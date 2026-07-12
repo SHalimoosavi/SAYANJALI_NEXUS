@@ -1,0 +1,1667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>SAYANJALI NEXUS PRIVATE LIMITED — AI, Blockchain &amp; Enterprise Software | Hyderabad</title>
+<meta name="description" content="SAYANJALI NEXUS PRIVATE LIMITED is a Hyderabad-based technology company building AI products, an independent Layer-1 blockchain, enterprise SaaS, and open-source developer tools."/>
+<meta name="keywords" content="SAYANJALI NEXUS PRIVATE LIMITED, SAYANJALI BLOCKCHAIN, SYJ Token, Enterprise SaaS India, AI Automation Hyderabad, Blockchain Developer India, Syed Ali Hasan Moosavi, OSINT Tools, GST Reconciliation Software"/>
+<meta property="og:title" content="SAYANJALI NEXUS PRIVATE LIMITED — AI, Blockchain & Enterprise Software"/>
+<meta property="og:description" content="A Hyderabad-based technology company building AI products, an independent Layer-1 blockchain, enterprise SaaS, and open-source developer tools."/>
+<meta property="og:type" content="website"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=Montserrat:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet"/>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --navy:#062B5B;
+  --navy-dark:#041e3f;
+  --navy-mid:#0a3d7a;
+  --gold:#D4A12A;
+  --gold-light:#e8b84b;
+  --gold-pale:#f5e7c0;
+  --green:#3FA535;
+  --green-dark:#2d7a27;
+  --white:#F7F8FA;
+  --black:#111111;
+  --glass:rgba(6,43,91,0.45);
+  --glass-light:rgba(255,255,255,0.06);
+}
+html{scroll-behavior:smooth;overflow-x:hidden}
+body{
+  background:var(--black);
+  color:var(--white);
+  font-family:'Montserrat',sans-serif;
+  font-weight:400;
+  overflow-x:hidden;
+  cursor:none;
+}
+/* CUSTOM CURSOR */
+#cursor{position:fixed;width:12px;height:12px;background:var(--gold);border-radius:50%;pointer-events:none;z-index:9999;transform:translate(-50%,-50%);transition:transform .1s ease,background .2s}
+#cursor-trail{position:fixed;width:36px;height:36px;border:1px solid rgba(212,161,42,.4);border-radius:50%;pointer-events:none;z-index:9998;transform:translate(-50%,-50%);transition:left .12s ease,top .12s ease,transform .2s}
+a,button{cursor:none}
+/* SCROLL BAR */
+::-webkit-scrollbar{width:4px}
+::-webkit-scrollbar-track{background:#050e1a}
+::-webkit-scrollbar-thumb{background:var(--gold);border-radius:4px}
+/* NAVBAR */
+#navbar{
+  position:fixed;top:0;left:0;right:0;z-index:1000;
+  padding:1.2rem 4rem;
+  display:flex;align-items:center;justify-content:space-between;
+  transition:all .4s ease;
+}
+#navbar.scrolled{
+  background:rgba(4,30,63,.92);
+  backdrop-filter:blur(20px);
+  border-bottom:1px solid rgba(212,161,42,.2);
+  padding:.9rem 4rem;
+}
+.nav-logo{display:flex;align-items:center;gap:.75rem;text-decoration:none}
+.nav-logo-icon{
+  width:42px;height:42px;
+  background:linear-gradient(135deg,var(--gold),var(--gold-light));
+  border-radius:10px;
+  display:flex;align-items:center;justify-content:center;
+  font-family:'Cormorant Garamond',serif;
+  font-size:1.3rem;font-weight:700;
+  color:var(--navy-dark);
+  flex-shrink:0;
+}
+.nav-logo-text{
+  font-family:'Montserrat',sans-serif;
+  font-size:.7rem;font-weight:700;
+  letter-spacing:.18em;text-transform:uppercase;
+  color:var(--white);line-height:1.3;
+}
+.nav-logo-sub{font-size:.55rem;font-weight:400;color:var(--gold);letter-spacing:.12em}
+.nav-links{display:flex;gap:2.5rem;list-style:none}
+.nav-links a{
+  font-size:.72rem;font-weight:600;letter-spacing:.12em;
+  text-transform:uppercase;color:rgba(247,248,250,.75);
+  text-decoration:none;transition:color .3s;position:relative;
+}
+.nav-links a::after{
+  content:'';position:absolute;bottom:-4px;left:0;width:0;height:1px;
+  background:var(--gold);transition:width .3s;
+}
+.nav-links a:hover{color:var(--gold)}
+.nav-links a:hover::after{width:100%}
+.nav-cta{
+  padding:.55rem 1.4rem;
+  border:1px solid var(--gold);
+  color:var(--gold);
+  font-size:.7rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;
+  background:transparent;text-decoration:none;
+  transition:all .3s;
+}
+.nav-cta:hover{background:var(--gold);color:var(--navy-dark)}
+.nav-burger{display:none;flex-direction:column;gap:5px;background:none;border:none;padding:.4rem}
+.nav-burger span{display:block;width:24px;height:1.5px;background:var(--white);transition:.3s}
+/* LOADING SCREEN */
+#loader{
+  position:fixed;inset:0;z-index:10000;
+  background:var(--navy-dark);
+  display:flex;flex-direction:column;align-items:center;justify-content:center;
+  transition:opacity .8s ease, visibility .8s ease;
+}
+#loader.hidden{opacity:0;visibility:hidden}
+.loader-logo{
+  font-family:'Cormorant Garamond',serif;
+  font-size:3rem;font-weight:300;
+  color:var(--gold);letter-spacing:.3em;
+  text-transform:uppercase;margin-bottom:2rem;
+  opacity:0;animation:fadeUp .8s .3s forwards;
+}
+.loader-bar-wrap{width:200px;height:1px;background:rgba(212,161,42,.2);overflow:hidden}
+.loader-bar{height:100%;background:var(--gold);width:0;animation:loadBar 2s .8s ease forwards}
+.loader-text{
+  font-size:.65rem;font-weight:600;letter-spacing:.25em;
+  text-transform:uppercase;color:rgba(212,161,42,.6);
+  margin-top:1rem;opacity:0;animation:fadeUp .8s .5s forwards;
+}
+@keyframes loadBar{to{width:100%}}
+@keyframes fadeUp{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:none}}
+/* CANVAS */
+#hero-canvas{position:absolute;inset:0;z-index:0}
+/* HERO */
+#hero{
+  position:relative;min-height:100vh;
+  display:flex;flex-direction:column;align-items:center;justify-content:center;
+  text-align:center;padding:0 2rem;
+  overflow:hidden;
+}
+.hero-bg{
+  position:absolute;inset:0;z-index:0;
+  background:radial-gradient(ellipse 80% 70% at 50% 50%,rgba(10,61,122,.6) 0%,rgba(4,30,63,.95) 55%,var(--black) 100%);
+}
+.hero-deer{
+  position:absolute;inset:0;z-index:1;
+  display:flex;align-items:center;justify-content:center;
+  opacity:.04;pointer-events:none;
+}
+.hero-deer svg{width:60vmin;height:60vmin}
+.hero-eyebrow{
+  position:relative;z-index:2;
+  font-size:.65rem;font-weight:700;letter-spacing:.35em;
+  text-transform:uppercase;color:var(--gold);
+  margin-bottom:1.5rem;
+  opacity:0;transform:translateY(20px);
+  display:flex;align-items:center;gap:1rem;
+}
+.hero-eyebrow::before,.hero-eyebrow::after{
+  content:'';display:block;width:40px;height:1px;background:var(--gold);opacity:.5;
+}
+.hero-title{
+  position:relative;z-index:2;
+  font-family:'Cormorant Garamond',serif;
+  font-size:clamp(5rem,12vw,11rem);
+  font-weight:300;line-height:.95;
+  letter-spacing:-.01em;
+  color:var(--white);
+  opacity:0;
+  margin-bottom:.5rem;
+}
+.hero-title em{
+  font-style:italic;color:var(--gold);
+  display:block;font-size:.9em;
+}
+.hero-company{
+  position:relative;z-index:2;
+  font-size:.65rem;font-weight:700;letter-spacing:.25em;
+  text-transform:uppercase;color:rgba(247,248,250,.45);
+  margin-bottom:2.5rem;
+  opacity:0;
+}
+.hero-desc{
+  position:relative;z-index:2;
+  font-size:1rem;font-weight:300;line-height:1.8;
+  color:rgba(247,248,250,.7);
+  max-width:600px;margin:0 auto 3.5rem;
+  opacity:0;
+}
+.hero-btns{
+  position:relative;z-index:2;
+  display:flex;gap:1.5rem;flex-wrap:wrap;justify-content:center;
+  opacity:0;
+}
+.btn-primary{
+  padding:.9rem 2.4rem;
+  background:linear-gradient(135deg,var(--gold),var(--gold-light));
+  color:var(--navy-dark);
+  font-size:.72rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;
+  border:none;text-decoration:none;
+  transition:all .3s;position:relative;overflow:hidden;
+}
+.btn-primary::after{
+  content:'';position:absolute;inset:0;
+  background:rgba(255,255,255,.2);transform:scaleX(0);transform-origin:left;
+  transition:transform .3s;
+}
+.btn-primary:hover::after{transform:scaleX(1)}
+.btn-outline{
+  padding:.9rem 2.4rem;
+  border:1px solid rgba(212,161,42,.5);
+  color:var(--gold);
+  font-size:.72rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;
+  background:transparent;text-decoration:none;
+  transition:all .3s;
+}
+.btn-outline:hover{background:rgba(212,161,42,.1);border-color:var(--gold)}
+.hero-scroll{
+  position:absolute;bottom:2.5rem;left:50%;transform:translateX(-50%);
+  z-index:2;display:flex;flex-direction:column;align-items:center;gap:.6rem;
+  opacity:0;animation:fadeUp 1s 2.5s forwards;
+}
+.hero-scroll span{font-size:.6rem;font-weight:600;letter-spacing:.25em;color:rgba(212,161,42,.6);text-transform:uppercase}
+.scroll-line{width:1px;height:50px;background:linear-gradient(to bottom,var(--gold),transparent);animation:scrollPulse 2s infinite}
+@keyframes scrollPulse{0%,100%{opacity:.3}50%{opacity:1}}
+/* SECTIONS */
+section{position:relative;overflow:hidden}
+.section-label{
+  font-size:.6rem;font-weight:700;letter-spacing:.3em;text-transform:uppercase;
+  color:var(--gold);margin-bottom:1rem;
+  display:flex;align-items:center;gap:.75rem;
+}
+.section-label::before{content:'';display:block;width:30px;height:1px;background:var(--gold);opacity:.6}
+.section-heading{
+  font-family:'Cormorant Garamond',serif;
+  font-size:clamp(2.4rem,5vw,4.2rem);
+  font-weight:300;line-height:1.1;
+  color:var(--white);margin-bottom:1.5rem;
+}
+.section-heading em{color:var(--gold);font-style:italic}
+.section-sub{
+  font-size:.95rem;font-weight:300;line-height:1.9;
+  color:rgba(247,248,250,.6);max-width:680px;
+}
+/* ABOUT */
+#about{
+  padding:10rem 4rem;
+  background:linear-gradient(180deg,var(--black) 0%,#030d1a 50%,#050f22 100%);
+}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:6rem;align-items:center;max-width:1200px;margin:0 auto}
+.about-visual{
+  position:relative;
+  background:linear-gradient(135deg,rgba(6,43,91,.6),rgba(4,20,50,.9));
+  border:1px solid rgba(212,161,42,.15);
+  padding:3rem;
+  display:flex;align-items:center;justify-content:center;
+  min-height:420px;
+  overflow:hidden;
+}
+.about-visual::before{
+  content:'';position:absolute;inset:0;
+  background:radial-gradient(circle at 30% 30%,rgba(212,161,42,.06) 0%,transparent 60%);
+}
+.about-quote{
+  font-family:'Cormorant Garamond',serif;
+  font-size:1.8rem;font-weight:300;font-style:italic;
+  line-height:1.5;color:var(--white);
+  text-align:center;position:relative;z-index:1;
+}
+.about-quote cite{
+  display:block;font-style:normal;font-size:.7rem;
+  font-family:'Montserrat',sans-serif;letter-spacing:.18em;
+  color:var(--gold);margin-top:1.5rem;text-transform:uppercase;
+}
+.about-stats{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;margin-top:2.5rem}
+.about-stat{
+  padding:1.5rem;
+  border-left:2px solid var(--gold);
+  background:rgba(212,161,42,.04);
+}
+.about-stat-num{
+  font-family:'Cormorant Garamond',serif;
+  font-size:2.8rem;font-weight:600;color:var(--gold);
+  line-height:1;margin-bottom:.3rem;
+}
+.about-stat-label{font-size:.65rem;font-weight:600;letter-spacing:.15em;color:rgba(247,248,250,.5);text-transform:uppercase}
+/* VISION */
+#vision{
+  padding:10rem 4rem;
+  background:var(--navy-dark);
+  position:relative;
+}
+#vision::before{
+  content:'';position:absolute;inset:0;
+  background:radial-gradient(ellipse 80% 60% at 50% 0%,rgba(212,161,42,.06) 0%,transparent 60%);
+}
+.vision-grid{display:grid;grid-template-columns:1fr 1fr;gap:4rem;max-width:1200px;margin:4rem auto 0}
+.vision-card{
+  padding:2.5rem;
+  border:1px solid rgba(212,161,42,.15);
+  background:rgba(255,255,255,.02);
+  position:relative;overflow:hidden;
+  transition:all .4s;
+}
+.vision-card:hover{
+  border-color:rgba(212,161,42,.4);
+  background:rgba(212,161,42,.04);
+  transform:translateY(-4px);
+}
+.vision-card::before{
+  content:'';position:absolute;top:0;left:0;right:0;height:2px;
+  background:linear-gradient(90deg,var(--gold),transparent);
+}
+.vision-card-icon{
+  width:52px;height:52px;
+  background:rgba(212,161,42,.12);
+  display:flex;align-items:center;justify-content:center;
+  margin-bottom:1.5rem;
+  font-size:1.4rem;
+}
+.vision-card-title{
+  font-family:'Cormorant Garamond',serif;
+  font-size:1.6rem;font-weight:500;
+  color:var(--white);margin-bottom:1rem;
+}
+.vision-card-text{font-size:.85rem;line-height:1.8;color:rgba(247,248,250,.6)}
+.mission-list{list-style:none;margin-top:2rem}
+.mission-list li{
+  padding:.8rem 0;
+  border-bottom:1px solid rgba(212,161,42,.08);
+  font-size:.85rem;font-weight:400;
+  color:rgba(247,248,250,.7);
+  display:flex;align-items:flex-start;gap:1rem;
+  line-height:1.6;
+}
+.mission-list li::before{
+  content:'✦';color:var(--gold);font-size:.6rem;margin-top:.2rem;flex-shrink:0;
+}
+/* VERTICALS */
+#verticals{
+  padding:10rem 4rem;
+  background:linear-gradient(180deg,#050f22 0%,var(--black) 100%);
+}
+.verticals-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  gap:1.5rem;max-width:1300px;margin:4rem auto 0;
+}
+.vertical-card{
+  padding:2rem;
+  border:1px solid rgba(255,255,255,.06);
+  background:rgba(6,43,91,.2);
+  position:relative;overflow:hidden;
+  transition:all .4s;cursor:pointer;
+}
+.vertical-card:hover{
+  border-color:rgba(212,161,42,.3);
+  background:rgba(6,43,91,.5);
+  transform:translateY(-6px);
+}
+.vertical-card::after{
+  content:'';position:absolute;
+  bottom:0;left:0;right:0;height:2px;
+  background:linear-gradient(90deg,transparent,var(--gold),transparent);
+  transform:scaleX(0);transform-origin:center;
+  transition:transform .4s;
+}
+.vertical-card:hover::after{transform:scaleX(1)}
+.vertical-num{
+  font-family:'Space Mono',monospace;
+  font-size:.6rem;color:rgba(212,161,42,.5);
+  margin-bottom:1rem;letter-spacing:.1em;
+}
+.vertical-icon{
+  width:44px;height:44px;
+  background:linear-gradient(135deg,rgba(212,161,42,.15),rgba(63,165,53,.1));
+  display:flex;align-items:center;justify-content:center;
+  margin-bottom:1.2rem;font-size:1.3rem;
+}
+.vertical-name{
+  font-family:'Cormorant Garamond',serif;
+  font-size:1.25rem;font-weight:600;
+  color:var(--white);margin-bottom:.6rem;
+  line-height:1.2;
+}
+.vertical-desc{font-size:.78rem;line-height:1.7;color:rgba(247,248,250,.5)}
+.vertical-tag{
+  display:inline-block;margin-top:1rem;
+  font-size:.58rem;font-weight:700;letter-spacing:.15em;text-transform:uppercase;
+  color:var(--gold);padding:.3rem .8rem;
+  border:1px solid rgba(212,161,42,.25);
+}
+/* LEADERSHIP */
+#leadership{
+  padding:10rem 4rem;
+  background:var(--navy-dark);
+  position:relative;
+}
+#leadership::after{
+  content:'';position:absolute;inset:0;
+  background:radial-gradient(ellipse 100% 80% at 50% 100%,rgba(63,165,53,.04) 0%,transparent 60%);
+  pointer-events:none;
+}
+.leadership-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr 1fr 1fr;
+  gap:2rem;max-width:1200px;margin:5rem auto 0;
+}
+.leader-card{
+  padding:2rem 1.8rem;
+  border:1px solid rgba(212,161,42,.12);
+  background:rgba(6,43,91,.25);
+  position:relative;overflow:hidden;
+  transition:all .4s;text-align:center;
+}
+.leader-card.featured{
+  border-color:rgba(212,161,42,.4);
+  background:linear-gradient(165deg,rgba(6,43,91,.6),rgba(4,20,45,.8));
+}
+.leader-card:hover{transform:translateY(-6px);border-color:rgba(212,161,42,.4)}
+.leader-card::before{
+  content:'';position:absolute;top:0;left:0;right:0;height:3px;
+  background:linear-gradient(90deg,var(--gold),var(--green),var(--gold));
+  transform:scaleX(0);transform-origin:left;transition:transform .4s;
+}
+.leader-card:hover::before,.leader-card.featured::before{transform:scaleX(1)}
+.leader-avatar{
+  width:90px;height:90px;border-radius:50%;
+  background:linear-gradient(135deg,var(--gold),rgba(212,161,42,.4));
+  display:flex;align-items:center;justify-content:center;
+  font-family:'Cormorant Garamond',serif;
+  font-size:2rem;font-weight:600;color:var(--navy-dark);
+  margin:0 auto 1.2rem;
+  border:2px solid rgba(212,161,42,.3);
+}
+.leader-name{
+  font-family:'Cormorant Garamond',serif;
+  font-size:1.2rem;font-weight:600;
+  color:var(--white);margin-bottom:.3rem;
+}
+.leader-title{
+  font-size:.62rem;font-weight:700;letter-spacing:.15em;
+  text-transform:uppercase;color:var(--gold);
+  margin-bottom:1rem;
+}
+.leader-bio{font-size:.75rem;line-height:1.7;color:rgba(247,248,250,.5)}
+.leader-quote{
+  margin-top:1.2rem;padding-top:1rem;
+  border-top:1px solid rgba(212,161,42,.12);
+  font-family:'Cormorant Garamond',serif;
+  font-size:.95rem;font-style:italic;
+  color:rgba(247,248,250,.7);line-height:1.5;
+}
+/* TECHNOLOGY */
+#technology{
+  padding:10rem 4rem;
+  background:linear-gradient(180deg,var(--black) 0%,#020a14 100%);
+}
+.tech-grid{display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center;max-width:1200px;margin:5rem auto 0}
+.tech-items{display:grid;gap:1.5rem}
+.tech-item{
+  display:flex;gap:1.5rem;align-items:flex-start;
+  padding:1.5rem;
+  border:1px solid rgba(255,255,255,.04);
+  background:rgba(6,43,91,.15);
+  transition:all .3s;
+}
+.tech-item:hover{border-color:rgba(63,165,53,.25);background:rgba(6,43,91,.4)}
+.tech-item-icon{
+  width:40px;height:40px;flex-shrink:0;
+  background:rgba(63,165,53,.15);
+  display:flex;align-items:center;justify-content:center;
+  font-size:1.2rem;
+}
+.tech-item-name{
+  font-size:.8rem;font-weight:600;letter-spacing:.08em;
+  text-transform:uppercase;color:var(--white);margin-bottom:.4rem;
+}
+.tech-item-desc{font-size:.78rem;line-height:1.6;color:rgba(247,248,250,.5)}
+.tech-dashboard{
+  background:linear-gradient(135deg,rgba(6,43,91,.8),rgba(4,20,50,.95));
+  border:1px solid rgba(212,161,42,.15);
+  padding:2rem;position:relative;overflow:hidden;
+  min-height:450px;
+}
+.tech-dashboard::before{
+  content:'';position:absolute;inset:0;
+  background:repeating-linear-gradient(0deg,transparent,transparent 39px,rgba(212,161,42,.04) 39px,rgba(212,161,42,.04) 40px),
+             repeating-linear-gradient(90deg,transparent,transparent 39px,rgba(212,161,42,.04) 39px,rgba(212,161,42,.04) 40px);
+}
+.dash-header{
+  display:flex;align-items:center;justify-content:space-between;
+  margin-bottom:1.5rem;position:relative;z-index:1;
+}
+.dash-title{font-size:.7rem;font-weight:600;letter-spacing:.15em;text-transform:uppercase;color:var(--gold)}
+.dash-dots{display:flex;gap:.4rem}
+.dash-dot{width:8px;height:8px;border-radius:50%}
+.dash-dot:nth-child(1){background:#ff6b6b}
+.dash-dot:nth-child(2){background:#ffd93d}
+.dash-dot:nth-child(3){background:#6bcb77}
+.dash-bars{display:flex;align-items:flex-end;gap:.6rem;height:120px;margin-bottom:1.5rem;position:relative;z-index:1}
+.dash-bar{
+  flex:1;background:linear-gradient(to top,var(--gold),rgba(212,161,42,.3));
+  border-radius:3px 3px 0 0;
+  animation:barGrow 2s ease forwards;
+  transform-origin:bottom;transform:scaleY(0);
+}
+@keyframes barGrow{to{transform:scaleY(1)}}
+.dash-metrics{display:grid;grid-template-columns:1fr 1fr;gap:1rem;position:relative;z-index:1}
+.dash-metric{
+  padding:1rem;
+  background:rgba(0,0,0,.3);
+  border:1px solid rgba(212,161,42,.08);
+}
+.dash-metric-val{
+  font-family:'Space Mono',monospace;
+  font-size:1.4rem;color:var(--gold-light);margin-bottom:.2rem;
+}
+.dash-metric-label{font-size:.6rem;letter-spacing:.12em;text-transform:uppercase;color:rgba(247,248,250,.4)}
+/* SOCIAL IMPACT */
+#impact{
+  padding:10rem 4rem;
+  background:var(--navy-dark);
+  position:relative;
+}
+.impact-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2rem;max-width:1200px;margin:5rem auto 0}
+.impact-card{
+  padding:2.5rem;
+  background:rgba(63,165,53,.06);
+  border:1px solid rgba(63,165,53,.15);
+  position:relative;overflow:hidden;
+  transition:all .4s;
+}
+.impact-card:hover{
+  background:rgba(63,165,53,.12);
+  border-color:rgba(63,165,53,.35);
+  transform:translateY(-4px);
+}
+.impact-card::before{
+  content:'';position:absolute;top:0;left:0;right:0;height:3px;
+  background:linear-gradient(90deg,var(--green),var(--green-dark));
+}
+.impact-icon{font-size:2.5rem;margin-bottom:1.5rem}
+.impact-title{
+  font-family:'Cormorant Garamond',serif;
+  font-size:1.4rem;font-weight:600;
+  color:var(--white);margin-bottom:.8rem;
+}
+.impact-text{font-size:.82rem;line-height:1.8;color:rgba(247,248,250,.55)}
+/* STATS */
+#stats{
+  padding:8rem 4rem;
+  background:linear-gradient(180deg,var(--black) 0%,#030d1a 100%);
+  text-align:center;
+}
+.stats-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:2rem;max-width:1200px;margin:5rem auto 0}
+.stat-box{padding:2.5rem 1.5rem;position:relative}
+.stat-box::after{
+  content:'';position:absolute;right:0;top:20%;bottom:20%;
+  width:1px;background:rgba(212,161,42,.12);
+}
+.stat-box:last-child::after{display:none}
+.stat-number{
+  font-family:'Cormorant Garamond',serif;
+  font-size:3.5rem;font-weight:600;
+  color:var(--gold);line-height:1;
+  display:block;
+}
+.stat-label{
+  font-size:.65rem;font-weight:600;letter-spacing:.18em;
+  text-transform:uppercase;color:rgba(247,248,250,.45);
+  margin-top:.6rem;line-height:1.4;
+}
+/* CONTACT */
+#contact{
+  padding:10rem 4rem;
+  background:var(--navy-dark);
+  position:relative;
+}
+#contact::before{
+  content:'';position:absolute;inset:0;
+  background:radial-gradient(ellipse 80% 60% at 50% 50%,rgba(6,43,91,.8) 0%,transparent 70%);
+}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:6rem;max-width:1200px;margin:5rem auto 0;position:relative;z-index:1}
+.contact-info-title{
+  font-family:'Cormorant Garamond',serif;
+  font-size:1.8rem;font-weight:400;
+  color:var(--white);margin-bottom:2rem;
+}
+.contact-item{
+  display:flex;gap:1rem;align-items:flex-start;
+  padding:1rem 0;border-bottom:1px solid rgba(212,161,42,.08);
+  transition:all .3s;
+}
+.contact-item:hover .contact-item-val{color:var(--gold)}
+.contact-item-icon{
+  width:36px;height:36px;flex-shrink:0;
+  background:rgba(212,161,42,.1);
+  display:flex;align-items:center;justify-content:center;
+  font-size:1rem;margin-top:.15rem;
+}
+.contact-item-label{font-size:.6rem;font-weight:700;letter-spacing:.15em;text-transform:uppercase;color:rgba(212,161,42,.6);margin-bottom:.2rem}
+.contact-item-val{font-size:.85rem;color:rgba(247,248,250,.75);transition:.3s}
+.contact-item-val a{color:inherit;text-decoration:none}
+.contact-emails{display:grid;grid-template-columns:1fr 1fr;gap:.5rem;margin-top:.5rem}
+.email-chip{
+  padding:.4rem .8rem;
+  border:1px solid rgba(212,161,42,.15);
+  font-size:.68rem;color:rgba(247,248,250,.6);
+  transition:all .3s;
+}
+.email-chip:hover{border-color:var(--gold);color:var(--gold)}
+.contact-form{
+  background:rgba(6,43,91,.3);
+  border:1px solid rgba(212,161,42,.12);
+  padding:2.5rem;
+}
+.form-title{
+  font-family:'Cormorant Garamond',serif;
+  font-size:1.6rem;font-weight:400;
+  color:var(--white);margin-bottom:2rem;
+}
+.form-group{margin-bottom:1.5rem}
+.form-label{
+  display:block;font-size:.62rem;font-weight:600;
+  letter-spacing:.15em;text-transform:uppercase;
+  color:rgba(212,161,42,.7);margin-bottom:.5rem;
+}
+.form-input{
+  width:100%;padding:.85rem 1rem;
+  background:rgba(0,0,0,.3);
+  border:1px solid rgba(255,255,255,.08);
+  color:var(--white);font-family:'Montserrat',sans-serif;font-size:.85rem;
+  outline:none;transition:border-color .3s;
+}
+.form-input:focus{border-color:rgba(212,161,42,.5)}
+.form-input::placeholder{color:rgba(247,248,250,.25)}
+textarea.form-input{resize:vertical;min-height:100px}
+.whatsapp-btn{
+  display:flex;align-items:center;gap:.75rem;
+  padding:1rem 1.8rem;
+  background:#25D366;color:#fff;
+  font-size:.75rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;
+  border:none;text-decoration:none;margin-top:1rem;width:fit-content;
+  transition:all .3s;
+}
+.whatsapp-btn:hover{background:#128C7E;transform:translateY(-2px)}
+/* FOOTER */
+footer{
+  padding:5rem 4rem 3rem;
+  background:var(--navy-dark);
+  border-top:1px solid rgba(212,161,42,.1);
+  position:relative;
+}
+.footer-gold-line{
+  position:absolute;top:0;left:0;right:0;height:2px;
+  background:linear-gradient(90deg,transparent,var(--gold),transparent);
+}
+.footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:4rem;max-width:1200px;margin:0 auto 4rem}
+.footer-brand-name{
+  font-family:'Cormorant Garamond',serif;
+  font-size:1.4rem;font-weight:400;color:var(--white);
+  margin-bottom:.5rem;
+}
+.footer-brand-sub{font-size:.65rem;letter-spacing:.2em;color:var(--gold);text-transform:uppercase;margin-bottom:1.2rem}
+.footer-brand-desc{font-size:.8rem;line-height:1.8;color:rgba(247,248,250,.45);max-width:280px}
+.footer-col-title{
+  font-size:.65rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;
+  color:var(--gold);margin-bottom:1.5rem;
+}
+.footer-links{list-style:none;display:flex;flex-direction:column;gap:.7rem}
+.footer-links a{
+  font-size:.8rem;color:rgba(247,248,250,.5);
+  text-decoration:none;transition:color .3s;
+}
+.footer-links a:hover{color:var(--gold)}
+.footer-bottom{
+  max-width:1200px;margin:0 auto;
+  padding-top:2rem;
+  border-top:1px solid rgba(255,255,255,.05);
+  display:flex;align-items:center;justify-content:space-between;
+  flex-wrap:wrap;gap:1rem;
+}
+.footer-quote{
+  font-family:'Cormorant Garamond',serif;
+  font-size:1rem;font-style:italic;
+  color:rgba(247,248,250,.4);max-width:500px;
+}
+.footer-copy{font-size:.65rem;color:rgba(247,248,250,.25);letter-spacing:.08em}
+/* DIVIDER */
+.gold-divider{
+  width:100%;height:1px;
+  background:linear-gradient(90deg,transparent,rgba(212,161,42,.3),transparent);
+  margin:0;
+}
+/* ANIMATE ON SCROLL */
+.reveal{opacity:0;transform:translateY(40px);transition:opacity .8s ease,transform .8s ease}
+.reveal.visible{opacity:1;transform:none}
+.reveal-left{opacity:0;transform:translateX(-40px);transition:opacity .8s ease,transform .8s ease}
+.reveal-left.visible{opacity:1;transform:none}
+.reveal-right{opacity:0;transform:translateX(40px);transition:opacity .8s ease,transform .8s ease}
+.reveal-right.visible{opacity:1;transform:none}
+/* MOBILE NAV */
+.mobile-nav-overlay{
+  position:fixed;inset:0;z-index:999;
+  background:rgba(4,20,50,.98);
+  display:flex;flex-direction:column;align-items:center;justify-content:center;
+  transform:translateX(100%);transition:transform .4s ease;
+}
+.mobile-nav-overlay.open{transform:none}
+.mobile-nav-links{list-style:none;text-align:center;display:flex;flex-direction:column;gap:2rem}
+.mobile-nav-links a{
+  font-family:'Cormorant Garamond',serif;
+  font-size:2.5rem;font-weight:300;
+  color:var(--white);text-decoration:none;
+  transition:color .3s;
+}
+.mobile-nav-links a:hover{color:var(--gold)}
+/* RESPONSIVE */
+@media(max-width:1100px){
+  .leadership-grid{grid-template-columns:1fr 1fr}
+  .stats-grid{grid-template-columns:repeat(3,1fr)}
+  #navbar{padding:1rem 2rem}
+  #navbar.scrolled{padding:.8rem 2rem}
+  .footer-grid{grid-template-columns:1fr 1fr;gap:3rem}
+}
+@media(max-width:768px){
+  #navbar{padding:1rem 1.5rem}
+  .nav-links,.nav-cta{display:none}
+  .nav-burger{display:flex}
+  .about-grid,.tech-grid,.contact-grid,.vision-grid{grid-template-columns:1fr}
+  .about-visual{min-height:280px}
+  .impact-grid{grid-template-columns:1fr}
+  .leadership-grid{grid-template-columns:1fr}
+  .stats-grid{grid-template-columns:1fr 1fr}
+  #hero,#about,#vision,#verticals,#leadership,#technology,#impact,#stats,#contact{padding-left:1.5rem;padding-right:1.5rem}
+  footer{padding:4rem 1.5rem 2rem}
+  .footer-grid{grid-template-columns:1fr}
+  .about-stats{grid-template-columns:1fr}
+  .hero-btns{flex-direction:column;align-items:center}
+  .contact-emails{grid-template-columns:1fr}
+  .footer-bottom{flex-direction:column;text-align:center}
+}
+.faq-wrap{max-width:800px;margin:0 auto}
+.faq-item{border-bottom:1px solid rgba(212,161,42,.18);padding:1.5rem 0}
+.faq-q{display:flex;justify-content:space-between;align-items:center;cursor:pointer;gap:1rem}
+.faq-q-text{font-size:1rem;font-weight:600;color:var(--white)}
+.faq-toggle{color:var(--gold);font-size:1.2rem;flex-shrink:0}
+.faq-a{margin-top:.9rem;font-size:.9rem;line-height:1.7;color:rgba(247,248,250,.65);display:none}
+.faq-item.open .faq-a{display:block}
+.faq-item.open .faq-toggle{transform:rotate(45deg)}
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://shalimoosavi.github.io/sayanjali-nexus/#organization",
+      "name": "SAYANJALI NEXUS PRIVATE LIMITED",
+      "legalName": "SAYANJALI NEXUS PRIVATE LIMITED",
+      "founder": { "@type": "Person", "name": "Syed Ali Hasan Moosavi" },
+      "foundingLocation": "Hyderabad, Telangana, India",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Hyderabad",
+        "addressRegion": "Telangana",
+        "addressCountry": "IN"
+      },
+      "email": "cto@sayanjalinexus.com",
+      "sameAs": [
+        "https://github.com/SHalimoosavi",
+        "https://shalimoosavi.github.io/moosavi/"
+      ],
+      "description": "A Hyderabad-based technology company building AI products, an independent Layer-1 blockchain, enterprise SaaS, and open-source developer tools."
+    },
+    {
+      "@type": "LocalBusiness",
+      "@id": "https://shalimoosavi.github.io/sayanjali-nexus/#localbusiness",
+      "name": "SAYANJALI NEXUS PRIVATE LIMITED",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Hyderabad",
+        "addressRegion": "Telangana",
+        "addressCountry": "IN"
+      },
+      "telephone": "+91-6304225807",
+      "email": "cto@sayanjalinexus.com"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://shalimoosavi.github.io/sayanjali-nexus/" },
+        { "@type": "ListItem", "position": 2, "name": "Business Verticals", "item": "https://shalimoosavi.github.io/sayanjali-nexus/#verticals" },
+        { "@type": "ListItem", "position": 3, "name": "SAYANJALI BLOCKCHAIN", "item": "https://shalimoosavi.github.io/sayanjali-nexus/#blockchain-corp" },
+        { "@type": "ListItem", "position": 4, "name": "Open Source", "item": "https://shalimoosavi.github.io/sayanjali-nexus/#opensource-corp" },
+        { "@type": "ListItem", "position": 5, "name": "Contact", "item": "https://shalimoosavi.github.io/sayanjali-nexus/#contact" }
+      ]
+    }
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What does SAYANJALI NEXUS PRIVATE LIMITED do?",
+          "acceptedAnswer": { "@type": "Answer", "text": "SAYANJALI NEXUS PRIVATE LIMITED is a Hyderabad-based technology company building AI products, an independent Layer-1 blockchain, enterprise SaaS, and open-source developer tools — founded and led by Syed Ali Hasan Moosavi." }
+        },
+        {
+          "@type": "Question",
+          "name": "What is SAYANJALI BLOCKCHAIN?",
+          "acceptedAnswer": { "@type": "Answer", "text": "SAYANJALI BLOCKCHAIN is an independent Layer-1 blockchain built from scratch in Python, with Proof-of-Work consensus, ECDSA wallets, signed transactions, a REST API, and a CLI. It is the native settlement layer for the SYJ Token, shipped as v0.1.0-mvp with 37 passing automated tests." }
+        },
+        {
+          "@type": "Question",
+          "name": "Who founded SAYANJALI NEXUS?",
+          "acceptedAnswer": { "@type": "Answer", "text": "SAYANJALI NEXUS PRIVATE LIMITED was founded by Syed Ali Hasan Moosavi, who serves as Founder and Managing Director, alongside three co-directors." }
+        },
+        {
+          "@type": "Question",
+          "name": "Which business verticals are currently live?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Seven verticals are live today: Artificial Intelligence, Blockchain & Web3, Enterprise SaaS, Developer Tools & Open Source, Cybersecurity & OSINT, Corporate Compliance, and Education Technology. Agriculture, logistics, cloud kitchen, real estate, e-commerce, consulting, and community development are on the future roadmap." }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<!-- CUSTOM CURSOR -->
+<div id="cursor"></div>
+<div id="cursor-trail"></div>
+
+<!-- LOADING SCREEN -->
+<div id="loader">
+  <div class="loader-logo">SYJ</div>
+  <div class="loader-bar-wrap"><div class="loader-bar"></div></div>
+  <div class="loader-text">Initializing Ecosystem</div>
+</div>
+
+<!-- MOBILE NAV -->
+<div class="mobile-nav-overlay" id="mobileNav">
+  <ul class="mobile-nav-links">
+    <li><a href="#about" onclick="closeMobileNav()">About</a></li>
+    <li><a href="#vision" onclick="closeMobileNav()">Vision</a></li>
+    <li><a href="#verticals" onclick="closeMobileNav()">Verticals</a></li>
+    <li><a href="#blockchain-corp" onclick="closeMobileNav()">Blockchain</a></li>
+    <li><a href="#opensource-corp" onclick="closeMobileNav()">Open Source</a></li>
+    <li><a href="#leadership" onclick="closeMobileNav()">Leadership</a></li>
+    <li><a href="#technology" onclick="closeMobileNav()">Technology</a></li>
+    <li><a href="#impact" onclick="closeMobileNav()">Impact</a></li>
+    <li><a href="#contact" onclick="closeMobileNav()">Contact</a></li>
+  </ul>
+</div>
+
+<!-- NAVBAR -->
+<nav id="navbar">
+  <a href="#" class="nav-logo">
+    <div class="nav-logo-icon">S</div>
+    <div>
+      <div class="nav-logo-text">Sayanjali Nexus</div>
+      <div class="nav-logo-sub">Private Limited</div>
+    </div>
+  </a>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#vision">Vision</a></li>
+    <li><a href="#verticals">Verticals</a></li>
+    <li><a href="#blockchain-corp">Blockchain</a></li>
+    <li><a href="#leadership">Leadership</a></li>
+    <li><a href="#technology">Technology</a></li>
+    <li><a href="#impact">Impact</a></li>
+  </ul>
+  <a href="#contact" class="nav-cta">Connect</a>
+  <button class="nav-burger" id="burgerBtn" aria-label="Menu" onclick="toggleMobileNav()">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-bg"></div>
+  <canvas id="hero-canvas"></canvas>
+  <!-- Deer silhouette watermark -->
+  <div class="hero-deer">
+    <svg viewBox="0 0 200 260" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+      <path d="M100 20c-2 0-5 2-7 5-3 4-2 9 0 12l-15-8c-4-2-8 0-9 4-1 3 1 7 4 8l-10-3c-4-1-8 2-8 6s4 7 8 6l8 2c-6 2-9 8-7 14 2 5 8 8 14 6l-6 10c-4 7-2 15 4 19l-2 35c-1 8 5 15 13 16s15-5 16-13l2-22 2 22c1 8 8 14 16 13s14-8 13-16l-2-35c6-4 8-12 4-19l-6-10c6 2 12-1 14-6 2-6-1-12-7-14l8-2c4 1 8-2 8-6s-4-7-8-6l-10 3c3-1 5-5 4-8-1-4-5-6-9-4L107 37c2-3 3-8 0-12-2-3-5-5-7-5z"/>
+      <path d="M85 20l-8-15c-1-2-3-3-5-2s-3 3-2 5l5 16M115 20l8-15c1-2 3-3 5-2s3 3 2 5l-5 16M78 28l-18-10c-2-1-4 0-5 2s0 4 2 5l18 8M122 28l18-10c2-1 4 0 5 2s0 4-2 5l-18 8"/>
+    </svg>
+  </div>
+  <div class="hero-eyebrow" id="heroEyebrow">The Giver</div>
+  <h1 class="hero-title" id="heroTitle">
+    Sayanjali<br><em>Nexus</em>
+  </h1>
+  <p class="hero-company" id="heroCompany">Private Limited &nbsp;|&nbsp; Hyderabad, India</p>
+  <p class="hero-desc" id="heroDesc">
+    A technology-driven enterprise building AI products, an independent Layer-1 blockchain, and enterprise software — engineered in-house, shipped in public.
+  </p>
+  <div class="hero-btns" id="heroBtns">
+    <a href="#verticals" class="btn-primary">Explore Ecosystem</a>
+    <a href="#vision" class="btn-outline">Our Vision</a>
+    <a href="#contact" class="btn-outline">Connect</a>
+  </div>
+  <div class="hero-scroll">
+    <span>Scroll</span>
+    <div class="scroll-line"></div>
+  </div>
+</section>
+
+<div class="gold-divider"></div>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="about-grid">
+    <div class="reveal-left">
+      <div class="section-label">About Us</div>
+      <h2 class="section-heading">A Vision<br><em>Beyond Business</em></h2>
+      <p class="section-sub">
+        SAYANJALI NEXUS PRIVATE LIMITED is a technology-driven enterprise building across Artificial Intelligence, Blockchain, Enterprise Software, and Developer Infrastructure — with agriculture, logistics, and community ventures on the long-term roadmap.
+      </p>
+      <p class="section-sub" style="margin-top:1.2rem">
+        Rooted in the philosophy of <em style="color:var(--gold);font-style:italic;font-family:'Cormorant Garamond',serif">"The Giver"</em> — an enterprise that does not merely build business, but builds a better world.
+      </p>
+      <div class="about-stats">
+        <div class="about-stat reveal" data-delay="100">
+          <div class="about-stat-num" data-count="14">0</div>
+          <div class="about-stat-label">Verticals (Live + Planned)</div>
+        </div>
+        <div class="about-stat reveal" data-delay="200">
+          <div class="about-stat-num" data-count="7">0</div>
+          <div class="about-stat-label">Live Products</div>
+        </div>
+        <div class="about-stat reveal" data-delay="300">
+          <div class="about-stat-num" data-count="4">0</div>
+          <div class="about-stat-label">Founding Directors</div>
+        </div>
+        <div class="about-stat reveal" data-delay="400">
+          <div class="about-stat-num">∞</div>
+          <div class="about-stat-label">Impact Vision</div>
+        </div>
+      </div>
+    </div>
+    <div class="reveal-right">
+      <div class="about-visual">
+        <div class="about-quote">
+          "Technology must not only build wealth. It must build impact, opportunity, and a better future for humanity."
+          <cite>— Syed Ali Hasan Moosavi, Founder & MD</cite>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="gold-divider"></div>
+
+<!-- VISION & MISSION -->
+<section id="vision">
+  <div style="max-width:1200px;margin:0 auto;position:relative;z-index:1">
+    <div style="text-align:center" class="reveal">
+      <div class="section-label" style="justify-content:center">Vision & Mission</div>
+      <h2 class="section-heading">Engineering a<br><em>Better Tomorrow</em></h2>
+    </div>
+    <div class="vision-grid">
+      <div class="vision-card reveal" data-delay="100">
+        <div class="vision-card-icon">🌐</div>
+        <div class="vision-card-title">Our Vision</div>
+        <p class="vision-card-text">To become a globally respected innovation ecosystem that transforms industries through technology, sustainability, healthcare, agriculture, and public impact.</p>
+      </div>
+      <div class="vision-card reveal" data-delay="200">
+        <div class="vision-card-icon">🎯</div>
+        <div class="vision-card-title">Our Mission</div>
+        <ul class="mission-list">
+          <li>Build scalable technology ecosystems that serve millions</li>
+          <li>Empower communities through targeted welfare initiatives</li>
+          <li>Digitally transform traditional industries at scale</li>
+          <li>Create sustainable and ethical infrastructure</li>
+          <li>Drive innovation with long-term societal value</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="gold-divider"></div>
+
+<!-- BUSINESS VERTICALS -->
+<section id="verticals">
+  <div style="max-width:1300px;margin:0 auto">
+    <div class="reveal" style="text-align:center">
+      <div class="section-label" style="justify-content:center">Business Verticals</div>
+      <h2 class="section-heading" style="text-align:center">14 Verticals of the<br><em>Ecosystem</em></h2>
+      <p class="section-sub" style="margin:0 auto;text-align:center">Seven live, shipped technology products, and seven verticals on our long-term expansion roadmap — clearly labeled so you always know what's operating today.</p>
+    </div>
+    <div class="verticals-grid">
+      <div class="vertical-card reveal" data-delay="50">
+        <div class="vertical-num">01 / 14 · LIVE</div>
+        <div class="vertical-icon">🤖</div>
+        <div class="vertical-name">Artificial Intelligence</div>
+        <div class="vertical-desc">AI agents and automation — NexusIntel AI and SYJ Mail Intelligence AI.</div>
+        <div class="vertical-tag">AI · Automation</div>
+      </div>
+      <div class="vertical-card reveal" data-delay="100">
+        <div class="vertical-num">02 / 14 · LIVE</div>
+        <div class="vertical-icon">⛓️</div>
+        <div class="vertical-name">Blockchain &amp; Web3</div>
+        <div class="vertical-desc">SAYANJALI BLOCKCHAIN, an independent Layer-1 network, and the SYJ Token ecosystem.</div>
+        <div class="vertical-tag">Layer-1 · Web3</div>
+      </div>
+      <div class="vertical-card reveal" data-delay="150">
+        <div class="vertical-num">03 / 14 · LIVE</div>
+        <div class="vertical-icon">🏢</div>
+        <div class="vertical-name">Enterprise SaaS</div>
+        <div class="vertical-desc">Multi-tenant business intelligence and CRM platforms built for real operational use.</div>
+        <div class="vertical-tag">SaaS · CRM</div>
+      </div>
+      <div class="vertical-card reveal" data-delay="200">
+        <div class="vertical-num">04 / 14 · LIVE</div>
+        <div class="vertical-icon">🛠️</div>
+        <div class="vertical-name">Developer Tools &amp; Open Source</div>
+        <div class="vertical-desc">GitHub productivity tooling, profile branding utilities, and a public OSS portfolio.</div>
+        <div class="vertical-tag">DevTools · OSS</div>
+      </div>
+      <div class="vertical-card reveal" data-delay="250">
+        <div class="vertical-num">05 / 14 · LIVE</div>
+        <div class="vertical-icon">🛡️</div>
+        <div class="vertical-name">Cybersecurity &amp; OSINT</div>
+        <div class="vertical-desc">Open-source reconnaissance and geolocation intelligence tooling.</div>
+        <div class="vertical-tag">OSINT · Security</div>
+      </div>
+      <div class="vertical-card reveal" data-delay="300">
+        <div class="vertical-num">06 / 14 · LIVE</div>
+        <div class="vertical-icon">🧾</div>
+        <div class="vertical-name">Corporate Compliance</div>
+        <div class="vertical-desc">Automated GST reconciliation and financial compliance tooling.</div>
+        <div class="vertical-tag">GST · FinTech</div>
+      </div>
+      <div class="vertical-card reveal" data-delay="350">
+        <div class="vertical-num">07 / 14 · LIVE</div>
+        <div class="vertical-icon">🎓</div>
+        <div class="vertical-name">Education Technology</div>
+        <div class="vertical-desc">AI-assisted learning tools, including SYJ Scholar AI.</div>
+        <div class="vertical-tag">EdTech</div>
+      </div>
+      <div class="vertical-card reveal" data-delay="400">
+        <div class="vertical-num">08 / 14 · PLANNED</div>
+        <div class="vertical-icon">🍽️</div>
+        <div class="vertical-name">Cloud Kitchen</div>
+        <div class="vertical-desc">Modern food and delivery ecosystem — on the roadmap for future expansion.</div>
+        <div class="vertical-tag">FoodTech · Future</div>
+      </div>
+      <div class="vertical-card reveal" data-delay="450">
+        <div class="vertical-num">09 / 14 · PLANNED</div>
+        <div class="vertical-icon">🚖</div>
+        <div class="vertical-name">Logistics &amp; Transportation</div>
+        <div class="vertical-desc">Mobility and transport coordination — future roadmap item.</div>
+        <div class="vertical-tag">Logistics · Future</div>
+      </div>
+      <div class="vertical-card reveal" data-delay="500">
+        <div class="vertical-num">10 / 14 · PLANNED</div>
+        <div class="vertical-icon">🌱</div>
+        <div class="vertical-name">Agriculture &amp; Agri-Tech</div>
+        <div class="vertical-desc">Supporting connected ventures such as ACE Livestock Farms with future digital tooling.</div>
+        <div class="vertical-tag">AgriTech · Future</div>
+      </div>
+      <div class="vertical-card reveal" data-delay="550">
+        <div class="vertical-num">11 / 14 · PLANNED</div>
+        <div class="vertical-icon">🏗️</div>
+        <div class="vertical-name">Real Estate &amp; Smart Infrastructure</div>
+        <div class="vertical-desc">Property and infrastructure development — long-term roadmap item.</div>
+        <div class="vertical-tag">PropTech · Future</div>
+      </div>
+      <div class="vertical-card reveal" data-delay="600">
+        <div class="vertical-num">12 / 14 · PLANNED</div>
+        <div class="vertical-icon">🛒</div>
+        <div class="vertical-name">E-Commerce</div>
+        <div class="vertical-desc">Digital commerce infrastructure — planned expansion vertical.</div>
+        <div class="vertical-tag">D2C · Future</div>
+      </div>
+      <div class="vertical-card reveal" data-delay="650">
+        <div class="vertical-num">13 / 14 · PLANNED</div>
+        <div class="vertical-icon">📊</div>
+        <div class="vertical-name">Digital Transformation Consulting</div>
+        <div class="vertical-desc">Enterprise advisory services — planned as the product line matures.</div>
+        <div class="vertical-tag">Consulting · Future</div>
+      </div>
+      <div class="vertical-card reveal" data-delay="700">
+        <div class="vertical-num">14 / 14 · PLANNED</div>
+        <div class="vertical-icon">🤝</div>
+        <div class="vertical-name">Public Welfare &amp; Community Development</div>
+        <div class="vertical-desc">Community and social impact initiatives — long-term vision, not yet active.</div>
+        <div class="vertical-tag">Social Impact · Future</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="gold-divider"></div>
+
+<!-- BLOCKCHAIN -->
+<section id="blockchain-corp">
+  <div style="max-width:1200px;margin:0 auto">
+    <div class="reveal" style="text-align:center">
+      <div class="section-label" style="justify-content:center">Web3 · Settlement Layer</div>
+      <h2 class="section-heading" style="text-align:center">SAYANJALI <em>BLOCKCHAIN</em></h2>
+      <p class="section-sub" style="margin:0 auto;text-align:center;max-width:700px">An independent Layer-1 blockchain built from scratch in Python — Proof-of-Work consensus, ECDSA wallets, signed transactions, a REST API, and a CLI. Shipped as v0.1.0-mvp with 37 passing tests. Peer-to-peer networking and smart contracts are the next milestones on the public roadmap.</p>
+    </div>
+    <div class="hero-btns" style="justify-content:center;margin-top:2rem">
+      <a href="https://shalimoosavi.github.io/syj-blockchain-web/" target="_blank" rel="noopener noreferrer" class="btn-primary">View Live Chain →</a>
+      <a href="https://github.com/SHalimoosavi/SAYANJALI-BLOCKCHAIN" target="_blank" rel="noopener noreferrer" class="btn-outline">GitHub Repository →</a>
+    </div>
+  </div>
+</section>
+
+<div class="gold-divider"></div>
+
+<!-- SYJ TOKEN -->
+<section id="syj-token">
+  <div style="max-width:1200px;margin:0 auto">
+    <div class="reveal" style="text-align:center">
+      <div class="section-label" style="justify-content:center">Utility Token</div>
+      <h2 class="section-heading" style="text-align:center">SYJ <em>Token</em></h2>
+      <p class="section-sub" style="margin:0 auto;text-align:center;max-width:700px">SYJ Token is the planned utility layer of the SAYANJALI ecosystem, designed to settle natively on SAYANJALI BLOCKCHAIN — built for enterprise licensing, AI subscriptions, marketplace transactions, and developer services, not speculation.</p>
+    </div>
+    <div class="hero-btns" style="justify-content:center;margin-top:2rem">
+      <a href="https://shalimoosavi.github.io/SYJ-TOKEN/" target="_blank" rel="noopener noreferrer" class="btn-primary">View SYJ Token →</a>
+    </div>
+  </div>
+</section>
+
+<div class="gold-divider"></div>
+
+<!-- OPEN SOURCE -->
+<section id="opensource-corp">
+  <div style="max-width:1200px;margin:0 auto">
+    <div class="reveal" style="text-align:center">
+      <div class="section-label" style="justify-content:center">GitHub · Open Source</div>
+      <h2 class="section-heading" style="text-align:center">Tools &amp; <em>Open Source Projects</em></h2>
+      <p class="section-sub" style="margin:0 auto;text-align:center;max-width:700px">Every major product ships with a public GitHub repository. Explore the code directly.</p>
+    </div>
+    <div class="verticals-grid">
+      <a href="https://shalimoosavi.github.io/SYJ-NexusIntel-AI-Landing/" target="_blank" rel="noopener noreferrer" class="vertical-card reveal" data-delay="50" style="text-decoration:none;color:inherit">
+        <div class="vertical-icon">📊</div>
+        <div class="vertical-name">NexusIntel AI</div>
+        <div class="vertical-desc">Enterprise revenue intelligence platform — live site and source.</div>
+        <div class="vertical-tag">Live + GitHub →</div>
+      </a>
+      <a href="https://github.com/SHalimoosavi/syj-mail-intelligence-ai" target="_blank" rel="noopener noreferrer" class="vertical-card reveal" data-delay="100" style="text-decoration:none;color:inherit">
+        <div class="vertical-icon">📬</div>
+        <div class="vertical-name">SYJ Mail Intelligence AI</div>
+        <div class="vertical-desc">Local-first AI email assistant using FastAPI and Ollama open-weight models.</div>
+        <div class="vertical-tag">GitHub →</div>
+      </a>
+      <a href="https://github.com/SHalimoosavi/SYJ-GST-Reconciliation" target="_blank" rel="noopener noreferrer" class="vertical-card reveal" data-delay="150" style="text-decoration:none;color:inherit">
+        <div class="vertical-icon">🧾</div>
+        <div class="vertical-name">SYJ GST Reconciliation</div>
+        <div class="vertical-desc">Automated GST reconciliation, 137 automated tests, ~90% coverage.</div>
+        <div class="vertical-tag">GitHub →</div>
+      </a>
+      <a href="https://github.com/SHalimoosavi/SYJ-Github-Optimiser" target="_blank" rel="noopener noreferrer" class="vertical-card reveal" data-delay="200" style="text-decoration:none;color:inherit">
+        <div class="vertical-icon">🛠️</div>
+        <div class="vertical-name">SYJ GitHub Optimiser</div>
+        <div class="vertical-desc">Developer productivity toolkit for GitHub repos and workflows.</div>
+        <div class="vertical-tag">GitHub →</div>
+      </a>
+      <a href="https://github.com/SHalimoosavi/SYJ-Personality-For-Github" target="_blank" rel="noopener noreferrer" class="vertical-card reveal" data-delay="250" style="text-decoration:none;color:inherit">
+        <div class="vertical-icon">✨</div>
+        <div class="vertical-name">SYJ Personality For GitHub</div>
+        <div class="vertical-desc">AI-powered GitHub profile enhancement and branding toolkit.</div>
+        <div class="vertical-tag">GitHub →</div>
+      </a>
+      <a href="https://github.com/SHalimoosavi/SYJ-SCHOLAR-AI" target="_blank" rel="noopener noreferrer" class="vertical-card reveal" data-delay="300" style="text-decoration:none;color:inherit">
+        <div class="vertical-icon">🎓</div>
+        <div class="vertical-name">SYJ Scholar AI</div>
+        <div class="vertical-desc">AI study companion focused on productivity and learning.</div>
+        <div class="vertical-tag">GitHub →</div>
+      </a>
+      <a href="https://github.com/SHalimoosavi/sayanjali-osint" target="_blank" rel="noopener noreferrer" class="vertical-card reveal" data-delay="350" style="text-decoration:none;color:inherit">
+        <div class="vertical-icon">🛡️</div>
+        <div class="vertical-name">SAYANJALI OSINT</div>
+        <div class="vertical-desc">Open-source OSINT toolkit for reconnaissance and investigations.</div>
+        <div class="vertical-tag">GitHub →</div>
+      </a>
+      <a href="https://github.com/SHalimoosavi/AI-Zara-web-widget" target="_blank" rel="noopener noreferrer" class="vertical-card reveal" data-delay="400" style="text-decoration:none;color:inherit">
+        <div class="vertical-icon">💬</div>
+        <div class="vertical-name">AI Zara Web Widget</div>
+        <div class="vertical-desc">Embeddable AI assistant widget for websites and customer engagement.</div>
+        <div class="vertical-tag">GitHub →</div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<div class="gold-divider"></div>
+
+<!-- LEADERSHIP -->
+<section id="leadership">
+  <div style="max-width:1200px;margin:0 auto;position:relative;z-index:1">
+    <div style="text-align:center" class="reveal">
+      <div class="section-label" style="justify-content:center">Leadership</div>
+      <h2 class="section-heading" style="text-align:center">The Minds<br><em>Behind the Vision</em></h2>
+    </div>
+    <div class="leadership-grid">
+      <div class="leader-card featured reveal" data-delay="100">
+        <div class="leader-avatar">S</div>
+        <div class="leader-name">Syed Ali Hasan Moosavi</div>
+        <div class="leader-title">Founder & Managing Director</div>
+        <div class="leader-bio">Main technology architect behind SYJ Token and SaaS platforms. Also Owner of MOOSAVI COMPLIANCE & FARMING CO. Visionary leader driving the ecosystem forward.</div>
+        <div class="leader-quote">"Technology must not only build wealth. It must build impact, opportunity, and a better future for humanity."</div>
+      </div>
+      <div class="leader-card reveal" data-delay="200">
+        <div class="leader-avatar" style="background:linear-gradient(135deg,var(--green),rgba(63,165,53,.4))">H</div>
+        <div class="leader-name">Hyder Ali Khan</div>
+        <div class="leader-title">Co-Founder & Executive Director</div>
+        <div class="leader-bio">Leading funding operations, marketing strategy, and business growth. Driving expansion and building global partnerships across verticals.</div>
+      </div>
+      <div class="leader-card reveal" data-delay="300">
+        <div class="leader-avatar" style="background:linear-gradient(135deg,var(--navy-mid),var(--navy))">A</div>
+        <div class="leader-name">Ausaja Abbas</div>
+        <div class="leader-title">Director</div>
+        <div class="leader-bio">Strategic direction and organizational leadership. Contributing to the long-term vision and operational excellence of the enterprise.</div>
+      </div>
+      <div class="leader-card reveal" data-delay="400">
+        <div class="leader-avatar" style="background:linear-gradient(135deg,rgba(212,161,42,.6),rgba(212,161,42,.2))">S</div>
+        <div class="leader-name">Shaber Ali Khan</div>
+        <div class="leader-title">Director & Treasurer</div>
+        <div class="leader-bio">Financial oversight, treasury management, and organizational financial operations ensuring fiscal discipline and sustainable growth.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="gold-divider"></div>
+
+<!-- TECHNOLOGY -->
+<section id="technology">
+  <div style="max-width:1200px;margin:0 auto">
+    <div class="reveal" style="text-align:center">
+      <div class="section-label" style="justify-content:center">Technology</div>
+      <h2 class="section-heading" style="text-align:center">Engineering<br><em>The Future</em></h2>
+    </div>
+    <div class="tech-grid">
+      <div class="tech-items">
+        <div class="tech-item reveal" data-delay="100">
+          <div class="tech-item-icon">🤖</div>
+          <div>
+            <div class="tech-item-name">AI & Machine Learning</div>
+            <div class="tech-item-desc">Intelligent agents and automation pipelines powering NexusIntel AI and SYJ Mail Intelligence AI.</div>
+          </div>
+        </div>
+        <div class="tech-item reveal" data-delay="200">
+          <div class="tech-item-icon">☁️</div>
+          <div>
+            <div class="tech-item-name">Cloud Infrastructure</div>
+            <div class="tech-item-desc">FastAPI, REST APIs, and deployment pipelines engineered for production reliability.</div>
+          </div>
+        </div>
+        <div class="tech-item reveal" data-delay="300">
+          <div class="tech-item-icon">🔗</div>
+          <div>
+            <div class="tech-item-name">Blockchain & Web3</div>
+            <div class="tech-item-desc">SAYANJALI BLOCKCHAIN, an independent Layer-1 chain, and the SYJ Token ecosystem it settles.</div>
+          </div>
+        </div>
+        <div class="tech-item reveal" data-delay="400">
+          <div class="tech-item-icon">📱</div>
+          <div>
+            <div class="tech-item-name">SaaS Platforms</div>
+            <div class="tech-item-desc">Multi-tenant business intelligence and CRM software — engineered for production, not prototypes.</div>
+          </div>
+        </div>
+        <div class="tech-item reveal" data-delay="500">
+          <div class="tech-item-icon">🔄</div>
+          <div>
+            <div class="tech-item-name">Digital Automation</div>
+            <div class="tech-item-desc">n8n workflows, GitHub Actions, and API-driven pipelines reducing manual operational work.</div>
+          </div>
+        </div>
+      </div>
+      <div class="reveal-right">
+        <div class="tech-dashboard">
+          <div class="dash-header">
+            <div class="dash-title">SYJ Ecosystem Dashboard</div>
+            <div class="dash-dots">
+              <div class="dash-dot"></div><div class="dash-dot"></div><div class="dash-dot"></div>
+            </div>
+          </div>
+          <div class="dash-bars" id="dashBars">
+            <div class="dash-bar" style="height:65%;animation-delay:.1s"></div>
+            <div class="dash-bar" style="height:80%;animation-delay:.2s"></div>
+            <div class="dash-bar" style="height:50%;animation-delay:.3s"></div>
+            <div class="dash-bar" style="height:90%;animation-delay:.4s"></div>
+            <div class="dash-bar" style="height:70%;animation-delay:.5s"></div>
+            <div class="dash-bar" style="height:85%;animation-delay:.6s"></div>
+            <div class="dash-bar" style="height:60%;animation-delay:.7s"></div>
+          </div>
+          <div class="dash-metrics">
+            <div class="dash-metric">
+              <div class="dash-metric-val" id="metricActive">8</div>
+              <div class="dash-metric-label">Business Verticals</div>
+            </div>
+            <div class="dash-metric">
+              <div class="dash-metric-val" id="metricSectors">10+</div>
+              <div class="dash-metric-label">Products &amp; Repos</div>
+            </div>
+            <div class="dash-metric">
+              <div class="dash-metric-val">SaaS</div>
+              <div class="dash-metric-label">Platform Ready</div>
+            </div>
+            <div class="dash-metric">
+              <div class="dash-metric-val">L1</div>
+              <div class="dash-metric-label">Blockchain Live</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="gold-divider"></div>
+
+<!-- OPEN SOURCE & COMMUNITY -->
+<section id="impact">
+  <div style="max-width:1200px;margin:0 auto;position:relative;z-index:1">
+    <div style="text-align:center" class="reveal">
+      <div class="section-label" style="justify-content:center">Engineering Philosophy</div>
+      <h2 class="section-heading" style="text-align:center">Built in Public.<br><em>Shipped Honestly.</em></h2>
+      <p class="section-sub" style="margin:0 auto;text-align:center;max-width:600px">Every major product ships with public source code, real test coverage, and documentation that says what actually works — not what might.</p>
+    </div>
+    <div class="impact-grid">
+      <div class="impact-card reveal" data-delay="100">
+        <div class="impact-icon">🧪</div>
+        <div class="impact-title">Tested, Not Just Demoed</div>
+        <div class="impact-text">SAYANJALI BLOCKCHAIN ships with 37 automated tests, SYJ GST Reconciliation with 137 — engineering discipline over marketing claims.</div>
+      </div>
+      <div class="impact-card reveal" data-delay="200">
+        <div class="impact-icon">📖</div>
+        <div class="impact-title">Open Source First</div>
+        <div class="impact-text">Every core product is publicly documented on GitHub with honest disclaimers about what's production-ready and what isn't.</div>
+      </div>
+        <div class="impact-card reveal" data-delay="400">
+        <div class="impact-icon">🎓</div>
+        <div class="impact-title">Education-Aligned Tools</div>
+        <div class="impact-text">SYJ Scholar AI focuses on making learning support genuinely useful, not gamified engagement.</div>
+      </div>
+      <div class="impact-card reveal" data-delay="500">
+        <div class="impact-icon">💼</div>
+        <div class="impact-title">Freelance &amp; Consulting</div>
+        <div class="impact-text">Available for AI automation, agents, and CRM engagements with international clients and agencies.</div>
+      </div>
+      <div class="impact-card reveal" data-delay="600">
+        <div class="impact-icon">🌱</div>
+        <div class="impact-title">Family Network Ventures</div>
+        <div class="impact-text">Supporting connected ventures — ACE Livestock Farms, Al Falah Tahari Hotel &amp; Tandoori Chai, and ZAINAB NEXUS — with documentation and digital tooling.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="gold-divider"></div>
+
+<!-- STATS -->
+<section id="stats">
+  <div style="max-width:1200px;margin:0 auto">
+    <div class="reveal">
+      <div class="section-label" style="justify-content:center">By the Numbers</div>
+      <h2 class="section-heading" style="text-align:center"><em>What's</em><br>Actually Built</h2>
+    </div>
+    <div class="stats-grid">
+      <div class="stat-box reveal" data-delay="100">
+        <span class="stat-number counter-num" data-target="14">0</span>
+        <div class="stat-label">Business<br>Verticals</div>
+      </div>
+      <div class="stat-box reveal" data-delay="200">
+        <span class="stat-number counter-num" data-target="10">0</span>
+        <div class="stat-label">Products &amp;<br>Open Source Repos</div>
+      </div>
+      <div class="stat-box reveal" data-delay="300">
+        <span class="stat-number counter-num" data-target="4">0</span>
+        <div class="stat-label">Founding<br>Directors</div>
+      </div>
+      <div class="stat-box reveal" data-delay="400">
+        <span class="stat-number">L1</span>
+        <div class="stat-label">Blockchain<br>Shipped</div>
+      </div>
+      <div class="stat-box reveal" data-delay="500">
+        <span class="stat-number">1</span>
+        <div class="stat-label">Vision:<br>The Giver</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="gold-divider"></div>
+
+<!-- FAQ -->
+<section id="faq">
+  <div style="max-width:900px;margin:0 auto">
+    <div class="reveal" style="text-align:center">
+      <div class="section-label" style="justify-content:center">Frequently Asked</div>
+      <h2 class="section-heading" style="text-align:center">Common <em>Questions</em></h2>
+    </div>
+    <div class="faq-wrap" itemscope itemtype="https://schema.org/FAQPage">
+      <div class="faq-item" onclick="this.classList.toggle('open')" itemscope itemtype="https://schema.org/Question">
+        <div class="faq-q"><span class="faq-q-text" itemprop="name">What does SAYANJALI NEXUS PRIVATE LIMITED do?</span><span class="faq-toggle">+</span></div>
+        <p class="faq-a" itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer"><span itemprop="text">SAYANJALI NEXUS PRIVATE LIMITED is a Hyderabad-based technology company building AI products, an independent Layer-1 blockchain, enterprise SaaS, and open-source developer tools — founded and led by Syed Ali Hasan Moosavi.</span></p>
+      </div>
+      <div class="faq-item" onclick="this.classList.toggle('open')" itemscope itemtype="https://schema.org/Question">
+        <div class="faq-q"><span class="faq-q-text" itemprop="name">What is SAYANJALI BLOCKCHAIN?</span><span class="faq-toggle">+</span></div>
+        <p class="faq-a" itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer"><span itemprop="text">SAYANJALI BLOCKCHAIN is an independent Layer-1 blockchain built from scratch in Python, with Proof-of-Work consensus, ECDSA wallets, signed transactions, a REST API, and a CLI. It is the native settlement layer for the SYJ Token, shipped as v0.1.0-mvp with 37 passing automated tests.</span></p>
+      </div>
+      <div class="faq-item" onclick="this.classList.toggle('open')" itemscope itemtype="https://schema.org/Question">
+        <div class="faq-q"><span class="faq-q-text" itemprop="name">Who founded SAYANJALI NEXUS?</span><span class="faq-toggle">+</span></div>
+        <p class="faq-a" itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer"><span itemprop="text">SAYANJALI NEXUS PRIVATE LIMITED was founded by Syed Ali Hasan Moosavi, who serves as Founder and Managing Director, alongside three co-directors.</span></p>
+      </div>
+      <div class="faq-item" onclick="this.classList.toggle('open')" itemscope itemtype="https://schema.org/Question">
+        <div class="faq-q"><span class="faq-q-text" itemprop="name">Which business verticals are currently live?</span><span class="faq-toggle">+</span></div>
+        <p class="faq-a" itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer"><span itemprop="text">Seven verticals are live today: Artificial Intelligence, Blockchain & Web3, Enterprise SaaS, Developer Tools & Open Source, Cybersecurity & OSINT, Corporate Compliance, and Education Technology. Agriculture, logistics, cloud kitchen, real estate, e-commerce, consulting, and community development are on the future roadmap.</span></p>
+      </div>
+      <div class="faq-item" onclick="this.classList.toggle('open')" itemscope itemtype="https://schema.org/Question">
+        <div class="faq-q"><span class="faq-q-text" itemprop="name">How can I contact SAYANJALI NEXUS?</span><span class="faq-toggle">+</span></div>
+        <p class="faq-a" itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer"><span itemprop="text">You can reach the team via email at cto@sayanjalinexus.com, by WhatsApp, or through the contact form on this website. The company is based in Hyderabad, Telangana, India.</span></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="gold-divider"></div>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div style="max-width:1200px;margin:0 auto;position:relative;z-index:1">
+    <div style="text-align:center" class="reveal">
+      <div class="section-label" style="justify-content:center">Contact</div>
+      <h2 class="section-heading" style="text-align:center">Connect With<br><em>Sayanjali</em></h2>
+    </div>
+    <div class="contact-grid">
+      <div class="reveal-left">
+        <div class="contact-info-title">Get in Touch</div>
+        <div class="contact-item">
+          <div class="contact-item-icon">📞</div>
+          <div>
+            <div class="contact-item-label">Phone</div>
+            <div class="contact-item-val">
+              <a href="tel:+916304225807">+91 6304 225 807</a><br>
+              <a href="tel:+918179418949">+91 8179 418 949</a>
+            </div>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-item-icon">✉️</div>
+          <div>
+            <div class="contact-item-label">Email</div>
+            <div class="contact-emails">
+              <div class="email-chip"><a href="mailto:info@sayanjalinexus.com" style="color:inherit;text-decoration:none">info@sayanjalinexus.com</a></div>
+              <div class="email-chip"><a href="mailto:ceo@sayanjalinexus.com" style="color:inherit;text-decoration:none">ceo@sayanjalinexus.com</a></div>
+              <div class="email-chip"><a href="mailto:cto@sayanjalinexus.com" style="color:inherit;text-decoration:none">cto@sayanjalinexus.com</a></div>
+              <div class="email-chip"><a href="mailto:cfo@sayanjalinexus.com" style="color:inherit;text-decoration:none">cfo@sayanjalinexus.com</a></div>
+              <div class="email-chip"><a href="mailto:founders@syj-token.com" style="color:inherit;text-decoration:none">founders@syj-token.com</a></div>
+              <div class="email-chip"><a href="mailto:info@syj-token.com" style="color:inherit;text-decoration:none">info@syj-token.com</a></div>
+              <div class="email-chip"><a href="mailto:contact@sayanjalinexus.com" style="color:inherit;text-decoration:none">contact@sayanjalinexus.com</a></div>
+              <div class="email-chip"><a href="mailto:contact@syj-token.com" style="color:inherit;text-decoration:none">contact@syj-token.com</a></div>
+            </div>
+          </div>
+        </div>
+        <div class="contact-item" style="border:none">
+          <div class="contact-item-icon">📍</div>
+          <div>
+            <div class="contact-item-label">Location</div>
+            <div class="contact-item-val">Hyderabad, Telangana, India</div>
+          </div>
+        </div>
+        <a href="https://wa.me/916304225807" class="whatsapp-btn" target="_blank" rel="noopener">
+          <span>💬</span> WhatsApp Quick Connect
+        </a>
+      </div>
+      <div class="reveal-right">
+        <div class="contact-form">
+          <div class="form-title">Send a Message</div>
+          <div class="form-group">
+            <label class="form-label">Full Name</label>
+            <input type="text" class="form-input" placeholder="Your name"/>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Email Address</label>
+            <input type="email" class="form-input" placeholder="your@email.com"/>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Subject</label>
+            <input type="text" class="form-input" placeholder="Partnership / Inquiry / Investment"/>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Message</label>
+            <textarea class="form-input" placeholder="Tell us about your vision..."></textarea>
+          </div>
+          <button class="btn-primary" style="width:100%;text-align:center;padding:1rem">Send Message →</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-gold-line"></div>
+  <div class="footer-grid">
+    <div>
+      <div class="footer-brand-name">Sayanjali Nexus</div>
+      <div class="footer-brand-sub">Private Limited</div>
+      <p class="footer-brand-desc">Building ecosystems that empower humanity through technology, sustainability, healthcare, agriculture, and innovation.</p>
+    </div>
+    <div>
+      <div class="footer-col-title">Company</div>
+      <ul class="footer-links">
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#vision">Vision & Mission</a></li>
+        <li><a href="#leadership">Leadership</a></li>
+        <li><a href="#impact">Engineering Philosophy</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-col-title">Verticals</div>
+      <ul class="footer-links">
+        <li><a href="#blockchain-corp">SAYANJALI BLOCKCHAIN</a></li>
+        <li><a href="#syj-token">SYJ Token</a></li>
+        <li><a href="https://shalimoosavi.github.io/SYJ-NexusIntel-AI-Landing/" target="_blank" rel="noopener noreferrer">NexusIntel AI</a></li>
+        <li><a href="#opensource-corp">Open Source Tools</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-col-title">Connect</div>
+      <ul class="footer-links">
+        <li><a href="mailto:info@sayanjalinexus.com">info@sayanjalinexus.com</a></li>
+        <li><a href="mailto:info@syj-token.com">info@syj-token.com</a></li>
+        <li><a href="tel:+916304225807">+91 6304 225 807</a></li>
+        <li><a href="tel:+918179418949">+91 8179 418 949</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="footer-quote">"The future belongs to those who build ecosystems, not just companies."</div>
+    <div class="footer-copy">© 2025 SAYANJALI NEXUS PRIVATE LIMITED. All Rights Reserved.</div>
+  </div>
+</footer>
+
+<script>
+/* CURSOR */
+const cursor=document.getElementById('cursor'),trail=document.getElementById('cursor-trail');
+let mx=0,my=0,tx=0,ty=0;
+document.addEventListener('mousemove',e=>{mx=e.clientX;my=e.clientY;cursor.style.left=mx+'px';cursor.style.top=my+'px'});
+setInterval(()=>{tx+=(mx-tx)*.12;ty+=(my-ty)*.12;trail.style.left=tx+'px';trail.style.top=ty+'px'},16);
+document.querySelectorAll('a,button').forEach(el=>{
+  el.addEventListener('mouseenter',()=>{cursor.style.transform='translate(-50%,-50%) scale(2.5)';trail.style.transform='translate(-50%,-50%) scale(1.4)'});
+  el.addEventListener('mouseleave',()=>{cursor.style.transform='translate(-50%,-50%) scale(1)';trail.style.transform='translate(-50%,-50%) scale(1)'});
+});
+
+/* LOADER */
+window.addEventListener('load',()=>{
+  setTimeout(()=>{
+    document.getElementById('loader').classList.add('hidden');
+    heroAnimate();
+  },2200);
+});
+
+/* HERO ANIMATION */
+function heroAnimate(){
+  const items=['#heroEyebrow','#heroTitle','#heroCompany','#heroDesc','#heroBtns'];
+  items.forEach((s,i)=>{
+    setTimeout(()=>{
+      const el=document.querySelector(s);
+      if(el){el.style.transition='opacity .9s ease,transform .9s ease';el.style.opacity='1';el.style.transform='none'}
+    },i*180);
+  });
+}
+
+/* NAVBAR SCROLL */
+window.addEventListener('scroll',()=>{
+  document.getElementById('navbar').classList.toggle('scrolled',window.scrollY>60);
+});
+
+/* MOBILE NAV */
+function toggleMobileNav(){document.getElementById('mobileNav').classList.toggle('open')}
+function closeMobileNav(){document.getElementById('mobileNav').classList.remove('open')}
+
+/* SCROLL REVEAL */
+const revealEls=document.querySelectorAll('.reveal,.reveal-left,.reveal-right');
+const observer=new IntersectionObserver(entries=>{
+  entries.forEach(e=>{
+    if(e.isIntersecting){
+      const delay=e.target.dataset.delay||0;
+      setTimeout(()=>e.target.classList.add('visible'),+delay);
+    }
+  });
+},{threshold:.12});
+revealEls.forEach(el=>observer.observe(el));
+
+/* COUNTER ANIMATION */
+const counterObserver=new IntersectionObserver(entries=>{
+  entries.forEach(e=>{
+    if(e.isIntersecting&&!e.target.dataset.counted){
+      e.target.dataset.counted='1';
+      const target=+(e.target.dataset.target||e.target.dataset.count);
+      let cur=0;
+      const step=Math.max(1,Math.floor(target/20));
+      const timer=setInterval(()=>{
+        cur=Math.min(cur+step,target);
+        e.target.textContent=cur;
+        if(cur>=target)clearInterval(timer);
+      },60);
+    }
+  });
+},{threshold:.5});
+document.querySelectorAll('.counter-num,.about-stat-num[data-count]').forEach(el=>{
+  const tgt=el.dataset.target||el.dataset.count;
+  if(tgt)counterObserver.observe(el);
+});
+
+/* THREE.JS PARTICLES */
+(function(){
+  const canvas=document.getElementById('hero-canvas');
+  if(!canvas||typeof THREE==='undefined')return;
+  const renderer=new THREE.WebGLRenderer({canvas,alpha:true,antialias:true});
+  const scene=new THREE.Scene();
+  const camera=new THREE.PerspectiveCamera(60,innerWidth/innerHeight,.1,1000);
+  camera.position.z=5;
+  renderer.setSize(innerWidth,innerHeight);
+  renderer.setPixelRatio(Math.min(devicePixelRatio,2));
+
+  const geo=new THREE.BufferGeometry();
+  const count=1200;
+  const pos=new Float32Array(count*3);
+  for(let i=0;i<count*3;i++)pos[i]=(Math.random()-.5)*18;
+  geo.setAttribute('position',new THREE.BufferAttribute(pos,3));
+  const mat=new THREE.PointsMaterial({color:0xD4A12A,size:.025,transparent:true,opacity:.55});
+  const points=new THREE.Points(geo,mat);
+  scene.add(points);
+
+  /* Connections */
+  const lineMat=new THREE.LineBasicMaterial({color:0x062B5B,opacity:.12,transparent:true});
+  for(let i=0;i<80;i++){
+    const g2=new THREE.BufferGeometry();
+    const a=new Float32Array(6);
+    for(let j=0;j<6;j++)a[j]=(Math.random()-.5)*18;
+    g2.setAttribute('position',new THREE.BufferAttribute(a,3));
+    scene.add(new THREE.Line(g2,lineMat));
+  }
+
+  let t=0;
+  function animate(){
+    requestAnimationFrame(animate);
+    t+=.0004;
+    points.rotation.y=t;
+    points.rotation.x=t*.4;
+    renderer.render(scene,camera);
+  }
+  animate();
+  window.addEventListener('resize',()=>{
+    camera.aspect=innerWidth/innerHeight;camera.updateProjectionMatrix();
+    renderer.setSize(innerWidth,innerHeight);
+  });
+  document.addEventListener('mousemove',e=>{
+    camera.rotation.y=(e.clientX/innerWidth-.5)*.04;
+    camera.rotation.x=(e.clientY/innerHeight-.5)*.025;
+  });
+})();
+</script>
+</body>
+</html>
