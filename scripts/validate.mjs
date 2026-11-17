@@ -15,7 +15,10 @@ const pairs=[["#F7F8FA","#041e3f"],["#b9c4d3","#041e3f"],["#e8b84b","#041e3f"],[
 for(const [fg,bg] of pairs)if(contrast(fg,bg)<4.5)errors.push("Contrast below 4.5:1 for "+fg+" on "+bg);
 for(const route of routes){
  const file=fileFor(route);if(!fs.existsSync(file)){errors.push("Missing page "+route);continue;}
- const html=fs.readFileSync(file,"utf8");const title=(html.match(/<title>([\s\S]*?)<\/title>/i)||[])[1]||"";const desc=(html.match(/<meta name="description" content="([^"]*)"/i)||[])[1]||"";
+  const html=fs.readFileSync(file,"utf8");
+  const decode=x=>String(x).replaceAll("&amp;","&").replaceAll("&quot;",String.fromCharCode(34)).replaceAll("&#39;",String.fromCharCode(39)).replaceAll("&lt;","<").replaceAll("&gt;",">");
+  const title=decode((html.match(/<title>([\s\S]*?)<\/title>/i)||[])[1]||"");
+  const desc=decode((html.match(/<meta name="description" content="([^"]*)"/i)||[])[1]||"");
  if(title.length>60)errors.push(route+" title length "+title.length);
  if(desc.length<140||desc.length>160)errors.push(route+" description length "+desc.length);
  if((html.match(/<h1\b/gi)||[]).length!==1)errors.push(route+" must have exactly one H1");
