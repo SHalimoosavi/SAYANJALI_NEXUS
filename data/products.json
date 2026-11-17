@@ -28,9 +28,11 @@
       "git clone https://github.com/SHalimoosavi/SYJ-NexusIntel-AI.git",
       "cd SYJ-NexusIntel-AI"
     ],
-    "license": "",
     "live": "https://shalimoosavi.github.io/SYJ-NexusIntel-AI-web/",
-    "source": "README.md"
+    "source": "README.md",
+    "lastPush": "2026-11-03",
+    "release": "v1.5.0-demo",
+    "releaseDate": "20 June 2026"
   },
   {
     "name": "SAYANJALI BLOCKCHAIN",
@@ -58,9 +60,11 @@
       "cd SAYANJALI-BLOCKCHAIN",
       "pytest -v"
     ],
-    "license": "MIT",
     "live": "https://shalimoosavi.github.io/syj-blockchain-web/",
-    "source": "README.md, PROJECT_STATUS.md, SECURITY_STATUS.md, TESTING.md, PHASE10_1_VALIDATION_REPORT.md"
+    "source": "README.md, PROJECT_STATUS.md, SECURITY_STATUS.md, TESTING.md, PHASE10_1_VALIDATION_REPORT.md",
+    "lastPush": "2026-11-12",
+    "release": "v0.9.6-build1.1-c1",
+    "releaseDate": "2 October 2026"
   },
   {
     "name": "SYJ OpenTrade Logic",
@@ -87,8 +91,10 @@
       "git clone https://github.com/SHalimoosavi/SYJ-OpenTrade-Logic.git",
       "cd SYJ-OpenTrade-Logic"
     ],
-    "license": "Apache-2.0",
-    "source": "README.md"
+    "source": "README.md",
+    "lastPush": "2026-08-13",
+    "release": "v0.9.2",
+    "releaseDate": "6 August 2026"
   },
   {
     "name": "SYJ Aegis",
@@ -114,8 +120,10 @@
       "git clone https://github.com/SHalimoosavi/SYJ-Aegis.git",
       "cd SYJ-Aegis"
     ],
-    "license": "",
-    "source": "README.md"
+    "source": "README.md",
+    "lastPush": "2026-09-17",
+    "release": "v1.0.0",
+    "releaseDate": "17 September 2026"
   },
   {
     "name": "SYJ EdgeMind",
@@ -142,8 +150,10 @@
       "git clone https://github.com/SHalimoosavi/SYJ-EdgeMind.git",
       "cd SYJ-EdgeMind"
     ],
-    "license": "",
-    "source": "README.md"
+    "source": "README.md",
+    "lastPush": "2026-09-09",
+    "release": "v0.9.0-alpha",
+    "releaseDate": "9 September 2026"
   },
   {
     "name": "SYJ LLM",
@@ -172,8 +182,10 @@
       "git clone https://github.com/SHalimoosavi/SYJ-LLM.git",
       "cd SYJ-LLM"
     ],
-    "license": "",
-    "source": "README.md"
+    "source": "README.md",
+    "lastPush": "2026-09-20",
+    "release": "v0.4.0",
+    "releaseDate": "20 September 2026"
   },
   {
     "name": "SYJ Deploy",
@@ -203,7 +215,10 @@
       "npm install"
     ],
     "license": "MIT",
-    "source": "README.md"
+    "source": "README.md",
+    "lastPush": "2026-10-17",
+    "release": "v1.0.0-beta",
+    "releaseDate": "24 June 2026"
   },
   {
     "name": "SYJ LaunchPad",
@@ -233,8 +248,8 @@
       "git clone https://github.com/SHalimoosavi/SYJ-LaunchPad.git",
       "cd SYJ-LaunchPad"
     ],
-    "license": "",
-    "source": "README.md"
+    "source": "README.md",
+    "lastPush": "2026-11-13"
   },
   {
     "name": "SYJ HCM",
@@ -263,8 +278,10 @@
       "git clone https://github.com/SHalimoosavi/SYJ-HCM.git",
       "cd SYJ-HCM"
     ],
-    "license": "",
-    "source": "README.md"
+    "source": "README.md",
+    "lastPush": "2026-10-19",
+    "release": "v0.14.0-alpha",
+    "releaseDate": "13 September 2026"
   },
   {
     "name": "DevXchange",
@@ -294,8 +311,8 @@
       "git clone https://github.com/SHalimoosavi/DevXchange.git",
       "cd DevXchange"
     ],
-    "license": "",
-    "source": "README.md"
+    "source": "README.md",
+    "lastPush": "2026-10-17"
   },
   {
     "name": "SYJ Video Forge",
@@ -323,8 +340,10 @@
       "git clone https://github.com/SHalimoosavi/SYJ-Video-Forge.git",
       "cd SYJ-Video-Forge"
     ],
-    "license": "",
-    "source": "README.md"
+    "source": "README.md",
+    "lastPush": "2026-10-11",
+    "release": "v0.3.0",
+    "releaseDate": "11 October 2026"
   },
   {
     "name": "SYJ GridSync OS",
@@ -351,8 +370,10 @@
       "git clone https://github.com/SHalimoosavi/SYJ-Gridsync-Os.git",
       "cd SYJ-Gridsync-Os"
     ],
-    "license": "",
-    "source": "README.md"
+    "source": "README.md",
+    "lastPush": "2026-08-03",
+    "release": "v0.6.0",
+    "releaseDate": "3 August 2026"
   },
   {
     "name": "SYJ TalentFlow CLI",
@@ -380,7 +401,10 @@
       "cd SYJ-TalentFlow-Cli"
     ],
     "license": "MIT",
-    "source": "README.md"
+    "source": "README.md",
+    "lastPush": "2026-07-24",
+    "release": "v1.0.0",
+    "releaseDate": "21 July 2026"
   },
   {
     "name": "SYJ LeadForge",
@@ -410,7 +434,10 @@
       "pip install -e \".[dev]\""
     ],
     "license": "MIT",
-    "source": "README.md"
+    "source": "README.md",
+    "lastPush": "2026-08-14",
+    "release": "v0.4.0",
+    "releaseDate": "14 August 2026"
   },
   {
     "name": "SYJ QuickStock Sync",
@@ -439,7 +466,10 @@
       "cd SYJ-QuickStock-Sync"
     ],
     "license": "MIT",
-    "source": "README.md"
+    "source": "README.md",
+    "lastPush": "2026-08-06",
+    "release": "v2.0.0",
+    "releaseDate": "6 August 2026"
   },
   {
     "name": "SYJ Mail Intelligence AI",
@@ -468,8 +498,10 @@
       "git clone https://github.com/SHalimoosavi/syj-mail-intelligence-ai.git",
       "cd syj-mail-intelligence-ai"
     ],
-    "license": "MIT",
-    "source": "README.md"
+    "source": "README.md",
+    "lastPush": "2026-07-18",
+    "release": "v1.0.0-beta1",
+    "releaseDate": "9 July 2026"
   },
   {
     "name": "SYJ GST Reconciliation",
@@ -497,7 +529,10 @@
       "python -m venv venv"
     ],
     "license": "MIT",
-    "source": "README.md"
+    "source": "README.md",
+    "lastPush": "2026-07-04",
+    "release": "v1.1.0",
+    "releaseDate": "4 July 2026"
   },
   {
     "name": "SYJ RE-Workstation",
@@ -524,7 +559,10 @@
       "cd SYJ-RE-Workstation"
     ],
     "license": "MIT",
-    "source": "README.md"
+    "source": "README.md",
+    "lastPush": "2026-11-14",
+    "release": "v0.1.0",
+    "releaseDate": "14 November 2026"
   },
   {
     "name": "AI Zara Web Widget",
@@ -550,8 +588,10 @@
       "git clone https://github.com/SHalimoosavi/AI-Zara-web-widget.git",
       "cd AI-Zara-web-widget"
     ],
-    "license": "",
-    "source": "README.md"
+    "source": "README.md",
+    "lastPush": "2026-06-17",
+    "release": "v1.0.0",
+    "releaseDate": "17 June 2026"
   },
   {
     "name": "SYJ GitHub Optimiser",
@@ -577,8 +617,10 @@
       "git clone https://github.com/SHalimoosavi/SYJ-Github-Optimiser.git",
       "cd SYJ-Github-Optimiser"
     ],
-    "license": "",
-    "source": "README.md"
+    "source": "README.md",
+    "lastPush": "2026-06-24",
+    "release": "v1.0.0-beta",
+    "releaseDate": "24 June 2026"
   },
   {
     "name": "SYJ Personality For GitHub",
@@ -604,8 +646,10 @@
       "git clone https://github.com/SHalimoosavi/SYJ-Personality-For-Github.git",
       "cd SYJ-Personality-For-Github"
     ],
-    "license": "",
-    "source": "README.md"
+    "source": "README.md",
+    "lastPush": "2026-06-23",
+    "release": "v1.0.0",
+    "releaseDate": "23 June 2026"
   },
   {
     "name": "SYJ Calling CRM",
@@ -636,7 +680,10 @@
       "cd SYJ-Calling-CRM"
     ],
     "license": "MIT",
-    "source": "README.md"
+    "source": "README.md",
+    "lastPush": "2026-07-14",
+    "release": "v0.1.0-mvp",
+    "releaseDate": "14 July 2026"
   },
   {
     "name": "SYJ OS",
@@ -666,7 +713,10 @@
       "npm run verify"
     ],
     "license": "MIT",
-    "source": "README.md"
+    "source": "README.md",
+    "lastPush": "2026-10-15",
+    "release": "v0.1.0",
+    "releaseDate": "15 October 2026"
   },
   {
     "name": "SYJ CanvasForge",
@@ -699,7 +749,10 @@
       "npm install"
     ],
     "license": "MIT",
-    "source": "README.md"
+    "source": "README.md",
+    "lastPush": "2026-07-25",
+    "release": "v1.0.0",
+    "releaseDate": "23 July 2026"
   },
   {
     "name": "SYJ PropertySync",
@@ -728,8 +781,10 @@
       "cd SYJ-Property-Sync",
       "npm install"
     ],
-    "license": "",
-    "source": "README.md"
+    "source": "README.md",
+    "lastPush": "2026-08-11",
+    "release": "v1.0.0",
+    "releaseDate": "11 August 2026"
   },
   {
     "name": "SYJ Logistics Fabric",
@@ -755,7 +810,9 @@
       "git clone https://github.com/SHalimoosavi/SYJ-Logistics-Fabric.git",
       "cd SYJ-Logistics-Fabric"
     ],
-    "license": "Apache-2.0",
-    "source": "README.md"
+    "source": "README.md",
+    "lastPush": "2026-08-16",
+    "release": "v0.9.0-alpha",
+    "releaseDate": "3 August 2026"
   }
 ]
