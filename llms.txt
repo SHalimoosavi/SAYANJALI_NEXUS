@@ -1,0 +1,48 @@
+# SAYANJALI NEXUS PRIVATE LIMITED
+
+> SAYANJALI NEXUS PRIVATE LIMITED is a technology-driven enterprise based in Hyderabad, Telangana, India, building AI products, blockchain infrastructure, enterprise software and developer tools.
+
+## Company
+- Location: Hyderabad, Telangana, India
+- Tagline: The Giver
+- Website: https://shalimoosavi.github.io/SAYANJALI_NEXUS/
+
+## Products
+- NexusIntel AI: A multi-tenant SaaS foundation for CRM, organization management, subscriptions, role-based access control and executive intelligence. https://shalimoosavi.github.io/SAYANJALI_NEXUS/products/nexusintel-ai/
+- SAYANJALI BLOCKCHAIN: An independent Layer-1 protocol engineering project with a Go production-track node and a Python reference implementation. https://shalimoosavi.github.io/SAYANJALI_NEXUS/products/sayanjali-blockchain/
+- SYJ OpenTrade Logic: An explainable HTS classification engine using deterministic General Rules of Interpretation decision logic and a REST API. https://shalimoosavi.github.io/SAYANJALI_NEXUS/products/syj-opentrade-logic/
+- SYJ Aegis: A local static-analysis tool for reviewing AI-agent security and governance risks. https://shalimoosavi.github.io/SAYANJALI_NEXUS/products/syj-aegis/
+- SYJ EdgeMind: A private, offline AI runtime direction for low-memory devices using quantized GGUF models and CPU inference. https://shalimoosavi.github.io/SAYANJALI_NEXUS/products/syj-edgemind/
+- SYJ LLM: An offline-first C++ LLM runtime built around llama.cpp and GGUF, with a local model registry and memory-aware execution. https://shalimoosavi.github.io/SAYANJALI_NEXUS/products/syj-llm/
+- SYJ Deploy: A self-hosted Git-based deployment dashboard for cloning, building, running and monitoring application projects. https://shalimoosavi.github.io/SAYANJALI_NEXUS/products/syj-deploy/
+- SYJ LaunchPad: An open-source self-hosted Web3 launchpad foundation for multi-chain sales, wallet authentication, vesting and claims. https://shalimoosavi.github.io/SAYANJALI_NEXUS/products/syj-launchpad/
+- SYJ HCM: A multi-tenant human capital management and applicant tracking platform for employee and recruitment workflows. https://shalimoosavi.github.io/SAYANJALI_NEXUS/products/syj-hcm/
+- DevXchange: A developer-focused marketplace project for software, SaaS, applications and AI projects with verification and licensing workflows. https://shalimoosavi.github.io/SAYANJALI_NEXUS/products/devxchange/
+- SYJ Video Forge: An open-source text-to-video and image-to-video application with a static frontend, local backend and pluggable inference providers. https://shalimoosavi.github.io/SAYANJALI_NEXUS/products/syj-video-forge/
+- SYJ GridSync OS: Industrial edge middleware for telemetry ingestion, grid-constraint validation and distributed energy resource orchestration. https://shalimoosavi.github.io/SAYANJALI_NEXUS/products/syj-gridsync-os/
+- SYJ TalentFlow CLI: A recruitment automation CLI for resume parsing, candidate matching, interview preparation and recruiter communications. https://shalimoosavi.github.io/SAYANJALI_NEXUS/products/syj-talentflow-cli/
+- SYJ LeadForge: An open-source lead qualification and website-audit toolkit for freelancers, web developers and agencies. https://shalimoosavi.github.io/SAYANJALI_NEXUS/products/syj-leadforge/
+- SYJ QuickStock Sync: An offline inventory application for small vendors with local stock records, sales, dispatch, restocking and reports. https://shalimoosavi.github.io/SAYANJALI_NEXUS/products/syj-quickstock-sync/
+- SYJ Mail Intelligence AI: A self-hostable email assistant for Gmail classification, importance scoring, summaries and reply drafting using local models. https://shalimoosavi.github.io/SAYANJALI_NEXUS/products/syj-mail-intelligence-ai/
+- SYJ GST Reconciliation: A Python tool for reconciling supplier and purchase GST invoice workbooks and producing Excel reports. https://shalimoosavi.github.io/SAYANJALI_NEXUS/products/syj-gst-reconciliation/
+- SYJ RE-Workstation: A command-line toolkit for static APK inspection, metadata extraction, permissions review and report comparison. https://shalimoosavi.github.io/SAYANJALI_NEXUS/products/syj-re-workstation/
+- AI Zara Web Widget: An embeddable floating chat widget for adding an AI assistant interface to a website. https://shalimoosavi.github.io/SAYANJALI_NEXUS/products/ai-zara-web-widget/
+- SYJ GitHub Optimiser: A command-line tool for automating GitHub profile README, repository topics and release workflows. https://shalimoosavi.github.io/SAYANJALI_NEXUS/products/syj-github-optimiser/
+- SYJ Personality For GitHub: A GitHub profile analysis tool that scores public profile signals and produces archetypes, charts and shareable cards. https://shalimoosavi.github.io/SAYANJALI_NEXUS/products/syj-personality-for-github/
+- SYJ Calling CRM: A lightweight CRM for tracking leads and calls, built with a Node.js service and TypeScript application stack. https://shalimoosavi.github.io/SAYANJALI_NEXUS/products/syj-calling-crm/
+- SYJ OS: A browser-based virtual-device simulator prototype for exploring system interface and product concepts. https://shalimoosavi.github.io/SAYANJALI_NEXUS/products/syj-os/
+- SYJ CanvasForge: A browser-based PDF, image and document editor that processes files on the client side. https://shalimoosavi.github.io/SAYANJALI_NEXUS/products/syj-canvasforge/
+- SYJ PropertySync: A property-listing synchronization proof of concept demonstrating validation, normalization and duplicate detection. https://shalimoosavi.github.io/SAYANJALI_NEXUS/products/syj-property-sync/
+- SYJ Logistics Fabric: A self-hostable reference node for sharing signed shipment events between independently operated logistics systems. https://shalimoosavi.github.io/SAYANJALI_NEXUS/products/syj-logistics-fabric/
+
+## Blockchain and Token status
+- SAYANJALI BLOCKCHAIN: testnet-stage protocol engineering; not production-ready and not mainnet-ready. https://shalimoosavi.github.io/SAYANJALI_NEXUS/blockchain/
+- SYJ Token: planned, pre-launch; not launched; no sale open. https://shalimoosavi.github.io/SAYANJALI_NEXUS/syj-token/
+
+## Docs
+- Documentation: https://shalimoosavi.github.io/SAYANJALI_NEXUS/docs/
+- Open source: https://shalimoosavi.github.io/SAYANJALI_NEXUS/open-source/
+
+## Contact
+- info@sayanjalinexus.com
+- +91 6304 225 807

@@ -1,0 +1,121 @@
+# SAYANJALI NEXUS PRIVATE LIMITED
+
+SAYANJALI NEXUS PRIVATE LIMITED is a technology-driven enterprise building across Artificial Intelligence, Blockchain, Enterprise Software, and Developer Infrastructure — with agriculture, logistics, and community ventures on the long-term roadmap.
+
+To become a globally respected innovation ecosystem that transforms industries through technology, sustainability, healthcare, agriculture, and public impact.
+
+## Products
+### NexusIntel AI
+A multi-tenant SaaS foundation for CRM, organization management, subscriptions, role-based access control and executive intelligence.
+Status: Beta. Repository: https://github.com/SHalimoosavi/SYJ-NexusIntel-AI
+
+### SAYANJALI BLOCKCHAIN
+An independent Layer-1 protocol engineering project with a Go production-track node and a Python reference implementation.
+Status: Testnet-stage. Repository: https://github.com/SHalimoosavi/SAYANJALI-BLOCKCHAIN
+
+### SYJ OpenTrade Logic
+An explainable HTS classification engine using deterministic General Rules of Interpretation decision logic and a REST API.
+Status: Beta. Repository: https://github.com/SHalimoosavi/SYJ-OpenTrade-Logic
+
+### SYJ Aegis
+A local static-analysis tool for reviewing AI-agent security and governance risks.
+Status: Beta. Repository: https://github.com/SHalimoosavi/SYJ-Aegis
+
+### SYJ EdgeMind
+A private, offline AI runtime direction for low-memory devices using quantized GGUF models and CPU inference.
+Status: Experimental. Repository: https://github.com/SHalimoosavi/SYJ-EdgeMind
+
+### SYJ LLM
+An offline-first C++ LLM runtime built around llama.cpp and GGUF, with a local model registry and memory-aware execution.
+Status: Experimental. Repository: https://github.com/SHalimoosavi/SYJ-LLM
+
+### SYJ Deploy
+A self-hosted Git-based deployment dashboard for cloning, building, running and monitoring application projects.
+Status: Beta. Repository: https://github.com/SHalimoosavi/SYJ-DEPLOY
+
+### SYJ LaunchPad
+An open-source self-hosted Web3 launchpad foundation for multi-chain sales, wallet authentication, vesting and claims.
+Status: Prototype. Repository: https://github.com/SHalimoosavi/SYJ-LaunchPad
+
+### SYJ HCM
+A multi-tenant human capital management and applicant tracking platform for employee and recruitment workflows.
+Status: Prototype. Repository: https://github.com/SHalimoosavi/SYJ-HCM
+
+### DevXchange
+A developer-focused marketplace project for software, SaaS, applications and AI projects with verification and licensing workflows.
+Status: Prototype. Repository: https://github.com/SHalimoosavi/DevXchange
+
+### SYJ Video Forge
+An open-source text-to-video and image-to-video application with a static frontend, local backend and pluggable inference providers.
+Status: Experimental. Repository: https://github.com/SHalimoosavi/SYJ-Video-Forge
+
+### SYJ GridSync OS
+Industrial edge middleware for telemetry ingestion, grid-constraint validation and distributed energy resource orchestration.
+Status: Experimental. Repository: https://github.com/SHalimoosavi/SYJ-Gridsync-Os
+
+### SYJ TalentFlow CLI
+A recruitment automation CLI for resume parsing, candidate matching, interview preparation and recruiter communications.
+Status: Beta. Repository: https://github.com/SHalimoosavi/SYJ-TalentFlow-Cli
+
+### SYJ LeadForge
+An open-source lead qualification and website-audit toolkit for freelancers, web developers and agencies.
+Status: Beta. Repository: https://github.com/SHalimoosavi/SYJ-LeadForge
+
+### SYJ QuickStock Sync
+An offline inventory application for small vendors with local stock records, sales, dispatch, restocking and reports.
+Status: Beta. Repository: https://github.com/SHalimoosavi/SYJ-QuickStock-Sync
+
+### SYJ Mail Intelligence AI
+A self-hostable email assistant for Gmail classification, importance scoring, summaries and reply drafting using local models.
+Status: Beta. Repository: https://github.com/SHalimoosavi/syj-mail-intelligence-ai
+
+### SYJ GST Reconciliation
+A Python tool for reconciling supplier and purchase GST invoice workbooks and producing Excel reports.
+Status: Beta. Repository: https://github.com/SHalimoosavi/SYJ-GST-Reconciliation
+
+### SYJ RE-Workstation
+A command-line toolkit for static APK inspection, metadata extraction, permissions review and report comparison.
+Status: Prototype. Repository: https://github.com/SHalimoosavi/SYJ-RE-Workstation
+
+### AI Zara Web Widget
+An embeddable floating chat widget for adding an AI assistant interface to a website.
+Status: Prototype. Repository: https://github.com/SHalimoosavi/AI-Zara-web-widget
+
+### SYJ GitHub Optimiser
+A command-line tool for automating GitHub profile README, repository topics and release workflows.
+Status: Beta. Repository: https://github.com/SHalimoosavi/SYJ-Github-Optimiser
+
+### SYJ Personality For GitHub
+A GitHub profile analysis tool that scores public profile signals and produces archetypes, charts and shareable cards.
+Status: Prototype. Repository: https://github.com/SHalimoosavi/SYJ-Personality-For-Github
+
+### SYJ Calling CRM
+A lightweight CRM for tracking leads and calls, built with a Node.js service and TypeScript application stack.
+Status: Prototype. Repository: https://github.com/SHalimoosavi/SYJ-Calling-CRM
+
+### SYJ OS
+A browser-based virtual-device simulator prototype for exploring system interface and product concepts.
+Status: Prototype. Repository: https://github.com/SHalimoosavi/SYJ-OS
+
+### SYJ CanvasForge
+A browser-based PDF, image and document editor that processes files on the client side.
+Status: Beta. Repository: https://github.com/SHalimoosavi/SYJ-CanvasForge
+
+### SYJ PropertySync
+A property-listing synchronization proof of concept demonstrating validation, normalization and duplicate detection.
+Status: Prototype. Repository: https://github.com/SHalimoosavi/SYJ-Property-Sync
+
+### SYJ Logistics Fabric
+A self-hostable reference node for sharing signed shipment events between independently operated logistics systems.
+Status: Prototype. Repository: https://github.com/SHalimoosavi/SYJ-Logistics-Fabric
+
+## Contact
+Hyderabad, Telangana, India
+info@sayanjalinexus.com
+ceo@sayanjalinexus.com
+cto@sayanjalinexus.com
+cfo@sayanjalinexus.com
+founders@syj-token.com
+info@syj-token.com
+contact@sayanjalinexus.com
+contact@syj-token.com
