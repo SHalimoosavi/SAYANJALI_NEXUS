@@ -153,7 +153,10 @@
     "source": "README.md",
     "lastPush": "2026-09-09",
     "release": "v0.9.0-alpha",
-    "releaseDate": "9 September 2026"
+    "releaseDate": "9 September 2026",
+    "related": [
+      "syj-llm"
+    ]
   },
   {
     "name": "SYJ LLM",
@@ -185,7 +188,10 @@
     "source": "README.md",
     "lastPush": "2026-09-20",
     "release": "v0.4.0",
-    "releaseDate": "20 September 2026"
+    "releaseDate": "20 September 2026",
+    "related": [
+      "syj-edgemind"
+    ]
   },
   {
     "name": "SYJ Deploy",
