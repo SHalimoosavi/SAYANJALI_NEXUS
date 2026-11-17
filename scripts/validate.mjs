@@ -27,7 +27,7 @@ for(const route of routes){
  if(!html.includes("Last updated: 17 November 2026"))errors.push(route+" visible update date missing");
  if(!html.includes("application/ld+json"))errors.push(route+" JSON-LD missing");
  for(const word of banned)if(html.toLowerCase().includes(word.toLowerCase()))errors.push(route+" contains forbidden phrase: "+word);
- const runtimeUrls=[...html.matchAll(/(?:src|href)="([^"]+)"/g)].map(m=>m[1]).filter(u=>u.startsWith("http"));if(runtimeUrls.some(u=>!u.startsWith(site.siteUrl))||/fonts\.googleapis\.com/i.test(html))errors.push(route+" has remote runtime resource");
+ const runtimeUrls=[...html.matchAll(/<script[^>]+src="([^"]+)"/g),...html.matchAll(/<link[^>]+rel="stylesheet"[^>]+href="([^"]+)"/g)].map(m=>m[1]).filter(u=>u.startsWith("http"));if(runtimeUrls.some(u=>!u.startsWith(site.siteUrl))||/fonts\.googleapis\.com/i.test(html))errors.push(route+" has remote runtime resource");
  if(/<img\b(?![^>]*\balt=)[^>]*>/i.test(html))errors.push(route+" image without alt");
  for(const m of html.matchAll(/<(input|textarea|select)\b[^>]*>/gi)){const id=(m[0].match(/\bid=["']([^"']+)/i)||[])[1];if(!id||(!html.includes('for="'+id+'"')&&!html.includes("for='"+id+"'")))errors.push(route+" unlabelled control "+(id||m[1]));}
  const script=html.match(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/);let graph=[];
