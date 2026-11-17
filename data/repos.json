@@ -211,24 +211,6 @@
       "status": "Prototype"
     },
     {
-      "name": "SYJ Scholar AI",
-      "repo": "SYJ-SCHOLAR-AI",
-      "url": "https://github.com/SHalimoosavi/SYJ-SCHOLAR-AI",
-      "description": "A PDF-based study companion for summaries, notes, flashcards and quizzes.",
-      "vertical": "Education Technology",
-      "status": "Experimental",
-      "catalogueNote": "Repository is Termux-centred; excluded from product pages and public product catalogue."
-    },
-    {
-      "name": "SAYANJALI OSINT",
-      "repo": "sayanjali-osint",
-      "url": "https://github.com/SHalimoosavi/sayanjali-osint",
-      "description": "An OSINT and geolocation framework for reconnaissance workflows.",
-      "vertical": "Cybersecurity & OSINT",
-      "status": "Experimental",
-      "catalogueNote": "Repository is Termux-centred; excluded from product pages and public product catalogue."
-    },
-    {
       "name": "SYJ Educate",
       "repo": "SYJ-Educate",
       "url": "https://github.com/SHalimoosavi/SYJ-Educate",
