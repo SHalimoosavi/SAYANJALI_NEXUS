@@ -38,7 +38,8 @@
       "conclusion": "success",
       "date": "1 November 2026",
       "workflow": "Dependency Audit"
-    }
+    },
+    "metaDescription": "NexusIntel AI is a beta SaaS built with Python and FastAPI for tenant-aware CRM, subscription control, access roles and executive intelligence. See repository."
   },
   {
     "name": "SAYANJALI BLOCKCHAIN",
@@ -76,7 +77,8 @@
       "conclusion": "success",
       "date": "12 November 2026",
       "workflow": "Build 1 C-1 Verification"
-    }
+    },
+    "metaDescription": "SAYANJALI BLOCKCHAIN is a testnet-stage Layer-1 project with a Go node and Python reference implementation. Its repository records remaining validation gates."
   },
   {
     "name": "SYJ OpenTrade Logic",
@@ -112,7 +114,8 @@
       "conclusion": "success",
       "date": "13 August 2026",
       "workflow": "CI"
-    }
+    },
+    "metaDescription": "SYJ OpenTrade Logic is a beta HTS classification engine built with Python and FastAPI, applying explainable General Rules of Interpretation. See repository."
   },
   {
     "name": "SYJ Aegis",
@@ -147,7 +150,8 @@
       "conclusion": "success",
       "date": "17 September 2026",
       "workflow": "SYJ-AEGIS CI"
-    }
+    },
+    "metaDescription": "SYJ Aegis is a beta Python static-analysis tool for AI-agent security, including secret detection, prompt-injection risk scanning and tool-permission review."
   },
   {
     "name": "SYJ EdgeMind",
@@ -186,7 +190,8 @@
       "conclusion": "no run found",
       "date": "17 November 2026",
       "workflow": "GitHub Actions"
-    }
+    },
+    "metaDescription": "SYJ EdgeMind is an experimental C++ runtime using llama.cpp and GGUF for offline inference on low-memory devices. See repository for scope and limits."
   },
   {
     "name": "SYJ LLM",
@@ -235,7 +240,8 @@
       "iOS",
       "Android",
       "WebAssembly"
-    ]
+    ],
+    "metaDescription": "SYJ LLM is an experimental C++17 runtime using llama.cpp and GGUF, with a local model registry and memory-aware execution. See repository for details."
   },
   {
     "name": "SYJ Deploy",
@@ -274,7 +280,8 @@
       "conclusion": "success",
       "date": "17 October 2026",
       "workflow": "CI"
-    }
+    },
+    "metaDescription": "SYJ Deploy is a beta self-hosted deployment dashboard built with Node.js and Express for Git cloning, build runs, logs and deployment history."
   },
   {
     "name": "SYJ LaunchPad",
@@ -311,7 +318,8 @@
       "conclusion": "success",
       "date": "13 November 2026",
       "workflow": "main-branch workflow"
-    }
+    },
+    "metaDescription": "SYJ LaunchPad is a prototype Web3 launchpad foundation built with FastAPI, Next.js, PostgreSQL and Solidity for wallet and vesting workflows."
   },
   {
     "name": "SYJ HCM",
@@ -349,7 +357,8 @@
       "conclusion": "success",
       "date": "13 September 2026",
       "workflow": "SYJ-HCM CI"
-    }
+    },
+    "metaDescription": "SYJ HCM is a prototype multi-tenant HCM and ATS platform built with TypeScript and Next.js for employee and recruitment workflows. See repository."
   },
   {
     "name": "DevXchange",
@@ -386,7 +395,8 @@
       "conclusion": "success",
       "date": "17 October 2026",
       "workflow": "CI"
-    }
+    },
+    "metaDescription": "DevXchange is a prototype developer marketplace built with TypeScript, Next.js and Fastify, with listing, verification and licensing workflow concepts."
   },
   {
     "name": "SYJ Video Forge",
@@ -423,7 +433,8 @@
       "conclusion": "success",
       "date": "11 October 2026",
       "workflow": "Deploy static site to GitHub Pages"
-    }
+    },
+    "metaDescription": "SYJ Video Forge is an experimental text-to-video and image-to-video app with a static frontend, local backend and pluggable inference providers."
   },
   {
     "name": "SYJ GridSync OS",
@@ -459,7 +470,8 @@
       "conclusion": "no run found",
       "date": "17 November 2026",
       "workflow": "GitHub Actions"
-    }
+    },
+    "metaDescription": "SYJ GridSync OS is experimental industrial edge middleware for telemetry ingestion, safety validation and distributed energy resource orchestration."
   },
   {
     "name": "SYJ TalentFlow CLI",
@@ -501,7 +513,8 @@
       "Windows",
       "Linux",
       "macOS"
-    ]
+    ],
+    "metaDescription": "SYJ TalentFlow CLI is a beta Node.js recruitment toolkit for resume parsing, candidate matching, interview questions, email templates and recruiter reports."
   },
   {
     "name": "SYJ LeadForge",
@@ -540,7 +553,8 @@
       "conclusion": "success",
       "date": "14 August 2026",
       "workflow": "CI"
-    }
+    },
+    "metaDescription": "SYJ LeadForge is a beta Python and FastAPI tool for lead qualification, website auditing, opportunity scoring and exporting business leads for agencies."
   },
   {
     "name": "SYJ QuickStock Sync",
@@ -578,7 +592,8 @@
       "conclusion": "success",
       "date": "3 August 2026",
       "workflow": "CI"
-    }
+    },
+    "metaDescription": "SYJ QuickStock Sync is a beta offline inventory application for small businesses, with stock adjustments, sales, history and summary reports."
   },
   {
     "name": "SYJ Mail Intelligence AI",
@@ -616,7 +631,8 @@
       "conclusion": "failure",
       "date": "18 July 2026",
       "workflow": "CI"
-    }
+    },
+    "metaDescription": "SYJ Mail Intelligence AI is a beta FastAPI and Next.js assistant for Gmail classification, importance scoring, summaries and reply drafting."
   },
   {
     "name": "SYJ GST Reconciliation",
@@ -658,7 +674,8 @@
       "Windows",
       "Linux",
       "macOS"
-    ]
+    ],
+    "metaDescription": "SYJ GST Reconciliation is a beta Python tool for GST invoice workbook validation, duplicate detection, reconciliation and Excel report generation."
   },
   {
     "name": "SYJ RE-Workstation",
@@ -697,7 +714,8 @@
     },
     "platforms": [
       "Linux"
-    ]
+    ],
+    "metaDescription": "SYJ RE-Workstation is a prototype Bash toolkit for static APK metadata, permission, manifest and signature inspection with report comparison for review."
   },
   {
     "name": "AI Zara Web Widget",
@@ -732,7 +750,8 @@
       "conclusion": "success",
       "date": "17 June 2026",
       "workflow": "Deploy static content to Pages"
-    }
+    },
+    "metaDescription": "AI Zara Web Widget is a prototype HTML and JavaScript chat widget that embeds a floating assistant interface into a website. Demo scope is documented."
   },
   {
     "name": "SYJ GitHub Optimiser",
@@ -767,7 +786,8 @@
       "conclusion": "no run found",
       "date": "17 November 2026",
       "workflow": "GitHub Actions"
-    }
+    },
+    "metaDescription": "SYJ GitHub Optimiser is a beta JavaScript CLI for automating GitHub profile README updates, repository topics and release workflows from a terminal."
   },
   {
     "name": "SYJ Personality For GitHub",
@@ -802,7 +822,8 @@
       "conclusion": "no run found",
       "date": "17 November 2026",
       "workflow": "GitHub Actions"
-    }
+    },
+    "metaDescription": "SYJ Personality For GitHub is a prototype Python tool for analysing public GitHub profiles, scoring signals and generating charts and shareable cards."
   },
   {
     "name": "SYJ Calling CRM",
@@ -842,7 +863,8 @@
       "conclusion": "no run found",
       "date": "17 November 2026",
       "workflow": "GitHub Actions"
-    }
+    },
+    "metaDescription": "SYJ Calling CRM is a prototype TypeScript CRM for tracking leads and calls, using Node.js, Express, Next.js, Prisma and SQLite as documented in its repository."
   },
   {
     "name": "SYJ OS",
@@ -881,7 +903,8 @@
       "conclusion": "success",
       "date": "15 October 2026",
       "workflow": "Deploy SYJ OS"
-    }
+    },
+    "metaDescription": "SYJ OS is a prototype browser-based virtual-device simulator built with TypeScript, React and Vite; it is not a standalone operating system. See README."
   },
   {
     "name": "SYJ CanvasForge",
@@ -923,7 +946,8 @@
       "conclusion": "failure",
       "date": "25 July 2026",
       "workflow": "CI"
-    }
+    },
+    "metaDescription": "SYJ CanvasForge is a beta browser-based PDF, image and document editor built with React, TypeScript, PDF.js, pdf-lib and Fabric.js. See repository."
   },
   {
     "name": "SYJ PropertySync",
@@ -961,7 +985,8 @@
       "conclusion": "no run found",
       "date": "17 November 2026",
       "workflow": "GitHub Actions"
-    }
+    },
+    "metaDescription": "SYJ PropertySync is a prototype React and TypeScript property-listing demo for validation, normalization, duplicate detection and simulated connectors."
   },
   {
     "name": "SYJ Logistics Fabric",
@@ -996,6 +1021,7 @@
       "conclusion": "success",
       "date": "16 August 2026",
       "workflow": "CI"
-    }
+    },
+    "metaDescription": "SYJ Logistics Fabric is a prototype Go reference node for exchanging signed shipment events between independently operated logistics systems over HTTP."
   }
 ]
