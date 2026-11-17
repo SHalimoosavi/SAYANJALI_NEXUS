@@ -32,7 +32,16 @@ try {
   await new Promise(resolve=>server.listen(4173,"127.0.0.1",resolve));
   browser=await chromium.launch({headless:true,timeout:30000});
   const page=await browser.newPage();
-  await page.route("https://shalimoosavi.github.io/SAYANJALI_NEXUS/**",route=>{const url=new URL(route.request().url());return route.continue({url:"http://127.0.0.1:4173"+url.pathname+url.search});});
+  await page.route("https://shalimoosavi.github.io/SAYANJALI_NEXUS/**",async route=>{
+    const url=new URL(route.request().url());
+    let relative=url.pathname.startsWith(basePath)?url.pathname.slice(basePath.length):url.pathname.replace(/^\\//,"");
+    if(!relative)relative="index.html";
+    if(relative.endsWith("/"))relative+="index.html";
+    const file=path.resolve(root,relative);
+    if(file!==root&&!file.startsWith(root+path.sep)){await route.fulfill({status:403,body:"Forbidden"});return;}
+    try{await route.fulfill({status:200,contentType:mime[path.extname(file)]||"application/octet-stream",body:fs.readFileSync(file)});}
+    catch{await route.fulfill({status:404,body:"Not found"});}
+  });
   page.on("pageerror",error=>errors.push("Browser JavaScript error: "+error.message));
   fs.mkdirSync(path.join(root,"artifacts","screenshots"),{recursive:true});
   const site=JSON.parse(fs.readFileSync(path.join(root,"data/site.json"),"utf8"));
