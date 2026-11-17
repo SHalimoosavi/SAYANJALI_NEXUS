@@ -32,6 +32,7 @@ try {
   await new Promise(resolve=>server.listen(4173,"127.0.0.1",resolve));
   browser=await chromium.launch({headless:true,timeout:30000});
   const page=await browser.newPage();
+  await page.route("https://shalimoosavi.github.io/SAYANJALI_NEXUS/**",route=>{const url=new URL(route.request().url());return route.continue({url:"http://127.0.0.1:4173"+url.pathname+url.search});});
   page.on("pageerror",error=>errors.push("Browser JavaScript error: "+error.message));
   fs.mkdirSync(path.join(root,"artifacts","screenshots"),{recursive:true});
   const site=JSON.parse(fs.readFileSync(path.join(root,"data/site.json"),"utf8"));
