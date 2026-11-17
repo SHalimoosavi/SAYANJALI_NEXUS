@@ -1,0 +1,86 @@
+[
+  {
+    "number": 1,
+    "name": "Artificial Intelligence",
+    "description": "AI agents and automation — NexusIntel AI and SYJ Mail Intelligence AI.",
+    "status": "Active"
+  },
+  {
+    "number": 2,
+    "name": "Blockchain & Web3",
+    "description": "SAYANJALI BLOCKCHAIN, an independent Layer-1 network, and the SYJ Token ecosystem.",
+    "status": "Active"
+  },
+  {
+    "number": 3,
+    "name": "Enterprise SaaS",
+    "description": "Multi-tenant business intelligence and CRM platforms built for real operational use.",
+    "status": "Active"
+  },
+  {
+    "number": 4,
+    "name": "Developer Tools & Open Source",
+    "description": "GitHub productivity tooling, profile branding utilities, and a public OSS portfolio.",
+    "status": "Active"
+  },
+  {
+    "number": 5,
+    "name": "Cybersecurity & OSINT",
+    "description": "Open-source reconnaissance and geolocation intelligence tooling.",
+    "status": "Active"
+  },
+  {
+    "number": 6,
+    "name": "Corporate Compliance",
+    "description": "Automated GST reconciliation and financial compliance tooling.",
+    "status": "Active"
+  },
+  {
+    "number": 7,
+    "name": "Education Technology",
+    "description": "AI-assisted learning tools, including SYJ Scholar AI.",
+    "status": "Active"
+  },
+  {
+    "number": 8,
+    "name": "Cloud Kitchen",
+    "description": "Modern food and delivery ecosystem — on the roadmap for future expansion.",
+    "status": "Planned"
+  },
+  {
+    "number": 9,
+    "name": "Logistics & Transportation",
+    "description": "Mobility and transport coordination — future roadmap item.",
+    "status": "Early work"
+  },
+  {
+    "number": 10,
+    "name": "Agriculture & Agri-Tech",
+    "description": "Supporting connected ventures such as ACE Livestock Farms with future digital tooling.",
+    "status": "Planned"
+  },
+  {
+    "number": 11,
+    "name": "Real Estate & Smart Infrastructure",
+    "description": "Property and infrastructure development — long-term roadmap item.",
+    "status": "Early work"
+  },
+  {
+    "number": 12,
+    "name": "E-Commerce",
+    "description": "Digital commerce infrastructure — planned expansion vertical.",
+    "status": "Early work"
+  },
+  {
+    "number": 13,
+    "name": "Digital Transformation Consulting",
+    "description": "Enterprise advisory services — planned as the product line matures.",
+    "status": "Planned"
+  },
+  {
+    "number": 14,
+    "name": "Public Welfare & Community Development",
+    "description": "Community and social impact initiatives — long-term vision, not yet active.",
+    "status": "Planned"
+  }
+]

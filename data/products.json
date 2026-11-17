@@ -1,0 +1,761 @@
+[
+  {
+    "name": "NexusIntel AI",
+    "slug": "nexusintel-ai",
+    "repo": "SYJ-NexusIntel-AI",
+    "vertical": "Enterprise SaaS",
+    "status": "Beta",
+    "stack": [
+      "Python",
+      "FastAPI",
+      "Next.js",
+      "React",
+      "TypeScript",
+      "PostgreSQL"
+    ],
+    "description": "A multi-tenant SaaS foundation for CRM, organization management, subscriptions, role-based access control and executive intelligence.",
+    "features": [
+      "Organization management and tenant isolation",
+      "Subscription management and feature flags",
+      "Role-based access control and JWT cookie sessions",
+      "CRM prospect and deal management",
+      "Pipeline visualisation and executive intelligence briefings"
+    ],
+    "architecture": "Next.js frontend communicates with a FastAPI backend. SQLAlchemy provides the data-access layer; the README documents PostgreSQL and a multi-tenant service structure.",
+    "tests": "README documents no final verified test count in the inspected section. Latest repository CI evidence must be checked separately before describing a passing state.",
+    "limitations": "The README identifies production stabilisation and security hardening as current work. Autonomous AI agents are explicitly future roadmap items.",
+    "commands": [
+      "git clone https://github.com/SHalimoosavi/SYJ-NexusIntel-AI.git",
+      "cd SYJ-NexusIntel-AI"
+    ],
+    "license": "",
+    "live": "https://shalimoosavi.github.io/SYJ-NexusIntel-AI-web/",
+    "source": "README.md"
+  },
+  {
+    "name": "SAYANJALI BLOCKCHAIN",
+    "slug": "sayanjali-blockchain",
+    "repo": "SAYANJALI-BLOCKCHAIN",
+    "vertical": "Blockchain & Web3",
+    "status": "Testnet-stage",
+    "stack": [
+      "Go",
+      "Python"
+    ],
+    "description": "An independent Layer-1 protocol engineering project with a Go production-track node and a Python reference implementation.",
+    "features": [
+      "Go protocol foundation and node under cmd/syjd and internal",
+      "Python reference/oracle implementation for compatibility and regression work",
+      "Peer-to-peer networking and authenticated communication",
+      "Transaction, wallet and persistent storage components",
+      "Phase 10.1 400-block consensus-path validation report"
+    ],
+    "architecture": "The Go node is the production-track implementation. The Python code is retained as a reference/oracle implementation. Cosmos SDK and CometBFT are proposed future architecture, not shipped components.",
+    "tests": "TESTING.md states 231 tests currently. The same document later records 244 passing tests; a blockchain site reports 250, and a Phase 10.1 report records 262 Python tests plus a 400-block Go consensus-path experiment. These figures describe different checkpoints and are not interchangeable.",
+    "limitations": "The repository states NOT PRODUCTION-READY and NOT MAINNET-READY. Production-toolchain validation and security scanner execution remain outstanding in the current documentation.",
+    "commands": [
+      "git clone https://github.com/SHalimoosavi/SAYANJALI-BLOCKCHAIN.git",
+      "cd SAYANJALI-BLOCKCHAIN",
+      "pytest -v"
+    ],
+    "license": "MIT",
+    "live": "https://shalimoosavi.github.io/syj-blockchain-web/",
+    "source": "README.md, PROJECT_STATUS.md, SECURITY_STATUS.md, TESTING.md, PHASE10_1_VALIDATION_REPORT.md"
+  },
+  {
+    "name": "SYJ OpenTrade Logic",
+    "slug": "syj-opentrade-logic",
+    "repo": "SYJ-OpenTrade-Logic",
+    "vertical": "Trade & Compliance",
+    "status": "Beta",
+    "stack": [
+      "Python",
+      "FastAPI"
+    ],
+    "description": "An explainable HTS classification engine using deterministic General Rules of Interpretation decision logic and a REST API.",
+    "features": [
+      "Deterministic HTS classification engine",
+      "Explainable classification decision paths",
+      "FastAPI service and Pydantic schemas",
+      "CLI classification interface",
+      "HTS data import workflow"
+    ],
+    "architecture": "The repository separates a dependency-light core classification engine from API schemas, FastAPI routes and data import tools.",
+    "tests": "README badge reports 103 passing tests; this is a README claim, not independently re-run in this website build.",
+    "limitations": "Classification output is an aid to review; the repository describes unresolved cases rather than guessing. Confirm current tariff data before operational use.",
+    "commands": [
+      "git clone https://github.com/SHalimoosavi/SYJ-OpenTrade-Logic.git",
+      "cd SYJ-OpenTrade-Logic"
+    ],
+    "license": "Apache-2.0",
+    "source": "README.md"
+  },
+  {
+    "name": "SYJ Aegis",
+    "slug": "syj-aegis",
+    "repo": "SYJ-Aegis",
+    "vertical": "Cybersecurity & OSINT",
+    "status": "Beta",
+    "stack": [
+      "Python"
+    ],
+    "description": "A local static-analysis tool for reviewing AI-agent security and governance risks.",
+    "features": [
+      "Secret detection",
+      "Prompt-injection and retrieval-augmented generation risk scanning",
+      "Tool-permission mapping",
+      "Excessive-agency detection",
+      "Local static analysis reports"
+    ],
+    "architecture": "The README describes a Python static-analysis engine that inspects local project artefacts and reports findings without requiring a cloud analysis service.",
+    "tests": "Test count not published in the verified website evidence set.",
+    "limitations": "Static analysis cannot prove that an AI agent is secure or identify every runtime vulnerability.",
+    "commands": [
+      "git clone https://github.com/SHalimoosavi/SYJ-Aegis.git",
+      "cd SYJ-Aegis"
+    ],
+    "license": "",
+    "source": "README.md"
+  },
+  {
+    "name": "SYJ EdgeMind",
+    "slug": "syj-edgemind",
+    "repo": "SYJ-EdgeMind",
+    "vertical": "AI & LLM Infrastructure",
+    "status": "Experimental",
+    "stack": [
+      "C++",
+      "llama.cpp",
+      "GGUF"
+    ],
+    "description": "A private, offline AI runtime direction for low-memory devices using quantized GGUF models and CPU inference.",
+    "features": [
+      "Local GGUF model execution",
+      "Low-memory runtime focus",
+      "CPU-only inference design",
+      "No cloud dependency in the stated design"
+    ],
+    "architecture": "The repository description identifies a lightweight C/C++ runtime built on llama.cpp with quantized GGUF models.",
+    "tests": "No verified Actions run was found in the reviewed repository metadata.",
+    "limitations": "The approximately 4 GB memory target is a repository design statement, not an independently measured hardware benchmark.",
+    "commands": [
+      "git clone https://github.com/SHalimoosavi/SYJ-EdgeMind.git",
+      "cd SYJ-EdgeMind"
+    ],
+    "license": "",
+    "source": "README.md"
+  },
+  {
+    "name": "SYJ LLM",
+    "slug": "syj-llm",
+    "repo": "SYJ-LLM",
+    "vertical": "AI & LLM Infrastructure",
+    "status": "Experimental",
+    "stack": [
+      "C++",
+      "CMake",
+      "llama.cpp",
+      "GGUF"
+    ],
+    "description": "An offline-first C++ LLM runtime built around llama.cpp and GGUF, with a local model registry and memory-aware execution.",
+    "features": [
+      "Local model registry",
+      "Memory-aware model execution",
+      "Command-line workflows",
+      "Localhost API foundation",
+      "Fine-tuning pipeline documented in project status"
+    ],
+    "architecture": "The project uses a C++ runtime and CMake build system around llama.cpp and GGUF model files.",
+    "tests": "The profile README records 5/5 CTest validation; this is owner-reported evidence, not independently rerun here.",
+    "limitations": "Platform packaging and later Studio and remote-access features remain unimplemented according to the profile README.",
+    "commands": [
+      "git clone https://github.com/SHalimoosavi/SYJ-LLM.git",
+      "cd SYJ-LLM"
+    ],
+    "license": "",
+    "source": "README.md"
+  },
+  {
+    "name": "SYJ Deploy",
+    "slug": "syj-deploy",
+    "repo": "SYJ-DEPLOY",
+    "vertical": "Developer Tools & Open Source",
+    "status": "Beta",
+    "stack": [
+      "Node.js",
+      "Express",
+      "Socket.IO"
+    ],
+    "description": "A self-hosted Git-based deployment dashboard for cloning, building, running and monitoring application projects.",
+    "features": [
+      "Git repository cloning",
+      "Build and run workflows for supported project types",
+      "Live logs and deployment history",
+      "Environment-variable management",
+      "Web dashboard for self-hosted operation"
+    ],
+    "architecture": "The repository metadata describes a Node.js application with Express, session handling, Socket.IO and Git operations.",
+    "tests": "A GitHub Actions run was found in the repository metadata; test count not stated here.",
+    "limitations": "A self-hosted deployment service requires the operator to secure the host, secrets, network access and build environment.",
+    "commands": [
+      "git clone https://github.com/SHalimoosavi/SYJ-DEPLOY.git",
+      "cd SYJ-DEPLOY",
+      "npm install"
+    ],
+    "license": "MIT",
+    "source": "README.md"
+  },
+  {
+    "name": "SYJ LaunchPad",
+    "slug": "syj-launchpad",
+    "repo": "SYJ-LaunchPad",
+    "vertical": "Blockchain & Web3",
+    "status": "Prototype",
+    "stack": [
+      "Python",
+      "FastAPI",
+      "Next.js",
+      "PostgreSQL",
+      "Solidity"
+    ],
+    "description": "An open-source self-hosted Web3 launchpad foundation for multi-chain sales, wallet authentication, vesting and claims.",
+    "features": [
+      "Multi-chain launchpad foundation",
+      "Wallet authentication",
+      "Vesting and claim workflows",
+      "FastAPI backend",
+      "Next.js frontend"
+    ],
+    "architecture": "The repository describes a FastAPI backend, Next.js frontend, PostgreSQL persistence and Solidity contracts.",
+    "tests": "A GitHub Actions workflow run was found; no independently rerun test result is claimed here.",
+    "limitations": "Repository metadata shows active development; deployed sale contracts and production operations are not asserted.",
+    "commands": [
+      "git clone https://github.com/SHalimoosavi/SYJ-LaunchPad.git",
+      "cd SYJ-LaunchPad"
+    ],
+    "license": "",
+    "source": "README.md"
+  },
+  {
+    "name": "SYJ HCM",
+    "slug": "syj-hcm",
+    "repo": "SYJ-HCM",
+    "vertical": "Enterprise SaaS",
+    "status": "Prototype",
+    "stack": [
+      "TypeScript",
+      "Next.js",
+      "Drizzle ORM",
+      "SQLite"
+    ],
+    "description": "A multi-tenant human capital management and applicant tracking platform for employee and recruitment workflows.",
+    "features": [
+      "Employee management",
+      "Recruitment and applicant tracking",
+      "Careers and offer workflows",
+      "Secure document workflows",
+      "Interview management"
+    ],
+    "architecture": "The repository is a TypeScript application with Next.js and Drizzle ORM; SQLite is listed in its repository description.",
+    "tests": "Latest retrieved GitHub Actions run failed; test count not independently verified.",
+    "limitations": "The repository is an active engineering project. Commercial deployment and production use are not established by repository metadata.",
+    "commands": [
+      "git clone https://github.com/SHalimoosavi/SYJ-HCM.git",
+      "cd SYJ-HCM"
+    ],
+    "license": "",
+    "source": "README.md"
+  },
+  {
+    "name": "DevXchange",
+    "slug": "devxchange",
+    "repo": "DevXchange",
+    "vertical": "E-Commerce",
+    "status": "Prototype",
+    "stack": [
+      "TypeScript",
+      "Next.js",
+      "Fastify",
+      "Prisma",
+      "PostgreSQL"
+    ],
+    "description": "A developer-focused marketplace project for software, SaaS, applications and AI projects with verification and licensing workflows.",
+    "features": [
+      "Marketplace listing model",
+      "Software and source-code product categories",
+      "Recorded verification checks",
+      "Licence and versioning concepts",
+      "Expiring download concept"
+    ],
+    "architecture": "The repository describes a Next.js frontend, Fastify service layer, Prisma data access and PostgreSQL-oriented architecture.",
+    "tests": "A GitHub Actions workflow run was found; no release was published at the time of inspection.",
+    "limitations": "The repository is an early marketplace project. A live commercial marketplace and completed payment/download operations are not claimed.",
+    "commands": [
+      "git clone https://github.com/SHalimoosavi/DevXchange.git",
+      "cd DevXchange"
+    ],
+    "license": "",
+    "source": "README.md"
+  },
+  {
+    "name": "SYJ Video Forge",
+    "slug": "syj-video-forge",
+    "repo": "SYJ-Video-Forge",
+    "vertical": "AI & LLM Infrastructure",
+    "status": "Experimental",
+    "stack": [
+      "Python",
+      "JavaScript",
+      "FFmpeg"
+    ],
+    "description": "An open-source text-to-video and image-to-video application with a static frontend, local backend and pluggable inference providers.",
+    "features": [
+      "Text-to-video workflow",
+      "Image-to-video workflow",
+      "Static frontend for GitHub Pages",
+      "Local backend",
+      "Pluggable inference-provider design"
+    ],
+    "architecture": "The repository separates the static web interface from a local backend and worker/inference environment.",
+    "tests": "A GitHub Actions run was found. Real GPU inference on physical hardware is explicitly not verified in the repository's QA guidance.",
+    "limitations": "The README says real-hardware inference remains unverified until a report is reviewed. GitHub Pages hosts only the static UI.",
+    "commands": [
+      "git clone https://github.com/SHalimoosavi/SYJ-Video-Forge.git",
+      "cd SYJ-Video-Forge"
+    ],
+    "license": "",
+    "source": "README.md"
+  },
+  {
+    "name": "SYJ GridSync OS",
+    "slug": "syj-gridsync-os",
+    "repo": "SYJ-Gridsync-Os",
+    "vertical": "Industrial & Logistics Technology",
+    "status": "Experimental",
+    "stack": [
+      "Node.js",
+      "JavaScript"
+    ],
+    "description": "Industrial edge middleware for telemetry ingestion, grid-constraint validation and distributed energy resource orchestration.",
+    "features": [
+      "Modbus, MQTT and DNP3 adapter concepts",
+      "Telemetry normalization",
+      "Deterministic state-machine validation",
+      "Durable write-ahead command queue",
+      "REST API and monitoring dashboard"
+    ],
+    "architecture": "The README describes protocol adapters feeding normalized telemetry into a state machine, constraint validator and durable command queue.",
+    "tests": "README badge reports 101 self-tests passing; not independently re-run in this build.",
+    "limitations": "The repository identifies the project as proprietary and documents that the self-test count is repository-reported.",
+    "commands": [
+      "git clone https://github.com/SHalimoosavi/SYJ-Gridsync-Os.git",
+      "cd SYJ-Gridsync-Os"
+    ],
+    "license": "",
+    "source": "README.md"
+  },
+  {
+    "name": "SYJ TalentFlow CLI",
+    "slug": "syj-talentflow-cli",
+    "repo": "SYJ-TalentFlow-Cli",
+    "vertical": "Enterprise SaaS",
+    "status": "Beta",
+    "stack": [
+      "JavaScript",
+      "Node.js"
+    ],
+    "description": "A recruitment automation CLI for resume parsing, candidate matching, interview preparation and recruiter communications.",
+    "features": [
+      "Resume parsing",
+      "Job-description parsing",
+      "Candidate scoring and ranking",
+      "Interview question generation",
+      "Recruiter email templates and reports"
+    ],
+    "architecture": "The README describes CLI orchestration separated from parsing, scoring, AI provider, reporting and configuration modules.",
+    "tests": "The repository describes node:test and a CI matrix; current run result was not independently checked for this page.",
+    "limitations": "AI-provider use depends on configured providers. No customer deployments or recruitment outcomes are claimed.",
+    "commands": [
+      "git clone https://github.com/SHalimoosavi/SYJ-TalentFlow-Cli.git",
+      "cd SYJ-TalentFlow-Cli"
+    ],
+    "license": "MIT",
+    "source": "README.md"
+  },
+  {
+    "name": "SYJ LeadForge",
+    "slug": "syj-leadforge",
+    "repo": "SYJ-LeadForge",
+    "vertical": "Enterprise SaaS",
+    "status": "Beta",
+    "stack": [
+      "Python",
+      "FastAPI",
+      "Next.js"
+    ],
+    "description": "An open-source lead qualification and website-audit toolkit for freelancers, web developers and agencies.",
+    "features": [
+      "CSV business-list import",
+      "Website checks for HTTPS, metadata, headings and contact links",
+      "Rule-based opportunity scoring",
+      "CSV, JSON and Markdown exports",
+      "FastAPI backend and static dashboard"
+    ],
+    "architecture": "The CLI, REST backend and dashboard use shared Python core scoring and audit logic with local SQLite storage.",
+    "tests": "README reports 82 tests; GitHub Actions workflow evidence was found. The test count is reported in the README, not independently re-run.",
+    "limitations": "The README states it is not a scraper or spam tool and only audits business lists supplied by the operator.",
+    "commands": [
+      "git clone https://github.com/SHalimoosavi/SYJ-LeadForge.git",
+      "cd SYJ-LeadForge",
+      "pip install -e \".[dev]\""
+    ],
+    "license": "MIT",
+    "source": "README.md"
+  },
+  {
+    "name": "SYJ QuickStock Sync",
+    "slug": "syj-quickstock-sync",
+    "repo": "SYJ-QuickStock-Sync",
+    "vertical": "Enterprise SaaS",
+    "status": "Beta",
+    "stack": [
+      "Node.js",
+      "Express",
+      "JavaScript"
+    ],
+    "description": "An offline inventory application for small vendors with local stock records, sales, dispatch, restocking and reports.",
+    "features": [
+      "SKU and stock management",
+      "Sales, dispatch, restock and manual adjustments",
+      "Undo for recent stock-changing actions",
+      "Inventory history",
+      "Text, Markdown, WhatsApp and email summaries"
+    ],
+    "architecture": "The README describes a Node.js/Express service with a vanilla HTML frontend and atomic JSON storage on disk.",
+    "tests": "A GitHub Actions run was found; no numeric test count is asserted here.",
+    "limitations": "The documented local-first design does not imply hosted cloud synchronisation or multi-user service availability.",
+    "commands": [
+      "git clone https://github.com/SHalimoosavi/SYJ-QuickStock-Sync.git",
+      "cd SYJ-QuickStock-Sync"
+    ],
+    "license": "MIT",
+    "source": "README.md"
+  },
+  {
+    "name": "SYJ Mail Intelligence AI",
+    "slug": "syj-mail-intelligence-ai",
+    "repo": "syj-mail-intelligence-ai",
+    "vertical": "Artificial Intelligence",
+    "status": "Beta",
+    "stack": [
+      "Python",
+      "FastAPI",
+      "Next.js",
+      "Ollama"
+    ],
+    "description": "A self-hostable email assistant for Gmail classification, importance scoring, summaries and reply drafting using local models.",
+    "features": [
+      "Email classification",
+      "Importance scoring and deadline detection",
+      "Style-aware reply drafting",
+      "Confidence-gated approval workflow",
+      "Gmail integration and dashboard"
+    ],
+    "architecture": "A FastAPI service handles email workflows and model calls; a Next.js dashboard provides inbox, approval and analytics views. Ollama is documented for local model execution.",
+    "tests": "README reports 19 tests. The latest retrieved CI run failed on 18 July 2026; the suite was not independently re-run.",
+    "limitations": "The README documents approval modes and configurable auto-send thresholds. Email sending requires carefully configured Gmail access and model settings.",
+    "commands": [
+      "git clone https://github.com/SHalimoosavi/syj-mail-intelligence-ai.git",
+      "cd syj-mail-intelligence-ai"
+    ],
+    "license": "MIT",
+    "source": "README.md"
+  },
+  {
+    "name": "SYJ GST Reconciliation",
+    "slug": "syj-gst-reconciliation",
+    "repo": "SYJ-GST-Reconciliation",
+    "vertical": "Corporate Compliance",
+    "status": "Beta",
+    "stack": [
+      "Python"
+    ],
+    "description": "A Python tool for reconciling supplier and purchase GST invoice workbooks and producing Excel reports.",
+    "features": [
+      "Excel workbook ingestion",
+      "Data normalization and invoice validation",
+      "Duplicate detection",
+      "Matching by GSTIN and invoice number",
+      "Multi-sheet Excel report generation"
+    ],
+    "architecture": "The README documents a pipeline from workbook loading and normalization through validation, duplicate detection, matching, reconciliation and report generation.",
+    "tests": "README reports 137 automated tests and approximately 90% coverage. The latest retrieved CI run failed on 4 July 2026; these metrics were not independently re-run.",
+    "limitations": "The README describes the application as an invoice reconciliation tool; it does not replace professional tax review or official filing systems.",
+    "commands": [
+      "git clone https://github.com/SHalimoosavi/SYJ-GST-Reconciliation.git",
+      "cd SYJ-GST-Reconciliation",
+      "python -m venv venv"
+    ],
+    "license": "MIT",
+    "source": "README.md"
+  },
+  {
+    "name": "SYJ RE-Workstation",
+    "slug": "syj-re-workstation",
+    "repo": "SYJ-RE-Workstation",
+    "vertical": "Cybersecurity & OSINT",
+    "status": "Prototype",
+    "stack": [
+      "Bash"
+    ],
+    "description": "A command-line toolkit for static APK inspection, metadata extraction, permissions review and report comparison.",
+    "features": [
+      "APK metadata inspection",
+      "Permission extraction",
+      "Manifest review",
+      "Signature inspection",
+      "JADX output and report comparison"
+    ],
+    "architecture": "The repository describes a Bash-based static inspection workflow that invokes local analysis tools and organizes their output for review.",
+    "tests": "A GitHub Actions run was found; numeric test count not established.",
+    "limitations": "Static APK inspection does not execute the application and cannot establish runtime behaviour.",
+    "commands": [
+      "git clone https://github.com/SHalimoosavi/SYJ-RE-Workstation.git",
+      "cd SYJ-RE-Workstation"
+    ],
+    "license": "MIT",
+    "source": "README.md"
+  },
+  {
+    "name": "AI Zara Web Widget",
+    "slug": "ai-zara-web-widget",
+    "repo": "AI-Zara-web-widget",
+    "vertical": "Artificial Intelligence",
+    "status": "Prototype",
+    "stack": [
+      "HTML",
+      "JavaScript"
+    ],
+    "description": "An embeddable floating chat widget for adding an AI assistant interface to a website.",
+    "features": [
+      "Floating chat interface",
+      "Copy-and-embed website integration",
+      "Static frontend demonstration",
+      "Website-builder compatibility described in README"
+    ],
+    "architecture": "The repository is a static HTML/JavaScript widget. Demo behaviour and any model service are separate from the company website.",
+    "tests": "No verified test count or CI result is asserted here.",
+    "limitations": "The repository describes a demo setup; production use and service availability are not claimed.",
+    "commands": [
+      "git clone https://github.com/SHalimoosavi/AI-Zara-web-widget.git",
+      "cd AI-Zara-web-widget"
+    ],
+    "license": "",
+    "source": "README.md"
+  },
+  {
+    "name": "SYJ GitHub Optimiser",
+    "slug": "syj-github-optimiser",
+    "repo": "SYJ-Github-Optimiser",
+    "vertical": "Developer Tools & Open Source",
+    "status": "Beta",
+    "stack": [
+      "JavaScript",
+      "Node.js"
+    ],
+    "description": "A command-line tool for automating GitHub profile README, repository topics and release workflows.",
+    "features": [
+      "Profile README automation",
+      "Repository topic management",
+      "Release workflow automation",
+      "Terminal-based operation"
+    ],
+    "architecture": "The repository description identifies a JavaScript command-line utility that interacts with GitHub workflows.",
+    "tests": "Test and CI results not independently verified for this page.",
+    "limitations": "GitHub operations require credentials with appropriate repository permissions; the operator controls the changes made.",
+    "commands": [
+      "git clone https://github.com/SHalimoosavi/SYJ-Github-Optimiser.git",
+      "cd SYJ-Github-Optimiser"
+    ],
+    "license": "",
+    "source": "README.md"
+  },
+  {
+    "name": "SYJ Personality For GitHub",
+    "slug": "syj-personality-for-github",
+    "repo": "SYJ-Personality-For-Github",
+    "vertical": "Developer Tools & Open Source",
+    "status": "Prototype",
+    "stack": [
+      "Python"
+    ],
+    "description": "A GitHub profile analysis tool that scores public profile signals and produces archetypes, charts and shareable cards.",
+    "features": [
+      "Public GitHub profile analysis",
+      "Scoring and archetype detection",
+      "Repository insights",
+      "Radar charts",
+      "Shareable identity cards"
+    ],
+    "architecture": "The README describes a Python tool that reads public GitHub profile and repository information and generates a report.",
+    "tests": "Test count and CI status not independently verified for this page.",
+    "limitations": "Profile analysis is an interpretive summary of public activity, not a validated psychological assessment.",
+    "commands": [
+      "git clone https://github.com/SHalimoosavi/SYJ-Personality-For-Github.git",
+      "cd SYJ-Personality-For-Github"
+    ],
+    "license": "",
+    "source": "README.md"
+  },
+  {
+    "name": "SYJ Calling CRM",
+    "slug": "syj-calling-crm",
+    "repo": "SYJ-Calling-CRM",
+    "vertical": "Enterprise SaaS",
+    "status": "Prototype",
+    "stack": [
+      "TypeScript",
+      "Node.js",
+      "Express",
+      "Next.js",
+      "Prisma",
+      "SQLite"
+    ],
+    "description": "A lightweight CRM for tracking leads and calls, built with a Node.js service and TypeScript application stack.",
+    "features": [
+      "Lead tracking",
+      "Call tracking",
+      "CRM data model",
+      "Prisma/SQLite persistence"
+    ],
+    "architecture": "Repository metadata describes Node.js, Express, Next.js, TypeScript, Prisma and SQLite.",
+    "tests": "Test and CI evidence not independently verified for this page.",
+    "limitations": "No customer use or hosted service is claimed.",
+    "commands": [
+      "git clone https://github.com/SHalimoosavi/SYJ-Calling-CRM.git",
+      "cd SYJ-Calling-CRM"
+    ],
+    "license": "MIT",
+    "source": "README.md"
+  },
+  {
+    "name": "SYJ OS",
+    "slug": "syj-os",
+    "repo": "SYJ-OS",
+    "vertical": "Developer Tools & Open Source",
+    "status": "Prototype",
+    "stack": [
+      "TypeScript",
+      "React",
+      "Vite"
+    ],
+    "description": "A browser-based virtual-device simulator prototype for exploring system interface and product concepts.",
+    "features": [
+      "Simulated device shell",
+      "Virtual hardware interface",
+      "Settings and calculator proof apps",
+      "Local persistence",
+      "PWA and GitHub Pages deployment foundation"
+    ],
+    "architecture": "The README describes a browser app organized into apps, system services, a virtual hardware interface and virtual hardware model.",
+    "tests": "The README defines an npm verification sequence; no current successful CI result is asserted here.",
+    "limitations": "The README explicitly says this is not an operating system and does not emulate a phone chipset or kernel.",
+    "commands": [
+      "git clone https://github.com/SHalimoosavi/SYJ-OS.git",
+      "cd SYJ-OS",
+      "npm run verify"
+    ],
+    "license": "MIT",
+    "source": "README.md"
+  },
+  {
+    "name": "SYJ CanvasForge",
+    "slug": "syj-canvasforge",
+    "repo": "SYJ-CanvasForge",
+    "vertical": "Developer Tools & Open Source",
+    "status": "Beta",
+    "stack": [
+      "TypeScript",
+      "React",
+      "Vite",
+      "PDF.js",
+      "pdf-lib",
+      "Fabric.js"
+    ],
+    "description": "A browser-based PDF, image and document editor that processes files on the client side.",
+    "features": [
+      "PDF annotations and page operations",
+      "PDF merge and split",
+      "Layer-based image editing",
+      "DOCX and TXT viewing",
+      "Client-side file processing"
+    ],
+    "architecture": "The README describes a React and TypeScript application using PDF.js, pdf-lib and Fabric.js, with no server-side file processing.",
+    "tests": "Vitest is listed in the stack; test run result not independently verified here.",
+    "limitations": "The README says files remain in the browser and are not uploaded to a backend. Large documents remain subject to browser memory limits.",
+    "commands": [
+      "git clone https://github.com/SHalimoosavi/SYJ-CanvasForge.git",
+      "cd SYJ-CanvasForge",
+      "npm install"
+    ],
+    "license": "MIT",
+    "source": "README.md"
+  },
+  {
+    "name": "SYJ PropertySync",
+    "slug": "syj-property-sync",
+    "repo": "SYJ-Property-Sync",
+    "vertical": "Real Estate & Smart Infrastructure",
+    "status": "Prototype",
+    "stack": [
+      "TypeScript",
+      "React",
+      "Vite"
+    ],
+    "description": "A property-listing synchronization proof of concept demonstrating validation, normalization and duplicate detection.",
+    "features": [
+      "Property listing editing",
+      "Validation and normalization",
+      "Duplicate detection",
+      "Simulated CRM, website and portal connectors",
+      "Audit-log interface"
+    ],
+    "architecture": "The README describes a client-side React/TypeScript/Vite demonstration with simulated connectors and no backend required.",
+    "tests": "Test and CI results not independently verified for this page.",
+    "limitations": "The README explicitly states it is a demo environment, not a production integration with the named external organization's systems; records are fictional demo data.",
+    "commands": [
+      "git clone https://github.com/SHalimoosavi/SYJ-Property-Sync.git",
+      "cd SYJ-Property-Sync",
+      "npm install"
+    ],
+    "license": "",
+    "source": "README.md"
+  },
+  {
+    "name": "SYJ Logistics Fabric",
+    "slug": "syj-logistics-fabric",
+    "repo": "SYJ-Logistics-Fabric",
+    "vertical": "Logistics & Transportation",
+    "status": "Prototype",
+    "stack": [
+      "Go"
+    ],
+    "description": "A self-hostable reference node for sharing signed shipment events between independently operated logistics systems.",
+    "features": [
+      "Federated shipment-event exchange",
+      "Signed event messages",
+      "Self-hosted node concept",
+      "HTTP and JSON federation endpoints",
+      "SQLite persistence documented in architecture"
+    ],
+    "architecture": "The README describes independently operated Go nodes with local databases exchanging signed shipment events over HTTP and JSON.",
+    "tests": "The README documents a CI workflow and testing sections; no numerical count is asserted here.",
+    "limitations": "The README includes known gaps and labels the implementation as a reference node; it is not represented as a production logistics network.",
+    "commands": [
+      "git clone https://github.com/SHalimoosavi/SYJ-Logistics-Fabric.git",
+      "cd SYJ-Logistics-Fabric"
+    ],
+    "license": "Apache-2.0",
+    "source": "README.md"
+  }
+]

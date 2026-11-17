@@ -1,0 +1,336 @@
+{
+  "verifiedDate": "2026-11-17",
+  "publicNonForkRepositoryCount": 84,
+  "items": [
+    {
+      "name": "NexusIntel AI",
+      "repo": "SYJ-NexusIntel-AI",
+      "url": "https://github.com/SHalimoosavi/SYJ-NexusIntel-AI",
+      "description": "A multi-tenant SaaS foundation for CRM, organization management, subscriptions, role-based access control and executive intelligence.",
+      "vertical": "Enterprise SaaS",
+      "status": "Beta"
+    },
+    {
+      "name": "SAYANJALI BLOCKCHAIN",
+      "repo": "SAYANJALI-BLOCKCHAIN",
+      "url": "https://github.com/SHalimoosavi/SAYANJALI-BLOCKCHAIN",
+      "description": "An independent Layer-1 protocol engineering project with a Go production-track node and a Python reference implementation.",
+      "vertical": "Blockchain & Web3",
+      "status": "Testnet-stage"
+    },
+    {
+      "name": "SYJ OpenTrade Logic",
+      "repo": "SYJ-OpenTrade-Logic",
+      "url": "https://github.com/SHalimoosavi/SYJ-OpenTrade-Logic",
+      "description": "An explainable HTS classification engine using deterministic General Rules of Interpretation decision logic and a REST API.",
+      "vertical": "Trade & Compliance",
+      "status": "Beta"
+    },
+    {
+      "name": "SYJ Aegis",
+      "repo": "SYJ-Aegis",
+      "url": "https://github.com/SHalimoosavi/SYJ-Aegis",
+      "description": "A local static-analysis tool for reviewing AI-agent security and governance risks.",
+      "vertical": "Cybersecurity & OSINT",
+      "status": "Beta"
+    },
+    {
+      "name": "SYJ EdgeMind",
+      "repo": "SYJ-EdgeMind",
+      "url": "https://github.com/SHalimoosavi/SYJ-EdgeMind",
+      "description": "A private, offline AI runtime direction for low-memory devices using quantized GGUF models and CPU inference.",
+      "vertical": "AI & LLM Infrastructure",
+      "status": "Experimental"
+    },
+    {
+      "name": "SYJ LLM",
+      "repo": "SYJ-LLM",
+      "url": "https://github.com/SHalimoosavi/SYJ-LLM",
+      "description": "An offline-first C++ LLM runtime built around llama.cpp and GGUF, with a local model registry and memory-aware execution.",
+      "vertical": "AI & LLM Infrastructure",
+      "status": "Experimental"
+    },
+    {
+      "name": "SYJ Deploy",
+      "repo": "SYJ-DEPLOY",
+      "url": "https://github.com/SHalimoosavi/SYJ-DEPLOY",
+      "description": "A self-hosted Git-based deployment dashboard for cloning, building, running and monitoring application projects.",
+      "vertical": "Developer Tools & Open Source",
+      "status": "Beta"
+    },
+    {
+      "name": "SYJ LaunchPad",
+      "repo": "SYJ-LaunchPad",
+      "url": "https://github.com/SHalimoosavi/SYJ-LaunchPad",
+      "description": "An open-source self-hosted Web3 launchpad foundation for multi-chain sales, wallet authentication, vesting and claims.",
+      "vertical": "Blockchain & Web3",
+      "status": "Prototype"
+    },
+    {
+      "name": "SYJ HCM",
+      "repo": "SYJ-HCM",
+      "url": "https://github.com/SHalimoosavi/SYJ-HCM",
+      "description": "A multi-tenant human capital management and applicant tracking platform for employee and recruitment workflows.",
+      "vertical": "Enterprise SaaS",
+      "status": "Prototype"
+    },
+    {
+      "name": "DevXchange",
+      "repo": "DevXchange",
+      "url": "https://github.com/SHalimoosavi/DevXchange",
+      "description": "A developer-focused marketplace project for software, SaaS, applications and AI projects with verification and licensing workflows.",
+      "vertical": "E-Commerce",
+      "status": "Prototype"
+    },
+    {
+      "name": "SYJ Video Forge",
+      "repo": "SYJ-Video-Forge",
+      "url": "https://github.com/SHalimoosavi/SYJ-Video-Forge",
+      "description": "An open-source text-to-video and image-to-video application with a static frontend, local backend and pluggable inference providers.",
+      "vertical": "AI & LLM Infrastructure",
+      "status": "Experimental"
+    },
+    {
+      "name": "SYJ GridSync OS",
+      "repo": "SYJ-Gridsync-Os",
+      "url": "https://github.com/SHalimoosavi/SYJ-Gridsync-Os",
+      "description": "Industrial edge middleware for telemetry ingestion, grid-constraint validation and distributed energy resource orchestration.",
+      "vertical": "Industrial & Logistics Technology",
+      "status": "Experimental"
+    },
+    {
+      "name": "SYJ TalentFlow CLI",
+      "repo": "SYJ-TalentFlow-Cli",
+      "url": "https://github.com/SHalimoosavi/SYJ-TalentFlow-Cli",
+      "description": "A recruitment automation CLI for resume parsing, candidate matching, interview preparation and recruiter communications.",
+      "vertical": "Enterprise SaaS",
+      "status": "Beta"
+    },
+    {
+      "name": "SYJ LeadForge",
+      "repo": "SYJ-LeadForge",
+      "url": "https://github.com/SHalimoosavi/SYJ-LeadForge",
+      "description": "An open-source lead qualification and website-audit toolkit for freelancers, web developers and agencies.",
+      "vertical": "Enterprise SaaS",
+      "status": "Beta"
+    },
+    {
+      "name": "SYJ QuickStock Sync",
+      "repo": "SYJ-QuickStock-Sync",
+      "url": "https://github.com/SHalimoosavi/SYJ-QuickStock-Sync",
+      "description": "An offline inventory application for small vendors with local stock records, sales, dispatch, restocking and reports.",
+      "vertical": "Enterprise SaaS",
+      "status": "Beta"
+    },
+    {
+      "name": "SYJ Mail Intelligence AI",
+      "repo": "syj-mail-intelligence-ai",
+      "url": "https://github.com/SHalimoosavi/syj-mail-intelligence-ai",
+      "description": "A self-hostable email assistant for Gmail classification, importance scoring, summaries and reply drafting using local models.",
+      "vertical": "Artificial Intelligence",
+      "status": "Beta"
+    },
+    {
+      "name": "SYJ GST Reconciliation",
+      "repo": "SYJ-GST-Reconciliation",
+      "url": "https://github.com/SHalimoosavi/SYJ-GST-Reconciliation",
+      "description": "A Python tool for reconciling supplier and purchase GST invoice workbooks and producing Excel reports.",
+      "vertical": "Corporate Compliance",
+      "status": "Beta"
+    },
+    {
+      "name": "SYJ RE-Workstation",
+      "repo": "SYJ-RE-Workstation",
+      "url": "https://github.com/SHalimoosavi/SYJ-RE-Workstation",
+      "description": "A command-line toolkit for static APK inspection, metadata extraction, permissions review and report comparison.",
+      "vertical": "Cybersecurity & OSINT",
+      "status": "Prototype"
+    },
+    {
+      "name": "AI Zara Web Widget",
+      "repo": "AI-Zara-web-widget",
+      "url": "https://github.com/SHalimoosavi/AI-Zara-web-widget",
+      "description": "An embeddable floating chat widget for adding an AI assistant interface to a website.",
+      "vertical": "Artificial Intelligence",
+      "status": "Prototype"
+    },
+    {
+      "name": "SYJ GitHub Optimiser",
+      "repo": "SYJ-Github-Optimiser",
+      "url": "https://github.com/SHalimoosavi/SYJ-Github-Optimiser",
+      "description": "A command-line tool for automating GitHub profile README, repository topics and release workflows.",
+      "vertical": "Developer Tools & Open Source",
+      "status": "Beta"
+    },
+    {
+      "name": "SYJ Personality For GitHub",
+      "repo": "SYJ-Personality-For-Github",
+      "url": "https://github.com/SHalimoosavi/SYJ-Personality-For-Github",
+      "description": "A GitHub profile analysis tool that scores public profile signals and produces archetypes, charts and shareable cards.",
+      "vertical": "Developer Tools & Open Source",
+      "status": "Prototype"
+    },
+    {
+      "name": "SYJ Calling CRM",
+      "repo": "SYJ-Calling-CRM",
+      "url": "https://github.com/SHalimoosavi/SYJ-Calling-CRM",
+      "description": "A lightweight CRM for tracking leads and calls, built with a Node.js service and TypeScript application stack.",
+      "vertical": "Enterprise SaaS",
+      "status": "Prototype"
+    },
+    {
+      "name": "SYJ OS",
+      "repo": "SYJ-OS",
+      "url": "https://github.com/SHalimoosavi/SYJ-OS",
+      "description": "A browser-based virtual-device simulator prototype for exploring system interface and product concepts.",
+      "vertical": "Developer Tools & Open Source",
+      "status": "Prototype"
+    },
+    {
+      "name": "SYJ CanvasForge",
+      "repo": "SYJ-CanvasForge",
+      "url": "https://github.com/SHalimoosavi/SYJ-CanvasForge",
+      "description": "A browser-based PDF, image and document editor that processes files on the client side.",
+      "vertical": "Developer Tools & Open Source",
+      "status": "Beta"
+    },
+    {
+      "name": "SYJ PropertySync",
+      "repo": "SYJ-Property-Sync",
+      "url": "https://github.com/SHalimoosavi/SYJ-Property-Sync",
+      "description": "A property-listing synchronization proof of concept demonstrating validation, normalization and duplicate detection.",
+      "vertical": "Real Estate & Smart Infrastructure",
+      "status": "Prototype"
+    },
+    {
+      "name": "SYJ Logistics Fabric",
+      "repo": "SYJ-Logistics-Fabric",
+      "url": "https://github.com/SHalimoosavi/SYJ-Logistics-Fabric",
+      "description": "A self-hostable reference node for sharing signed shipment events between independently operated logistics systems.",
+      "vertical": "Logistics & Transportation",
+      "status": "Prototype"
+    },
+    {
+      "name": "SYJ Scholar AI",
+      "repo": "SYJ-SCHOLAR-AI",
+      "url": "https://github.com/SHalimoosavi/SYJ-SCHOLAR-AI",
+      "description": "A PDF-based study companion for summaries, notes, flashcards and quizzes.",
+      "vertical": "Education Technology",
+      "status": "Experimental",
+      "catalogueNote": "Repository is Termux-centred; excluded from product pages and public product catalogue."
+    },
+    {
+      "name": "SAYANJALI OSINT",
+      "repo": "sayanjali-osint",
+      "url": "https://github.com/SHalimoosavi/sayanjali-osint",
+      "description": "An OSINT and geolocation framework for reconnaissance workflows.",
+      "vertical": "Cybersecurity & OSINT",
+      "status": "Experimental",
+      "catalogueNote": "Repository is Termux-centred; excluded from product pages and public product catalogue."
+    },
+    {
+      "name": "SYJ Educate",
+      "repo": "SYJ-Educate",
+      "url": "https://github.com/SHalimoosavi/SYJ-Educate",
+      "description": "An open-source software engineering learning platform covering backend development, AI engineering, cybersecurity, OSINT, automation and SaaS architecture.",
+      "vertical": "Education Technology",
+      "status": "Prototype"
+    },
+    {
+      "name": "SYJ WebForge Academy",
+      "repo": "SYJ-WebForge-Academy",
+      "url": "https://github.com/SHalimoosavi/SYJ-WebForge-Academy",
+      "description": "A free, open-source bilingual web development and deployment bootcamp.",
+      "vertical": "Education Technology",
+      "status": "Prototype"
+    },
+    {
+      "name": "Sayanjali Nexus CRM",
+      "repo": "Sayanjali-Nexus-CRM",
+      "url": "https://github.com/SHalimoosavi/Sayanjali-Nexus-CRM",
+      "description": "A local-first multi-vertical CRM for leads, clients, projects, opportunities and documents.",
+      "vertical": "Enterprise SaaS",
+      "status": "Prototype"
+    },
+    {
+      "name": "SYJ Nexus Engine",
+      "repo": "SYJ-Nexus-Engine",
+      "url": "https://github.com/SHalimoosavi/SYJ-Nexus-Engine",
+      "description": "A headless, API-first enterprise operating framework with configurable verticals.",
+      "vertical": "Enterprise SaaS",
+      "status": "Prototype"
+    },
+    {
+      "name": "SYJ Nexus Sentinel Audit",
+      "repo": "SYJ-Nexus-Sentinel-Audit",
+      "url": "https://github.com/SHalimoosavi/SYJ-Nexus-Sentinel-Audit",
+      "description": "A local network security observability daemon with device monitoring and audit reports.",
+      "vertical": "Cybersecurity & OSINT",
+      "status": "Prototype"
+    },
+    {
+      "name": "SYJ Nexus Shadow Sync",
+      "repo": "SYJ-Nexus-Shadow-Sync",
+      "url": "https://github.com/SHalimoosavi/SYJ-Nexus-Shadow-Sync",
+      "description": "A local-first file monitoring and snapshot daemon.",
+      "vertical": "Developer Tools & Open Source",
+      "status": "Prototype"
+    },
+    {
+      "name": "SYJ Nexus Event Trace",
+      "repo": "SYJ-Nexus-Event-Trace",
+      "url": "https://github.com/SHalimoosavi/SYJ-Nexus-Event-Trace",
+      "description": "A local-first webhook event sink and logger with SQLite storage.",
+      "vertical": "Developer Tools & Open Source",
+      "status": "Prototype"
+    },
+    {
+      "name": "SYJ MINE",
+      "repo": "SYJ-MINE",
+      "url": "https://github.com/SHalimoosavi/SYJ-MINE",
+      "description": "A self-hosted mining infrastructure and fleet orchestration platform.",
+      "vertical": "Developer Tools & Open Source",
+      "status": "Experimental"
+    },
+    {
+      "name": "SYJ AI",
+      "repo": "SYJ-AI",
+      "url": "https://github.com/SHalimoosavi/SYJ-AI",
+      "description": "A local-first autonomous AI software engineering workflow.",
+      "vertical": "Artificial Intelligence",
+      "status": "Beta"
+    },
+    {
+      "name": "SYJ AI Arena",
+      "repo": "SYJ-AI-Arena",
+      "url": "https://github.com/SHalimoosavi/SYJ-AI-Arena",
+      "description": "A multi-agent debate and evaluation application.",
+      "vertical": "Artificial Intelligence",
+      "status": "Experimental"
+    },
+    {
+      "name": "SYJ Websense AI",
+      "repo": "SYJ-Websense-AI",
+      "url": "https://github.com/SHalimoosavi/SYJ-Websense-AI",
+      "description": "Repository metadata identifies a Python project; purpose requires README verification.",
+      "vertical": "Artificial Intelligence",
+      "status": "Research"
+    },
+    {
+      "name": "SYJ NexusRank AI",
+      "repo": "nexusrank-ai",
+      "url": "https://github.com/SHalimoosavi/nexusrank-ai",
+      "description": "An SEO intelligence project.",
+      "vertical": "Artificial Intelligence",
+      "status": "Prototype"
+    },
+    {
+      "name": "SYJ Labs",
+      "repo": "SYJ-Labs",
+      "url": "https://github.com/SHalimoosavi/SYJ-Labs",
+      "description": "The SAYANJALI NEXUS Labs webpage.",
+      "vertical": "Developer Tools & Open Source",
+      "status": "Prototype"
+    }
+  ]
+}

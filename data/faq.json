@@ -1,0 +1,70 @@
+[
+  {
+    "question": "What does SAYANJALI NEXUS PRIVATE LIMITED do?",
+    "answer": "SAYANJALI NEXUS PRIVATE LIMITED is a technology-driven enterprise building AI products, blockchain infrastructure, enterprise software and developer infrastructure."
+  },
+  {
+    "question": "Where is SAYANJALI NEXUS PRIVATE LIMITED located?",
+    "answer": "The company is based in Hyderabad, Telangana, India."
+  },
+  {
+    "question": "Who leads SAYANJALI NEXUS PRIVATE LIMITED?",
+    "answer": "The leadership profiles published on this site are Syed Ali Hasan Moosavi, Hyder Ali Khan, Ausaja Abbas and Shaber Ali Khan, with their stated titles shown on the About page."
+  },
+  {
+    "question": "What products does SAYANJALI NEXUS build?",
+    "answer": "Its public software portfolio includes AI, blockchain, enterprise SaaS, security, trade and compliance, developer tooling, education and workflow projects."
+  },
+  {
+    "question": "Which products have public source code?",
+    "answer": "Product repository links are listed on the Products and Open Source pages. Each product page links directly to its public GitHub repository."
+  },
+  {
+    "question": "Is SAYANJALI BLOCKCHAIN production-ready?",
+    "answer": "No. Its repository states NOT PRODUCTION-READY and NOT MAINNET-READY. It remains a protocol engineering project with a Go production-track node and a Python reference implementation."
+  },
+  {
+    "question": "Has SYJ Token launched?",
+    "answer": "No. SYJ Token is planned and pre-launch. It has not launched and no sale is open."
+  },
+  {
+    "question": "What is the current blockchain development phase?",
+    "answer": "The repository README identifies Phase 10.1 — Runtime, Consensus & Production-Gate Validation. Its latest published release is v0.9.6-build1.1-c1, dated 2 October 2026."
+  },
+  {
+    "question": "What does SYJ Aegis do?",
+    "answer": "SYJ Aegis is a local static-analysis tool for reviewing AI-agent security and governance risks, including secrets and prompt-injection-related findings."
+  },
+  {
+    "question": "What is SYJ EdgeMind?",
+    "answer": "SYJ EdgeMind is an experimental C/C++ runtime direction using llama.cpp and quantized GGUF models for local inference on low-memory devices."
+  },
+  {
+    "question": "What is SYJ OpenTrade Logic?",
+    "answer": "SYJ OpenTrade Logic is an explainable HTS classification engine using deterministic General Rules of Interpretation decision logic."
+  },
+  {
+    "question": "How can I contact the company?",
+    "answer": "Use the email addresses, telephone numbers or WhatsApp link on the Contact page. The site does not store contact-form submissions."
+  },
+  {
+    "question": "How do I request a demo?",
+    "answer": "Use the Request a demo link on the Contact page. It opens your email app with a prepared message to the company."
+  },
+  {
+    "question": "How do I report a security vulnerability?",
+    "answer": "Email cto@sayanjalinexus.com with the affected repository or page, reproduction steps, impact and a safe way to follow up."
+  },
+  {
+    "question": "Where can developers find documentation?",
+    "answer": "Start at the Documentation Hub, then follow the README and documentation links in each product's GitHub repository."
+  },
+  {
+    "question": "Does the website use cookies or analytics?",
+    "answer": "The static company website does not set cookies or use analytics or tracking scripts."
+  },
+  {
+    "question": "Does the website submit contact details to a server?",
+    "answer": "No. Contact and demo links compose an email in the visitor's own email application; the static site has no form backend."
+  }
+]
