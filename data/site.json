@@ -1,0 +1,147 @@
+{
+  "siteUrl": "https://shalimoosavi.github.io/SAYANJALI_NEXUS/",
+  "verifiedDate": "2026-11-17",
+  "verificationLabel": "Verified 17 November 2026",
+  "company": "SAYANJALI NEXUS PRIVATE LIMITED",
+  "heroLocation": "Hyderabad, India",
+  "location": "Hyderabad, Telangana, India",
+  "tagline": "The Giver",
+  "heroLine": "A technology-driven enterprise building AI products, an independent Layer-1 blockchain, and enterprise software — engineered in-house, shipped in public.",
+  "about": "SAYANJALI NEXUS PRIVATE LIMITED is a technology-driven enterprise building across Artificial Intelligence, Blockchain, Enterprise Software, and Developer Infrastructure — with agriculture, logistics, and community ventures on the long-term roadmap.",
+  "philosophy": "Rooted in the philosophy of \"The Giver\" — an enterprise that does not merely build business, but builds a better world.",
+  "founderQuote": "Technology must not only build wealth. It must build impact, opportunity, and a better future for humanity.",
+  "founderQuoteBy": "Syed Ali Hasan Moosavi, Founder & MD",
+  "footerQuote": "The future belongs to those who build ecosystems, not just companies.",
+  "vision": "To become a globally respected innovation ecosystem that transforms industries through technology, sustainability, healthcare, agriculture, and public impact.",
+  "mission": [
+    "Build scalable technology ecosystems that serve millions",
+    "Empower communities through targeted welfare initiatives",
+    "Digitally transform traditional industries at scale",
+    "Create sustainable and ethical infrastructure",
+    "Drive innovation with long-term societal value."
+  ],
+  "leaders": [
+    {
+      "name": "Syed Ali Hasan Moosavi",
+      "title": "Founder & Managing Director",
+      "bio": "Main technology architect behind SYJ Token and SaaS platforms. Also Owner of MOOSAVI COMPLIANCE & FARMING CO. Visionary leader driving the ecosystem forward.",
+      "sameAs": [
+        "https://github.com/SHalimoosavi",
+        "https://shalimoosavi.github.io/moosavi/"
+      ]
+    },
+    {
+      "name": "Hyder Ali Khan",
+      "title": "Co-Founder & Executive Director",
+      "bio": "Leading funding operations, marketing strategy, and business growth. Driving expansion and building global partnerships across verticals."
+    },
+    {
+      "name": "Ausaja Abbas",
+      "title": "Director",
+      "bio": "Strategic direction and organizational leadership. Contributing to the long-term vision and operational excellence of the enterprise."
+    },
+    {
+      "name": "Shaber Ali Khan",
+      "title": "Director & Treasurer",
+      "bio": "Financial oversight, treasury management, and organizational financial operations ensuring fiscal discipline and sustainable growth."
+    }
+  ],
+  "phones": [
+    "+91 6304 225 807",
+    "+91 8179 418 949"
+  ],
+  "emails": [
+    "info@sayanjalinexus.com",
+    "ceo@sayanjalinexus.com",
+    "cto@sayanjalinexus.com",
+    "cfo@sayanjalinexus.com",
+    "founders@syj-token.com",
+    "info@syj-token.com",
+    "contact@sayanjalinexus.com",
+    "contact@syj-token.com"
+  ],
+  "securityEmail": "cto@sayanjalinexus.com",
+  "whatsapp": "https://wa.me/916304225807",
+  "ventures": "Supporting connected ventures — ACE Livestock Farms, Al Falah Tahari Hotel & Tandoori Chai, and ZAINAB NEXUS — with documentation and digital tooling.",
+  "footer": "Building ecosystems that empower humanity through technology, sustainability, healthcare, agriculture, and innovation.",
+  "copyright": "© 2026 SAYANJALI NEXUS PRIVATE LIMITED. All Rights Reserved.",
+  "googleVerification": "RhRpM-kPpzv-uHKu5XET8z_0lpO1PIuzYQjgypyHrho",
+  "publicRepoCount": 84,
+  "external": {
+    "blockchain": "https://shalimoosavi.github.io/syj-blockchain-web/",
+    "token": "https://shalimoosavi.github.io/SYJ-TOKEN/",
+    "nexusintel": "https://shalimoosavi.github.io/SYJ-NexusIntel-AI-web/",
+    "github": "https://github.com/SHalimoosavi",
+    "portfolio": "https://shalimoosavi.github.io/moosavi/"
+  },
+  "pageMeta": {
+    "/": {
+      "title": "SAYANJALI NEXUS PRIVATE LIMITED | AI & Blockchain Software",
+      "description": "Hyderabad technology company building AI products, an independent Layer-1 blockchain in testnet development, enterprise SaaS and open-source developer tools."
+    },
+    "/about/": {
+      "title": "About SAYANJALI NEXUS | Hyderabad Technology Company",
+      "description": "SAYANJALI NEXUS PRIVATE LIMITED is based in Hyderabad, India, and develops AI, blockchain and enterprise software. Meet its leadership, vision and mission."
+    },
+    "/products/": {
+      "title": "Software Products | SAYANJALI NEXUS",
+      "description": "Explore AI software, enterprise SaaS, security, compliance, developer tools and blockchain projects with clear maturity labels for each stage."
+    },
+    "/ecosystem/": {
+      "title": "Technology Ecosystem and Verticals | SAYANJALI NEXUS",
+      "description": "Explore 14 SAYANJALI NEXUS verticals across AI, blockchain, enterprise software and technology, each labelled Active, Early work or Planned."
+    },
+    "/blockchain/": {
+      "title": "SAYANJALI Blockchain | Layer-1 Testnet-Stage Development",
+      "description": "SAYANJALI BLOCKCHAIN is a Layer-1 development project with a Go node and Python reference implementation. It is not production-ready or mainnet-ready."
+    },
+    "/syj-token/": {
+      "title": "SYJ Token | Planned Utility Token (Pre-Launch)",
+      "description": "SYJ Token is planned and pre-launch, with no sale open. Its intended utility is to settle on SAYANJALI BLOCKCHAIN; it has not yet launched at present."
+    },
+    "/open-source/": {
+      "title": "Open-Source Projects | SAYANJALI NEXUS",
+      "description": "Browse 84 public non-fork repositories as of 17 November 2026, including AI, blockchain, security, SaaS, compliance, education and developer tooling."
+    },
+    "/docs/": {
+      "title": "Documentation Hub | SAYANJALI NEXUS",
+      "description": "Find repository documentation, setup instructions, architecture notes and developer references for public software projects from SAYANJALI NEXUS."
+    },
+    "/engineering/": {
+      "title": "Engineering Practices and Evidence | SAYANJALI NEXUS",
+      "description": "Review engineering practices, repository evidence, test documentation, continuous integration and known limitations across SAYANJALI NEXUS software projects."
+    },
+    "/roadmap/": {
+      "title": "Roadmap | SAYANJALI NEXUS",
+      "description": "See the current development areas and planned verticals of SAYANJALI NEXUS, with project maturity distinguished from longer-term company aspirations."
+    },
+    "/changelog/": {
+      "title": "Changelog | SAYANJALI NEXUS",
+      "description": "Read dated website and product evidence updates for SAYANJALI NEXUS, with links to repositories documenting each engineering change and source."
+    },
+    "/faq/": {
+      "title": "Frequently Asked Questions | SAYANJALI NEXUS",
+      "description": "Answers about SAYANJALI NEXUS, its Hyderabad location, leadership, AI products, blockchain development status, SYJ Token and developer contact."
+    },
+    "/contact/": {
+      "title": "Contact SAYANJALI NEXUS | Hyderabad, India",
+      "description": "Contact SAYANJALI NEXUS PRIVATE LIMITED in Hyderabad, India, for software enquiries, product demonstrations, partnerships and security disclosures."
+    },
+    "/press/": {
+      "title": "Press and Brand Facts | SAYANJALI NEXUS",
+      "description": "Find factual company information, approved naming, location, public links and brand assets for coverage of SAYANJALI NEXUS PRIVATE LIMITED today."
+    },
+    "/privacy/": {
+      "title": "Privacy Policy | SAYANJALI NEXUS",
+      "description": "Learn how the static SAYANJALI NEXUS website handles visits, email links, contact details, cookies and analytics, and what information it does not store."
+    },
+    "/terms/": {
+      "title": "Terms of Use | SAYANJALI NEXUS",
+      "description": "Read the terms for using the SAYANJALI NEXUS website, public information and repository links, including the separate licences governing open-source software."
+    },
+    "/security/": {
+      "title": "Security and Vulnerability Disclosure | SAYANJALI NEXUS",
+      "description": "Learn how to report a security vulnerability to SAYANJALI NEXUS, what technical details to include, and the current scope of security disclosures."
+    }
+  }
+}

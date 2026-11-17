@@ -1,0 +1,30 @@
+name: Validate company website
+on:
+  push:
+    branches:
+      - build/company-site-v2
+  pull_request:
+    branches:
+      - main
+permissions:
+  contents: read
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Generate pages
+        run: node scripts/build.mjs
+      - name: Validate metadata, links, schema and budgets
+        run: node scripts/validate.mjs --external
+      - name: Install Playwright Chromium
+        run: |
+          npm install --no-save playwright
+          npx playwright install --with-deps chromium
+      - name: Check responsive layouts at five viewport widths
+        run: node scripts/browser-check.mjs

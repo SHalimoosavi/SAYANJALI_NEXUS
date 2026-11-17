@@ -1,0 +1,15 @@
+{
+  "name": "SAYANJALI NEXUS PRIVATE LIMITED",
+  "short_name": "SAYANJALI",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#041e3f",
+  "theme_color": "#041e3f",
+  "icons": [
+    {
+      "src": "favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}

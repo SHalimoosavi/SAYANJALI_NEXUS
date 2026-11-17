@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://shalimoosavi.github.io/REPO-NAME/sitemap.xml
+Sitemap: https://shalimoosavi.github.io/SAYANJALI_NEXUS/sitemap.xml
