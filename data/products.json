@@ -60,7 +60,7 @@
       "Phase 10.1 400-block consensus-path validation report"
     ],
     "architecture": "The Go node is the production-track implementation. The Python code is retained as a reference/oracle implementation. Cosmos SDK and CometBFT are proposed future architecture, not shipped components.",
-    "tests": "TESTING.md states that 231 tests currently cover wallets, transactions, blocks, mining and consensus, chain validation, P2P networking and the REST API. The repository test suite was not re-run for this website audit. The latest default-branch Production Validation workflow failed on 12 November 2026; the separate Build 1 C-1 Verification workflow succeeded on the same date.",
+    "tests": "TESTING.md states that 231 tests currently cover wallets, transactions, blocks, mining and consensus, chain validation, P2P networking and the REST API. The repository test suite was not re-run for this website audit. The latest main-branch Build 1 C-1 Verification workflow succeeded on 12 November 2026. A separate Production Validation workflow on fix/api-strict-json failed that day; it was not a main-branch run.",
     "limitations": "The repository states NOT PRODUCTION-READY and NOT MAINNET-READY. Production-toolchain validation and security scanner execution remain outstanding in the current documentation.",
     "commands": [
       "git clone https://github.com/SHalimoosavi/SAYANJALI-BLOCKCHAIN.git",
@@ -74,9 +74,9 @@
     "releaseDate": "2 October 2026",
     "ci": {
       "branch": "main",
-      "conclusion": "failure",
+      "conclusion": "success",
       "date": "12 November 2026",
-      "workflow": "Production Validation"
+      "workflow": "Build 1 C-1 Verification"
     },
     "metaDescription": "SAYANJALI BLOCKCHAIN is a testnet-stage Layer-1 project with a Go node and Python reference implementation. Its repository records remaining validation gates."
   },
