@@ -1,5 +1,8 @@
 name: Validate company website
 on:
+  push:
+    branches:
+      - build/company-site-v2
   pull_request:
     branches:
       - main
