@@ -16,7 +16,7 @@ const basePath="/SAYANJALI_NEXUS/";
 const mime={".html":"text/html; charset=utf-8",".css":"text/css; charset=utf-8",".js":"text/javascript; charset=utf-8",".svg":"image/svg+xml",".png":"image/png",".ico":"image/x-icon",".json":"application/json"};
 const server=http.createServer((req,res)=>{
   const url=new URL(req.url,"http://127.0.0.1");
-    let relative=url.pathname.startsWith(basePath)?url.pathname.slice(basePath.length):url.pathname.replace(/^\//,"");
+    let relative=url.pathname.startsWith(basePath)?url.pathname.slice(basePath.length):url.pathname.slice(1);
   if(!relative)relative="index.html";
   if(relative.endsWith("/"))relative+="index.html";
   const file=path.resolve(root,relative);
@@ -34,7 +34,7 @@ try {
   const page=await browser.newPage();
   await page.route("https://shalimoosavi.github.io/SAYANJALI_NEXUS/**",async route=>{
     const url=new URL(route.request().url());
-    let relative=url.pathname.startsWith(basePath)?url.pathname.slice(basePath.length):url.pathname.replace(/^\\//,"");
+    let relative=url.pathname.startsWith(basePath)?url.pathname.slice(basePath.length):url.pathname.slice(1);
     if(!relative)relative="index.html";
     if(relative.endsWith("/"))relative+="index.html";
     const file=path.resolve(root,relative);
@@ -50,7 +50,7 @@ try {
   for(const width of [320,375,768,1024,1440]){
     await page.setViewportSize({width,height:900});
     for(const route of routes){
-      const target="http://127.0.0.1:4173"+basePath+route.replace(/^\//,"");
+      const target="http://127.0.0.1:4173"+basePath+route.slice(1);
       let loaded=false,lastError="";
       for(let attempt=1;attempt<=3;attempt++){
         try{await page.goto(target,{waitUntil:"networkidle",timeout:30000});loaded=true;break;}
