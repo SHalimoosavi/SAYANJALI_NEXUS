@@ -16,7 +16,7 @@ const basePath="/SAYANJALI_NEXUS/";
 const mime={".html":"text/html; charset=utf-8",".css":"text/css; charset=utf-8",".js":"text/javascript; charset=utf-8",".svg":"image/svg+xml",".png":"image/png",".ico":"image/x-icon",".json":"application/json"};
 const server=http.createServer((req,res)=>{
   const url=new URL(req.url,"http://127.0.0.1");
-  let relative=url.pathname.startsWith(basePath)?url.pathname.slice(basePath.length):url.pathname.replace(/^\//,"");
+    let relative=url.pathname.startsWith(basePath)?url.pathname.slice(basePath.length):url.pathname.replace(/^\//,"");
   if(!relative)relative="index.html";
   if(relative.endsWith("/"))relative+="index.html";
   const file=path.resolve(root,relative);
