@@ -26,7 +26,7 @@ for(const route of routes){
  if(!html.includes("Last updated: 17 November 2026"))errors.push(route+" visible update date missing");
  if(!html.includes("application/ld+json"))errors.push(route+" JSON-LD missing");
  for(const word of banned)if(html.toLowerCase().includes(word.toLowerCase()))errors.push(route+" contains forbidden phrase: "+word);
- if(/<script\s+src=["']https?:/i.test(html)||/<link[^>]+rel=["']stylesheet["'][^>]+href=["']https?:/i.test(html)||/fonts\.googleapis\.com/i.test(html))errors.push(route+" has remote runtime resource");
+ const runtimeUrls=[...html.matchAll(/(?:src|href)="(https?:\\/\\/[^"]+)/g)].map(m=>m[1]);if(runtimeUrls.some(u=>!u.startsWith(site.siteUrl))||/fonts\\.googleapis\\.com/i.test(html))errors.push(route+" has remote runtime resource");
  if(/<img\b(?![^>]*\balt=)[^>]*>/i.test(html))errors.push(route+" image without alt");
  for(const m of html.matchAll(/<(input|textarea|select)\b[^>]*>/gi)){const id=(m[0].match(/\bid=["']([^"']+)/i)||[])[1];if(!id||(!html.includes('for="'+id+'"')&&!html.includes("for='"+id+"'")))errors.push(route+" unlabelled control "+(id||m[1]));}
  const script=html.match(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/);let graph=[];
@@ -39,10 +39,10 @@ for(const route of routes){
 for(const [route,count] of inbound)if(count===0)errors.push("Orphan page "+route);
 const home=fs.readFileSync(path.join(root,"index.html"),"utf8"),about=fs.readFileSync(path.join(root,"about/index.html"),"utf8"),contact=fs.readFileSync(path.join(root,"contact/index.html"),"utf8"),eco=fs.readFileSync(path.join(root,"ecosystem/index.html"),"utf8");
 for(const x of [site.company,site.tagline,site.heroLocation,site.heroLine,site.footer,site.copyright])if(!home.includes(x))errors.push("Locked home fact missing: "+x);
-for(const x of [site.about,site.philosophy,site.vision,site.founderQuote,site.founderQuoteBy,site.ventures,...site.mission])if(!about.includes(x))errors.push("Locked About fact missing: "+x);
-for(const p of site.leaders)for(const x of [p.name,p.title,p.bio])if(!about.includes(x))errors.push("Locked leader fact missing: "+x);
+for(const x of [site.about,site.philosophy,site.vision,site.founderQuote,site.founderQuoteBy,site.ventures,...site.mission])if(!about.includes(esc(x)))errors.push("Locked About fact missing: "+x);
+for(const p of site.leaders)for(const x of [p.name,p.title,p.bio])if(!about.includes(esc(x)))errors.push("Locked leader fact missing: "+x);
 for(const x of [...site.phones,...site.emails,site.whatsapp])if(!contact.includes(x))errors.push("Locked contact fact missing: "+x);
-for(const v of verticals)if(!eco.includes(v.name)||!eco.includes(v.description))errors.push("Vertical fact missing: "+v.name);
+for(const v of verticals)if(!eco.includes(esc(v.name))||!eco.includes(esc(v.description)))errors.push("Vertical fact missing: "+v.name);
 if(!home.includes(site.googleVerification))errors.push("Google verification tag missing");
 const ogFile=path.join(root,"og/default.png");if(!fs.existsSync(ogFile))errors.push("OG PNG missing");let og=null;if(fs.existsSync(ogFile)){const b=fs.readFileSync(ogFile);og={width:b.readUInt32BE(16),height:b.readUInt32BE(20),bytes:b.length};if(og.width!==1200||og.height!==630)errors.push("OG PNG dimensions incorrect");}
 for(const f of ["favicon.svg","favicon.ico","apple-touch-icon.png","site.webmanifest"])if(!fs.existsSync(path.join(root,f)))errors.push("Missing asset "+f);
