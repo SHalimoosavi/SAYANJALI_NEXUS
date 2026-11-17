@@ -5,6 +5,7 @@ const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),"..");
 const read=n=>JSON.parse(fs.readFileSync(path.join(root,n),"utf8"));
 const site=read("data/site.json"), verticals=read("data/verticals.json"), products=read("data/products.json"), faqs=read("data/faq.json"), repos=read("data/repos.json");
 const base=site.siteUrl, date=site.verifiedDate;
+const pageTemplate=fs.readFileSync(path.join(root,"templates/page.html"),"utf8");
 const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 const abs=p=>base+p.replace(/^\//,"");
 const nav=[["Products","/products/"],["Ecosystem","/ecosystem/"],["Blockchain","/blockchain/"],["Docs","/docs/"],["Open Source","/open-source/"],["About","/about/"],["Contact","/contact/"]];
