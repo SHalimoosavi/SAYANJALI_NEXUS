@@ -32,7 +32,13 @@
     "source": "README.md",
     "lastPush": "2026-11-03",
     "release": "v1.5.0-demo",
-    "releaseDate": "20 June 2026"
+    "releaseDate": "20 June 2026",
+    "ci": {
+      "branch": "main",
+      "conclusion": "success",
+      "date": "1 November 2026",
+      "workflow": "Dependency Audit"
+    }
   },
   {
     "name": "SAYANJALI BLOCKCHAIN",
@@ -64,7 +70,13 @@
     "source": "README.md, PROJECT_STATUS.md, SECURITY_STATUS.md, TESTING.md, PHASE10_1_VALIDATION_REPORT.md",
     "lastPush": "2026-11-12",
     "release": "v0.9.6-build1.1-c1",
-    "releaseDate": "2 October 2026"
+    "releaseDate": "2 October 2026",
+    "ci": {
+      "branch": "main",
+      "conclusion": "success",
+      "date": "12 November 2026",
+      "workflow": "Build 1 C-1 Verification"
+    }
   },
   {
     "name": "SYJ OpenTrade Logic",
@@ -94,7 +106,13 @@
     "source": "README.md",
     "lastPush": "2026-08-13",
     "release": "v0.9.2",
-    "releaseDate": "6 August 2026"
+    "releaseDate": "6 August 2026",
+    "ci": {
+      "branch": "main",
+      "conclusion": "success",
+      "date": "13 August 2026",
+      "workflow": "CI"
+    }
   },
   {
     "name": "SYJ Aegis",
@@ -123,7 +141,13 @@
     "source": "README.md",
     "lastPush": "2026-09-17",
     "release": "v1.0.0",
-    "releaseDate": "17 September 2026"
+    "releaseDate": "17 September 2026",
+    "ci": {
+      "branch": "main",
+      "conclusion": "success",
+      "date": "17 September 2026",
+      "workflow": "SYJ-AEGIS CI"
+    }
   },
   {
     "name": "SYJ EdgeMind",
@@ -156,7 +180,13 @@
     "releaseDate": "9 September 2026",
     "related": [
       "syj-llm"
-    ]
+    ],
+    "ci": {
+      "branch": "main",
+      "conclusion": "no run found",
+      "date": "17 November 2026",
+      "workflow": "GitHub Actions"
+    }
   },
   {
     "name": "SYJ LLM",
@@ -191,6 +221,20 @@
     "releaseDate": "20 September 2026",
     "related": [
       "syj-edgemind"
+    ],
+    "ci": {
+      "branch": "main",
+      "conclusion": "no run found",
+      "date": "17 November 2026",
+      "workflow": "GitHub Actions"
+    },
+    "platforms": [
+      "Windows",
+      "Linux",
+      "macOS",
+      "iOS",
+      "Android",
+      "WebAssembly"
     ]
   },
   {
@@ -224,7 +268,13 @@
     "source": "README.md",
     "lastPush": "2026-10-17",
     "release": "v1.0.0-beta",
-    "releaseDate": "24 June 2026"
+    "releaseDate": "24 June 2026",
+    "ci": {
+      "branch": "main",
+      "conclusion": "success",
+      "date": "17 October 2026",
+      "workflow": "CI"
+    }
   },
   {
     "name": "SYJ LaunchPad",
@@ -255,7 +305,13 @@
       "cd SYJ-LaunchPad"
     ],
     "source": "README.md",
-    "lastPush": "2026-11-13"
+    "lastPush": "2026-11-13",
+    "ci": {
+      "branch": "main",
+      "conclusion": "success",
+      "date": "13 November 2026",
+      "workflow": "main-branch workflow"
+    }
   },
   {
     "name": "SYJ HCM",
@@ -287,7 +343,13 @@
     "source": "README.md",
     "lastPush": "2026-10-19",
     "release": "v0.14.0-alpha",
-    "releaseDate": "13 September 2026"
+    "releaseDate": "13 September 2026",
+    "ci": {
+      "branch": "main",
+      "conclusion": "success",
+      "date": "13 September 2026",
+      "workflow": "SYJ-HCM CI"
+    }
   },
   {
     "name": "DevXchange",
@@ -318,7 +380,13 @@
       "cd DevXchange"
     ],
     "source": "README.md",
-    "lastPush": "2026-10-17"
+    "lastPush": "2026-10-17",
+    "ci": {
+      "branch": "main",
+      "conclusion": "success",
+      "date": "17 October 2026",
+      "workflow": "CI"
+    }
   },
   {
     "name": "SYJ Video Forge",
@@ -349,7 +417,13 @@
     "source": "README.md",
     "lastPush": "2026-10-11",
     "release": "v0.3.0",
-    "releaseDate": "11 October 2026"
+    "releaseDate": "11 October 2026",
+    "ci": {
+      "branch": "main",
+      "conclusion": "success",
+      "date": "11 October 2026",
+      "workflow": "Deploy static site to GitHub Pages"
+    }
   },
   {
     "name": "SYJ GridSync OS",
@@ -379,7 +453,13 @@
     "source": "README.md",
     "lastPush": "2026-08-03",
     "release": "v0.6.0",
-    "releaseDate": "3 August 2026"
+    "releaseDate": "3 August 2026",
+    "ci": {
+      "branch": "main",
+      "conclusion": "no run found",
+      "date": "17 November 2026",
+      "workflow": "GitHub Actions"
+    }
   },
   {
     "name": "SYJ TalentFlow CLI",
@@ -410,7 +490,18 @@
     "source": "README.md",
     "lastPush": "2026-07-24",
     "release": "v1.0.0",
-    "releaseDate": "21 July 2026"
+    "releaseDate": "21 July 2026",
+    "ci": {
+      "branch": "main",
+      "conclusion": "success",
+      "date": "24 July 2026",
+      "workflow": "CI"
+    },
+    "platforms": [
+      "Windows",
+      "Linux",
+      "macOS"
+    ]
   },
   {
     "name": "SYJ LeadForge",
@@ -443,7 +534,13 @@
     "source": "README.md",
     "lastPush": "2026-08-14",
     "release": "v0.4.0",
-    "releaseDate": "14 August 2026"
+    "releaseDate": "14 August 2026",
+    "ci": {
+      "branch": "main",
+      "conclusion": "success",
+      "date": "14 August 2026",
+      "workflow": "CI"
+    }
   },
   {
     "name": "SYJ QuickStock Sync",
@@ -475,7 +572,13 @@
     "source": "README.md",
     "lastPush": "2026-08-06",
     "release": "v2.0.0",
-    "releaseDate": "6 August 2026"
+    "releaseDate": "6 August 2026",
+    "ci": {
+      "branch": "main",
+      "conclusion": "success",
+      "date": "3 August 2026",
+      "workflow": "CI"
+    }
   },
   {
     "name": "SYJ Mail Intelligence AI",
@@ -507,7 +610,13 @@
     "source": "README.md",
     "lastPush": "2026-07-18",
     "release": "v1.0.0-beta1",
-    "releaseDate": "9 July 2026"
+    "releaseDate": "9 July 2026",
+    "ci": {
+      "branch": "main",
+      "conclusion": "failure",
+      "date": "18 July 2026",
+      "workflow": "CI"
+    }
   },
   {
     "name": "SYJ GST Reconciliation",
@@ -538,7 +647,18 @@
     "source": "README.md",
     "lastPush": "2026-07-04",
     "release": "v1.1.0",
-    "releaseDate": "4 July 2026"
+    "releaseDate": "4 July 2026",
+    "ci": {
+      "branch": "main",
+      "conclusion": "failure",
+      "date": "4 July 2026",
+      "workflow": "SYJ GST CI"
+    },
+    "platforms": [
+      "Windows",
+      "Linux",
+      "macOS"
+    ]
   },
   {
     "name": "SYJ RE-Workstation",
@@ -568,7 +688,16 @@
     "source": "README.md",
     "lastPush": "2026-11-14",
     "release": "v0.1.0",
-    "releaseDate": "14 November 2026"
+    "releaseDate": "14 November 2026",
+    "ci": {
+      "branch": "main",
+      "conclusion": "success",
+      "date": "14 November 2026",
+      "workflow": "Shell checks"
+    },
+    "platforms": [
+      "Linux"
+    ]
   },
   {
     "name": "AI Zara Web Widget",
@@ -597,7 +726,13 @@
     "source": "README.md",
     "lastPush": "2026-06-17",
     "release": "v1.0.0",
-    "releaseDate": "17 June 2026"
+    "releaseDate": "17 June 2026",
+    "ci": {
+      "branch": "main",
+      "conclusion": "success",
+      "date": "17 June 2026",
+      "workflow": "Deploy static content to Pages"
+    }
   },
   {
     "name": "SYJ GitHub Optimiser",
@@ -626,7 +761,13 @@
     "source": "README.md",
     "lastPush": "2026-06-24",
     "release": "v1.0.0-beta",
-    "releaseDate": "24 June 2026"
+    "releaseDate": "24 June 2026",
+    "ci": {
+      "branch": "main",
+      "conclusion": "no run found",
+      "date": "17 November 2026",
+      "workflow": "GitHub Actions"
+    }
   },
   {
     "name": "SYJ Personality For GitHub",
@@ -655,7 +796,13 @@
     "source": "README.md",
     "lastPush": "2026-06-23",
     "release": "v1.0.0",
-    "releaseDate": "23 June 2026"
+    "releaseDate": "23 June 2026",
+    "ci": {
+      "branch": "main",
+      "conclusion": "no run found",
+      "date": "17 November 2026",
+      "workflow": "GitHub Actions"
+    }
   },
   {
     "name": "SYJ Calling CRM",
@@ -689,7 +836,13 @@
     "source": "README.md",
     "lastPush": "2026-07-14",
     "release": "v0.1.0-mvp",
-    "releaseDate": "14 July 2026"
+    "releaseDate": "14 July 2026",
+    "ci": {
+      "branch": "main",
+      "conclusion": "no run found",
+      "date": "17 November 2026",
+      "workflow": "GitHub Actions"
+    }
   },
   {
     "name": "SYJ OS",
@@ -722,7 +875,13 @@
     "source": "README.md",
     "lastPush": "2026-10-15",
     "release": "v0.1.0",
-    "releaseDate": "15 October 2026"
+    "releaseDate": "15 October 2026",
+    "ci": {
+      "branch": "main",
+      "conclusion": "success",
+      "date": "15 October 2026",
+      "workflow": "Deploy SYJ OS"
+    }
   },
   {
     "name": "SYJ CanvasForge",
@@ -758,7 +917,13 @@
     "source": "README.md",
     "lastPush": "2026-07-25",
     "release": "v1.0.0",
-    "releaseDate": "23 July 2026"
+    "releaseDate": "23 July 2026",
+    "ci": {
+      "branch": "main",
+      "conclusion": "failure",
+      "date": "25 July 2026",
+      "workflow": "CI"
+    }
   },
   {
     "name": "SYJ PropertySync",
@@ -790,7 +955,13 @@
     "source": "README.md",
     "lastPush": "2026-08-11",
     "release": "v1.0.0",
-    "releaseDate": "11 August 2026"
+    "releaseDate": "11 August 2026",
+    "ci": {
+      "branch": "main",
+      "conclusion": "no run found",
+      "date": "17 November 2026",
+      "workflow": "GitHub Actions"
+    }
   },
   {
     "name": "SYJ Logistics Fabric",
@@ -819,6 +990,12 @@
     "source": "README.md",
     "lastPush": "2026-08-16",
     "release": "v0.9.0-alpha",
-    "releaseDate": "3 August 2026"
+    "releaseDate": "3 August 2026",
+    "ci": {
+      "branch": "main",
+      "conclusion": "success",
+      "date": "16 August 2026",
+      "workflow": "CI"
+    }
   }
 ]
