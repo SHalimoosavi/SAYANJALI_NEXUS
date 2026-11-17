@@ -6,6 +6,7 @@ const read=n=>JSON.parse(fs.readFileSync(path.join(root,n),"utf8"));
 const site=read("data/site.json"),products=read("data/products.json"),verticals=read("data/verticals.json"),repoData=read("data/repos.json");
 const routes=[...Object.keys(site.pageMeta),...products.map(p=>"/products/"+p.slug+"/")];
 const abs=p=>site.siteUrl+p.replace(/^\//,"");
+const esc=s=>String(s??"").replaceAll("&","&amp;").replaceAll("<","&lt;").replaceAll(">","&gt;").replaceAll('"',"&quot;");
 const fileFor=p=>path.join(root,p==="/"?"index.html":p.slice(1)+"index.html");
 const errors=[],external=new Set(),inbound=new Map(routes.map(p=>[p,0]));
 const banned=["TODO","lorem","REPO-NAME","example.com","Termux","mobile-first","L1 Blockchain Live","Platform Ready","production reliability","99.9%"];
