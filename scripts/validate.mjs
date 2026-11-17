@@ -54,5 +54,23 @@ const urls=[...fs.readFileSync(path.join(root,"sitemap.xml"),"utf8").matchAll(/<
 if(!fs.readFileSync(path.join(root,"robots.txt"),"utf8").includes("Sitemap: "+site.siteUrl+"sitemap.xml"))errors.push("robots.txt sitemap mismatch");
 if(!fs.readFileSync(path.join(root,"404.html"),"utf8").includes('name="robots" content="noindex, follow"'))errors.push("404 noindex missing");
 const css=fs.statSync(path.join(root,"assets/site.css")).size,js=fs.statSync(path.join(root,"assets/site.js")).size,homeSize=fs.statSync(path.join(root,"index.html")).size;if(css>60*1024)errors.push("CSS exceeds 60 KB");if(js>30*1024)errors.push("JS exceeds 30 KB");if(homeSize+css+js>250*1024)errors.push("Home first-load exceeds 250 KB");
-if(process.argv.includes("--external"))for(const url of external){let ok=false,last="";for(let n=1;n<=3;n++){try{let res=await fetch(url,{method:"HEAD",redirect:"follow",signal:AbortSignal.timeout(12000)});if(res.status===403||res.status===405)res=await fetch(url,{method:"GET",redirect:"follow",signal:AbortSignal.timeout(12000)});last=res.status+" "+res.url;if(res.status===200){ok=true;break;}}catch(e){last=e.message;}}if(!ok)errors.push("External URL failed after 3 attempts: "+url+" ("+last+")");}
+if(process.argv.includes("--external")){
+ const queue=[...external];
+ const workers=Array.from({length:Math.min(8,queue.length)},async()=>{
+  while(queue.length){
+   const url=queue.shift();
+   let ok=false,last="";
+   for(let attempt=1;attempt<=3;attempt++){
+    try{
+     let response=await fetch(url,{method:"HEAD",redirect:"follow",signal:AbortSignal.timeout(12000)});
+     if(response.status===403||response.status===405)response=await fetch(url,{method:"GET",redirect:"follow",signal:AbortSignal.timeout(12000)});
+     last=response.status+" "+response.url;
+     if(response.status===200){ok=true;break;}
+    }catch(error){last=error.message;}
+   }
+   if(!ok)errors.push("External URL failed after 3 attempts: "+url+" ("+last+")");
+  }
+ });
+ await Promise.all(workers);
+}
 console.log(JSON.stringify({verifiedDate:site.verifiedDate,pages:routes.length,products:products.length,openSourceRows:repoData.items.length,og,bytes:{home:homeSize,css,js,homeFirstLoad:homeSize+css+js},externalUrls:external.size,contrast:pairs.map(([fg,bg])=>({fg,bg,ratio:Number(contrast(fg,bg).toFixed(2))})),errors},null,2));if(errors.length)process.exitCode=1;
