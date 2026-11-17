@@ -85,7 +85,7 @@
     },
     "/products/": {
       "title": "Software Products | SAYANJALI NEXUS",
-      "description": "Explore AI software products, enterprise SaaS, security, compliance, developer tools and blockchain projects with clear Beta, Prototype and research maturity labels."
+      "description": "Explore AI software, enterprise SaaS, security, compliance, developer tools and blockchain projects with clear maturity labels for each stage."
     },
     "/ecosystem/": {
       "title": "Technology Ecosystem and Verticals | SAYANJALI NEXUS",
@@ -97,7 +97,7 @@
     },
     "/syj-token/": {
       "title": "SYJ Token | Planned Utility Token (Pre-Launch)",
-      "description": "SYJ Token is planned and pre-launch, with no sale open. Its intended utility is to settle on SAYANJALI BLOCKCHAIN; it has not yet launched."
+      "description": "SYJ Token is planned and pre-launch, with no sale open. Its intended utility is to settle on SAYANJALI BLOCKCHAIN; it has not yet launched at present."
     },
     "/open-source/": {
       "title": "Open-Source Projects | SAYANJALI NEXUS",
@@ -117,7 +117,7 @@
     },
     "/changelog/": {
       "title": "Changelog | SAYANJALI NEXUS",
-      "description": "Read dated website and product evidence updates for SAYANJALI NEXUS, with links to repositories documenting each engineering change."
+      "description": "Read dated website and product evidence updates for SAYANJALI NEXUS, with links to repositories documenting each engineering change and source."
     },
     "/faq/": {
       "title": "Frequently Asked Questions | SAYANJALI NEXUS",
